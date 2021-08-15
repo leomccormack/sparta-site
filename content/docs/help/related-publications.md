@@ -21,7 +21,7 @@ McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M., 2020.
     <embed src="mccormack2020higher.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2020higher.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @article{mccormack2020higher,
@@ -44,7 +44,7 @@ McCormack, L. and Politis, A., 2019, March. SPARTA & COMPASS: Real-time implemen
     <embed src="mccormack2019sparta.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019sparta.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{mccormack2019sparta,
@@ -64,7 +64,7 @@ McCormack, L., Politis, A. and Pulkki, V., 2019, May. **Sharpening of Angular Sp
     <embed src="mccormack2019sharpening.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019sharpening.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{mccormack2019sharpening,
@@ -85,7 +85,7 @@ McCormack, L. and Delikaris-Manias, S., 2019, September. **Parametric first-orde
     <embed src="mccormack2019parametric.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019parametric.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{mccormack2019parametric,
@@ -105,7 +105,7 @@ McCormack, L., Politis, A., Scheuregger, O. and Pulkki, V., 2019. **Higher-order
     <embed src="mccormack2019higher.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019higher.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @book{mccormack2019higher,
@@ -124,7 +124,7 @@ McCormack, L., Delikaris-Manias, S., Politis, A., Pavlidi, D., Farina, A., Pinar
     <embed src="mccormack2019applications.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019applications.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @article{mccormack2019applications,
@@ -147,7 +147,7 @@ Politis, A., Tervo, S. and Pulkki, V., 2018, April. **COMPASS: Coding and multid
     <embed src="politis2018compass.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="politis2018compass.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{politis2018compass,
@@ -168,7 +168,7 @@ McCormack, L., Delikaris-Manias, S., Farina, A., Pinardi, D. and Pulkki, V., 201
     <embed src="mccormack2018real.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2018real.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{mccormack2018real,
@@ -188,7 +188,7 @@ McCormack, L., Delikaris-Manias, S. and Pulkki, V., 2017, September. **Parametri
     <embed src="mccormack2017parametric.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2017parametric.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{mccormack2017parametric,
@@ -208,7 +208,7 @@ Politis, A., McCormack, L. and Pulkki, V., 2017, October. **Enhancement of ambis
     <embed src="politis2017enhancement.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="politis2017enhancement.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @inproceedings{politis2017enhancement,
@@ -229,7 +229,7 @@ Politis, A., Vilkamo, J. and Pulkki, V., 2015. **Sector-based parametric sound f
     <embed src="politis2015sector.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="politis2015sector.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 ```
 @article{politis2015sector,
