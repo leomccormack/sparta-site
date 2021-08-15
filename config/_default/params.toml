@@ -9,7 +9,7 @@ description = "An open-source VST audio plug-in suite for creating and reproduci
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
+domainTLD = "https://leomccormack.github.io/sparta-site/"
 titleHome = "SPARTA"
 
 ## Twitter Cards
