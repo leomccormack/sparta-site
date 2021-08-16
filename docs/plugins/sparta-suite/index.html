@@ -5,7 +5,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <link rel=preload as=font href=https://leomccormack.github.io/sparta-site/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin>
 <link rel=preload as=font href=https://leomccormack.github.io/sparta-site/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin>
-<link rel=stylesheet href=https://leomccormack.github.io/sparta-site/main.1c04702ac74e8c0e3af8487faf908f0554f139a5654aea8825edadb60e0949d18586d7e547ea5d34ffb789976b3211d5975c24833be56b3d6a99c71441094ea0.css integrity="sha512-HARwKsdOjA46+Eh/r5CPBVTxOaVlSuqIJe2ttg4JSdGFhtflR+pdNP+3iZdrMhHVl1wkgzvlaz1qmccUQQlOoA==" crossorigin=anonymous>
+<link rel=stylesheet href=https://leomccormack.github.io/sparta-site/main.3cd965274af14be472e933b85ae1022340bf4402e23c2d04175e3173ede8fbfa6d8bc7fa2142d49ecc39b449e596e84129f64827ce7fadf0c1e0ecb805cfb6d4.css integrity="sha512-PNllJ0rxS+Ry6TO4WuECI0C/RALiPC0EF14xc+3o+/pti8f6IULUnsw5tEnlluhBKfZIJ85/rfDB4Oy4Bc+21A==" crossorigin=anonymous>
 <noscript><style>img.lazyload{display:none}</style></noscript>
 <meta name=robots content="index, follow">
 <meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -55,10 +55,13 @@
 </ul>
 <div class="collapse navbar-collapse order-4 order-md-1">
 <ul class="navbar-nav main-nav me-auto order-5 order-md-2"><li class=nav-item>
+<a class=nav-link href=https://github.com/leomccormack/SPARTA/releases/>Download</a>
+</li>
+<li class=nav-item>
 <a class=nav-link href=https://leomccormack.github.io/sparta-site/docs/plugins/overview/>Documentation</a>
 </li>
 <li class=nav-item>
-<a class=nav-link href=https://leomccormack.github.io/sparta-site/docs/source-code/overview/>Source code</a>
+<a class=nav-link href=https://leomccormack.github.io/sparta-site/docs/sourcecode/overview/>Source code</a>
 </li>
 </ul>
 <div class="break order-6 d-md-none"></div>
@@ -76,13 +79,17 @@
 <nav class=docs-links aria-label="Main navigation">
 <h3>The plug-ins</h3>
 <ul class=list-unstyled>
-<li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/plugins/overview/>Overview</a></li>
+<li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/plugins/overview/>Overview of the plug-ins</a></li>
 <li><a class="docs-link active" href=https://leomccormack.github.io/sparta-site/docs/plugins/sparta-suite/>SPARTA Suite</a></li>
 <li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/plugins/compass-suite/>COMPASS suite</a></li>
 <li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/plugins/hodirac-suite/>HO-DirAC suite</a></li>
 <li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/plugins/hosirr/>HO-SIRR</a></li>
+<li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/plugins/cropac-binaural/>CroPaC-Binaural</a></li>
 </ul>
 <h3>Source code</h3>
+<ul class=list-unstyled>
+<li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/sourcecode/overview/>Overview of source code</a></li>
+</ul>
 <h3>Help</h3>
 <ul class=list-unstyled>
 <li><a class=docs-link href=https://leomccormack.github.io/sparta-site/docs/help/how-to-update/>How to Update</a></li>
@@ -133,7 +140,7 @@
 <p>Thanks to help from Daniel Rudrich, the relevant plug-ins now also support importing and exporting of loudspeaker, source, and sensors directions via .json configuration files; allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be found here.</p>
 <p>The default HRIR set is an 836-point simulation of a Kemar Dummy head, courtesy of Genelec AuralID.</p>
 <h3 id=ambibin>AmbiBIN<a href=#ambibin class=anchor aria-hidden=true>#</a> </h3>
-<p><img src=AmbiBIN_GUI.png alt=AmbiBIN_GUI caption="<em>AmbiBIN_GUI</em>" class=border-0 width=550><br></p>
+<p><img src=AmbiBIN_GUI.png alt=AmbiBIN_GUI caption="<em>AmbiBIN_GUI</em>" class=border-1 width=550><br></p>
 <p>A binaural Ambisonic decoder for headphone playback of Ambisonic signals (aka spherical harmonic or B-format signals), with a built-in rotator and head-tracking support via OSC messages. The rotation angles are updated after the time-frequency transform, which allows for reduced latency compared to its loudspeaker counterpart &lsquo;AmbiDEC&rsquo; when paired with &lsquo;Rotator&rsquo;. The plug-in also allows the user to import their own HRIRs via the SOFA standard. The plug-in offers a variety of different decoding methods, including: Least-Squares (LS), Spatial re-sampling (SPR), Time-Alignment (TA) [11], and Magnitude Least-Squares (MagLS) [12]. It can also impose a diffuse-coherence contraint/correction on the current decoder, as described in [11].</p>
 <p>This plug-in was developed by Leo McCormack, Archontis Politis, and Christoph Hold.</p>
 <h3 id=ambidec>AmbiDEC<a href=#ambidec class=anchor aria-hidden=true>#</a> </h3>
@@ -157,7 +164,7 @@
 <p>This plug-in was developed by Leo McCormack.</p>
 <h3 id=array2sh>Array2SH<a href=#array2sh class=anchor aria-hidden=true>#</a> </h3>
 <p><img src=Array2SH_GUI.png alt width=700><br></p>
-<p>The Array2SH plug-in is related to <a href=http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2018real.pdf>this publication</a>.</p>
+<p>The Array2SH plug-in is related to <a href=../../help/related-publications/#mccormack2018real>this publication</a>.</p>
 <p>&lsquo;Array2SH&rsquo; spatially encodes spherical/cylindrical array signals into spherical harmonic signals (aka: Ambisonic or B-Format signals). The plug-in utilises analytical descriptors, which ascertain the frequency and order-dependent influence that the physical properties of the array have on the plane-waves arriving at its surface. The plug-in allows the user to specify: the array type (spherical or cylindrical), whether the array has an open or rigid enclosure, the radius of the array, the radius of the sensors (in cases where they protrude out from the array), the sensor coordinates (up to 64 channels), sensor directivity (omni-dipole-cardioid), the speed of sound, and the acoustical admittance of the array material (in the case of rigid arrays). The plug-in then determines the order-dependent equalisation curves that need to be imposed onto the initial spherical harmonic signals estimate, in order to remove the influence of the array itself. However, especially for higher-orders, this generally results in a large amplification of the low frequencies (including the sensor noise at these frequencies that accompanies it); therefore, four different regularisation approaches have been integrated into the plug-in, which allow the user to make a compromise between noise amplification and transform accuracy. These target and regularised equalisation curves are depicted on the user interface to provide visual feedback.</p>
 <p>The plug-in also allows the user to &lsquo;Analyse&rsquo; the spatial encoding performance using objective measures described in [8,10], namely: the spatial correlation and the level difference. Here, the encoding matrices are applied to a simulated array, which is described by multichannel transfer functions of plane waves for 812 points on the surface of the spherical/cylindrical array. The resulting encoded array responses should ideally resemble spherical harmonic functions at the grid points. The spatial correlation is then derived by comparing the patterns of these responses with the patterns of ideal spherical harmonics, where &lsquo;1&rsquo; means they are perfect, and &lsquo;0&rsquo; completely uncorrelated; the spatial aliasing frequency can therefore be observed for each order, as the point where the spatial correlation tends towards 0. The level difference is then the mean level difference over all directions (diffuse level difference) between the ideal and simulated components. One can observe that higher permitted amplification limits [Max Gain (dB)] will result in noisier signals; however, this will also result in a wider frequency range of useful spherical harmonic components at each order. This analysis is primarily based on code written for publication [10], which compared the performance of various regularisation approaches of encoding filters, based on both theoretical and measured array responses.</p>
 <p>Note that this ability to balance the noise amplification with the accuracy of the spatial encoding (to better suit a given application) is very important, for example: the perceived fidelity of Ambisonic decoded audio can be rather poor if the noise amplification is set too high; therefore, typically a much lower amplification regularisation limit is used in Ambisonics reproduction when compared to sound-field visualisation algorithms, or beamformers that employ appropriate post-filtering.</p>
@@ -181,7 +188,7 @@
 <p>This plug-in was developed by Leo McCormack.</p>
 <h3 id=dirass>DirASS<a href=#dirass class=anchor aria-hidden=true>#</a> </h3>
 <p><img src=DirASS_GUI.png alt width=700><br></p>
-<p>The DirASS plug-in is related to these publications: <a href=http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2019applications.pdf>Link1</a>, <a href=http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2019sharpening.pdf>Link2</a>.</p>
+<p>The DirASS plug-in is related to these publications: <a href=../../help/related-publications/#mccormack2019applications>Link1</a>, <a href=../../help/related-publications/#mccormack2019sharpening>Link2</a>.</p>
 <p>A sound-field visualiser, which is based on the directional re-assignment of beamformer energy. This energy re-assignment is based on local DoA estimates for each scanning direction, and may be quantised to the nearest direction or upscaled to a higher-order than the input; resulting in sharper activity-maps. For example, a second-order input may be displayed with (up to) 20th order output resolution. The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.</p>
 <p>This plug-in was developed by Leo McCormack and Archontis Politis.</p>
 <h3 id=matrixconv>MatrixConv<a href=#matrixconv class=anchor aria-hidden=true>#</a> </h3>
@@ -190,7 +197,7 @@
 <ul>
 <li>Example 1, <strong>spatial reverberation</strong>: if you have a B-Format/Ambisonic room impulse response (RIR), you may convolve it with a monophonic input signal and the output will exhibit (much of) the spatial characteristics of the measured room. Simply load this Ambisonic RIR into the plug-in and set the number of input channels to 1. You may then decode the resulting Ambisonic output to your loudspeaker array (e.g. using SPARTA|AmbiDEC) or to headphones (e.g. using SPARTA|AmbiBIN). However, please note that the limitations of lower-order Ambisonics for signals (namely, colouration and poor spatial accuracy) will also be present with lower-order Ambisonic RIRs; at least, when applied in this manner. Consider referring to Example 3, for a more spatially accurate method of reproducing the spatial characteristics of rooms, which are captured as B-Format/Ambisonic RIRs.</li>
 <li>Example 2, <strong>microphone array to Ambisonics encoding</strong>: if you have a matrix of filters to go from an Eigenmike (32 channel) recording to 4th order Ambisonics (25 channel), then the plugin requires a 25-channel wav file to be loaded, and the number of input channels to be set to 32. In this case: the first 32 filters will map the input to the first output channel, filters 33-64 will map the input to the second output channel, &mldr; , and the last 32 filters will map the input to the 25th output channel. An example of such an encoding matrix may be downloaded from <a href=http://research.spa.aalto.fi/projects/sparta_vsts/extras/M_eigen2sh_radinv_o4_ACN_N3D_15dB_max.wav>here</a>. Note that these example filters employ the ACN/<strong>N3D</strong> convention, Tikhonov regularisation, and 15dB of maximum gain amplification; using the Matlab scripts from <a href=https://github.com/polarch/Spherical-Array-Processing><strong>here</strong></a>. This should be the same as SPARTA|Array2SH when it is set to the Eigenmike preset and default settings (except N3D not SN3D).</li>
-<li>Example 3, <strong>more advanced spatial reverberation</strong>: if you have a monophonic recording of a trumpet and you wish to reproduce it as if it were in your favourite concert hall, first measure a B-Format/Ambisonic room impulse response (RIR) of the hall, and then convert this Ambisonic RIR to your loudspeaker set-up using <a href=http://research.spa.aalto.fi/projects/sparta_vsts/hosirr.html>HO-SIRR</a>. Then load the resulting rendered loudspeaker array RIR into the plug-in and set the number of input channels to 1. Note that you may prefer to use HO-SIRR (which is a parametric renderer), to convert your arbitrary order B-Format/Ambisonic IRs to arbitrary loudspeaker array IRs, as the resulting output will generally be much more spatially accurate when compared to linear (non-parametric) Ambisonic decoding; as described in Example 1. For the curious reader, an example of a 12point T-design loudspeaker array IR, made using a simulation [15] of the Vienna Musikverein concert hall, may be downloaded from <a href=http://research.spa.aalto.fi/projects/sparta_vsts/extras/Vienna__12point-Tdesign.wav><strong>here</strong></a>. To listen to the convolved output, either arrange 12 loudspeakers in a t-design for the playback (a bit cumbersome), or use the SPARTA|Binauraliser plug-in set to &ldquo;T-Design (12)&rdquo; and listen over headphones.</li>
+<li>Example 3, <strong>more advanced spatial reverberation</strong>: if you have a monophonic recording of a trumpet and you wish to reproduce it as if it were in your favourite concert hall, first measure a B-Format/Ambisonic room impulse response (RIR) of the hall, and then convert this Ambisonic RIR to your loudspeaker set-up using <a href=../hosirr>HO-SIRR</a>. Then load the resulting rendered loudspeaker array RIR into the plug-in and set the number of input channels to 1. Note that you may prefer to use HO-SIRR (which is a parametric renderer), to convert your arbitrary order B-Format/Ambisonic IRs to arbitrary loudspeaker array IRs, as the resulting output will generally be much more spatially accurate when compared to linear (non-parametric) Ambisonic decoding; as described in Example 1. For the curious reader, an example of a 12point T-design loudspeaker array IR, made using a simulation [15] of the Vienna Musikverein concert hall, may be downloaded from <a href=http://research.spa.aalto.fi/projects/sparta_vsts/extras/Vienna__12point-Tdesign.wav><strong>here</strong></a>. To listen to the convolved output, either arrange 12 loudspeakers in a t-design for the playback (a bit cumbersome), or use the SPARTA|Binauraliser plug-in set to &ldquo;T-Design (12)&rdquo; and listen over headphones.</li>
 <li>Example 4, <strong>virtual monitoring of a multichannel setup</strong>: if you have a set of binaural head-related impulse responses (BRIRs) which correspond to the loudspeaker directions of a measured listening room, you may use this 2 x L matrix of filters to reproduce loudspeaker mixes (L-channels) over headphones. Simply concatenate the BRIRs for each input channel into a two channel wav file and load them into the plugin, then set the number of inputs to be the number of BRIRs/loudspeakers in the mix.</li>
 </ul>
 <p>This plug-in was developed by Leo McCormack and Archontis Politis.</p>
@@ -209,7 +216,7 @@
 <p>This plug-in was developed by Leo McCormack, Archontis Politis and Ville Pulkki.</p>
 <h3 id=powermap>PowerMap<a href=#powermap class=anchor aria-hidden=true>#</a> </h3>
 <p><img src=Powermap_GUI.png alt width=700><br></p>
-<p>The PowerMap plug-in is a modified version of the plug-in described in <a href=http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2017parametric.pdf><strong>this publication</strong></a>.</p>
+<p>The PowerMap plug-in is a modified version of the plug-in described in <a href=../../help/related-publications/#mccormack2017parametric><strong>this publication</strong></a>.</p>
 <p>&lsquo;PowerMap&rsquo; is a plug-in that represents the relative sound energy, or the statistical likelihood of a source, arriving at the listening position from a particular direction, using a colour gradient; where yellow indicates high sound energy/likelihood and blue indicates low sound energy/likelihood. The plug-in integrates a variety of different approaches, including: standard Plane-Wave Decomposition (PWD) beamformer-based, Minimum-Variance Distortionless Response (MVDR) beamformer-based, Multiple Signal Classification (MUSIC) pseudo-spectrum-based, and the Cross-Pattern Coherence (CroPaC) algorithm [3]; all of which are written to operate on Ambisonic signals up to 7th order. Note that the analysis order per frequency band is entirely user definable, and presets for higher order microphone arrays have been included for convience (which provide some rough yet appropriate starting values). The plug-in utilises a 812 point uniformly-distributed spherical grid, which is then interpolated into a 2D powermap using amplitude-normalised VBAP gains (i.e. triangular interpolation). The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.</p>
 <p>This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias.</p>
 <h3 id=rotator>Rotator<a href=#rotator class=anchor aria-hidden=true>#</a> </h3>
@@ -218,7 +225,7 @@
 <p>This plug-in was developed by Leo McCormack.</p>
 <h3 id=sldoa>SLDoA<a href=#sldoa class=anchor aria-hidden=true>#</a> </h3>
 <p><img src=SLDoA_GUI.png alt width=600><br></p>
-<p>The SLDoA plug-in is related to these publications: <a href=http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2018real.pdf><strong>Link1</strong></a>, <a href=http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2019applications.pdf><strong>Link2</strong></a>.</p>
+<p>The SLDoA plug-in is related to these publications: <a href=../../help/related-publications/#mccormack2018real><strong>Link1</strong></a>, <a href=../../help/related-publications/#mccormack2019applications><strong>Link2</strong></a>.</p>
 <p>A spatially localised direction-of-arrival (DoA) estimator. The plug-in first uses VBAP beam patterns (for directions that are uniformly distributed on the surface of a shere) to obtain spatially-biased zeroth and first-order signals, which are subsequently used for the active-intensity vector estimation; therefore, allowing for DoA estimation in several spatially-constrained sectors for each sub-band. The low frequency estimates are then depicted with blue icons, mid-frequencies with green, and high-frequencies with red. The size of the icon and its opacity correspond to the energy of the sector, which are normalised and scaled in ascending order for each frequency band. The plug-in employs two times as many sectors as the analysis order, with the exception of the first-order analysis, which uses the traditional active-intensity approach. The analysis order per frequency band is user definable, as is the frequency range at which to analyse. This approach to sound-field visualisation/DoA estimation represents a much more computationally efficient option, when compared to the algorithms that are integrated into the &lsquo;Powermap&rsquo; plug-in, for instance. The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.</p>
 <p>This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias.</p>
 <h3 id=spreader>Spreader<a href=#spreader class=anchor aria-hidden=true>#</a> </h3>
@@ -261,7 +268,7 @@
 <a href=https://leomccormack.github.io/sparta-site/docs/plugins/overview/>
 <div class="card my-1">
 <div class="card-body py-2">
-&larr; Overview
+&larr; Overview of the plug-ins
 </div>
 </div>
 </a>
@@ -287,6 +294,7 @@ COMPASS suite &rarr;
 </div>
 <div class="col-lg-8 order-first order-lg-last text-lg-end">
 <ul class=list-inline>
+<li class=list-inline-item><a href=https://leomccormack.github.io/sparta-site/privacy-policy/>Privacy</a></li>
 </ul>
 </div>
 </div>
@@ -295,6 +303,6 @@ COMPASS suite &rarr;
 <script src=https://leomccormack.github.io/sparta-site/js/bootstrap.min.586171fec3966d1a44fa8aa2edb24b861dc3a72be8cc24aa4e0dabe4c312a0dae5fe1eaa7c93180a6211fa4d7c5461b0d228fdf741be2eae279a376dfa1e7d81.js integrity="sha512-WGFx/sOWbRpE+oqi7bJLhh3DpyvozCSqTg2r5MMSoNrl/h6qfJMYCmIR+k18VGGw0ij990G+Lq4nmjdt+h59gQ==" crossorigin=anonymous defer></script>
 <script src=https://leomccormack.github.io/sparta-site/js/highlight.min.e13cfba4c5524e30386cb9ea71f0f191f39d15b25b222f4b67549689f7c076158f42a2282446044f5cdacc76a6d003efbfa252a84aea0116703803b6339ae35f.js integrity="sha512-4Tz7pMVSTjA4bLnqcfDxkfOdFbJbIi9LZ1SWiffAdhWPQqIoJEYET1zazHam0APvv6JSqErqARZwOAO2M5rjXw==" crossorigin=anonymous defer></script>
 <script src=https://leomccormack.github.io/sparta-site/main.min.9e62c9b0c5dc8279689cc9cb693a32c8ea1d19032f574f98c782ff59a0417d3662ff94b1a7755ab72a7a1862644bf00a58492c65aa0adabbc58080f4018c61bc.js integrity="sha512-nmLJsMXcgnlonMnLaToyyOodGQMvV0+Yx4L/WaBBfTZi/5Sxp3Vatyp6GGJkS/AKWEksZaoK2rvFgID0AYxhvA==" crossorigin=anonymous defer></script>
-<script src=https://leomccormack.github.io/sparta-site/index.min.6f84b7f76e232cad5ccd240e896dce4b1bb2390bad4dcb1c7fd7b353aa7af8aae4a1fd6eb3c7b7e7b86d43ac51bfc2c8f8df067688e75212fac71b1b4724f18f.js integrity="sha512-b4S3924jLK1czSQOiW3OSxuyOQutTcscf9ezU6p6+Krkof1us8e357htQ6xRv8LI+N8GdojnUhL6xxsbRyTxjw==" crossorigin=anonymous defer></script>
+<script src=https://leomccormack.github.io/sparta-site/index.min.bb4248cb70c9a39e712d095e7950f466a42b0f39193df2cb70bf50faa183bc0a26f39fb7b57195086ead433d7a5b127069a4817e6e504f76774ceaac1b79c34c.js integrity="sha512-u0JIy3DJo55xLQleeVD0ZqQrDzkZPfLLcL9Q+qGDvAom85+3tXGVCG6tQz16WxJwaaSBfm5QT3Z3TOqsG3nDTA==" crossorigin=anonymous defer></script>
 </body>
 </html>
