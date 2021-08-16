@@ -13,5 +13,5 @@ weight: 630
 toc: true
 ---
 
-* Old versions of the SPARTA plug-ins are still hosted on the original server, which [can be found here](https://research.spa.aalto.fi/projects/sparta_vsts/download)
+* Old versions of the SPARTA plug-ins are still hosted on the original server, which [can be found here](http://research.spa.aalto.fi/projects/sparta_vsts/download/).
 * Newer versions are instead [hosted on GitHub](https://github.com/leomccormack/SPARTA/releases).
