@@ -33,11 +33,11 @@ The exception to the above is with the HO-DirAC suite, which can only be used fo
 
 Building VST3 versions of the plugins is indeed possible. However, unfortunately, switching from VST2 to VST3 would be a step back in terms of being able to flexibly change the channel layouts and would restrict the maximum Ambisonic order and/or number of channels.
 
-In a nutshell, the VST2 SDK can support flexibly changing the number of channels between 1 and 64 (i.e. up to 7th order Ambisonics, and loudspeaker arrangements of up to 64 channels), whereas the VST3 versions instead supports only up to 24 channels (i.e. 3rd order Ambisonics, and up to 24 loudspeaker setups), which is quite a significant downgrade.
+In a nutshell, the VST2 SDK can support flexibly changing the number of channels between 1 and 64 (i.e. up to 7th order Ambisonics, and loudspeaker arrangements of up to 64 channels), whereas the VST3 versions instead supports only up to 24 channels (i.e. 3rd order Ambisonics, and up to 24 loudspeakers), which is quite a significant downgrade.
 
 While Steinberg appear to be content with their self-imposed limitation for their own plugins, we are unable to do so as we frequently use these plugins with loudspeaker arrays comprising more than 24 channels (and 4th order+) for our own research and teaching purposes at Aalto University.
 
-If the VST3 SDK is updated, or a VST4 SDK comes along, which restores the features of the VST2 SDK, then we are happy to switch over. However, until then, we will have to stick with the VST2 SDK.
+If the VST3 SDK is updated, or a VST4 SDK comes along, which restores the features of the VST2 SDK, then we are happy to switch over. However, until then, we will have to stick with the VST2 SDK for our pre-compiled releases.
 
 For more information regarding the issue, please refer to the following Steinberg forum posts and GitHub issues:
 * [https://sdk.steinberg.net/viewtopic.php?f=4&t=549](https://sdk.steinberg.net/viewtopic.php?f=4&t=549) (18 April 2018)
@@ -47,7 +47,7 @@ For more information regarding the issue, please refer to the following Steinber
 
 ## Why are there no AAX versions of the plug-ins?
 
-Unfortunately, the Avid business model is not really compatible with open-source/free plug-in projects.
+Unfortunately, the Avid business model is not very compatible with open-source/free plug-in projects.
 
 ## Where can I learn more about Ambisonics?
 
