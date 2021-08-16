@@ -21,10 +21,10 @@
   url = "/docs/plugins/overview/"
   weight = 20
 
-[[main]]
-  name = "Source code"
-  url = "/docs/sourcecode/overview/"
-  weight = 40
+#[[main]]
+#  name = "Sourcce Code"
+#  url = "/docs/sourcecode/overview/"
+#  weight = 40
 
 [[main]]
   name = "Help"

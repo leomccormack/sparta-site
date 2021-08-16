@@ -1,7 +1,7 @@
 ---
 title: "Install instructions"
-description: "Intructions on how to install the included VST plug-ins."
-lead: "Intructions on how to install the included VST plug-ins."
+description: "Instructions on how to install the included VST plug-ins."
+lead: "Instructions on how to install the included VST plug-ins."
 date: 2021-08-15T13:26:54+01:00
 lastmod: 2021-08-15T13:26:54+01:00
 draft: false
@@ -17,7 +17,7 @@ toc: true
 
 MacOS users can simply unzip and run the installer. 
 
-For MacOS versions 10.15 and above, you may need to give explicit permission for the installer to run via Settings->Security->"Open anyway". In rare cases, you may need to use the following command in the terminal for each of the plugins:
+For MacOS versions 10.15 and above, you may need to give explicit permission for the installer to run via Settings->Security->"Open anyway". In rare cases, you may need to use the following command in the terminal for each plug-in:
 
 ```
 sudo xattr -d com.apple.quarantine /Library/Audio/Plug-Ins/VST/AmbiBIN.vst
@@ -54,11 +54,11 @@ To uninstall, simply delete these files.
 
 ## Linux (x86) users
 
-Linux users can copy the plugins into any folder that is scanned by the VST host for VST plug-ins. For example:
+Linux users can download, unzip and copy the plugins into any folder that is scanned by the VST host for VST plug-ins. For example:
 ```
 ~/.vst
 ```
-The following file must then also be copied into:
+The following included file must then also be copied into:
 ```
 /usr/local/lib/libsaf_custom_mkl_lp64.so
 ```

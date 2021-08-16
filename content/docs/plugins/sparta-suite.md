@@ -19,7 +19,7 @@ All plug-ins are tested using REAPER (64-bit), which is a very affordable and fl
 
 You may also hover your mourse cursor over any of the combo boxes/sliders/toggle buttons etc., in order to be presented with helpful tooltips regarding the purpose of the parameter.
 
-Thanks to help from Daniel Rudrich, the relevant plug-ins now also support importing and exporting of loudspeaker, source, and sensors directions via .json configuration files; allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be found here.
+Thanks to help from Daniel Rudrich, the relevant plug-ins now also support importing and exporting of loudspeaker, source, and sensors directions via .json configuration files; allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be [found here](https://plugins.iem.at/docs/configurationfiles/).
 
 The default HRIR set is an 836-point simulation of a Kemar Dummy head, courtesy of Genelec AuralID.
 
