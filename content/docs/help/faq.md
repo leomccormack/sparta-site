@@ -2,8 +2,8 @@
 title: "FAQ"
 description: "Answers to frequently asked questions."
 lead: "Answers to frequently asked questions."
-date: 2020-10-06T08:49:31+00:00
-lastmod: 2020-10-06T08:49:31+00:00
+date: 2021-08-15T08:49:31+00:00
+lastmod: 2021-08-15T08:49:31+00:00
 draft: false
 images: []
 menu:
@@ -13,13 +13,13 @@ weight: 630
 toc: true
 ---
 
-## Hyas?
+## Why are there no VST3 versions of the plug-ins?
 
-Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
+Unfortunately, Steinberg took a step back with the their VST3 SDK regarding multi-channel support
 
-## Footer notice?
+## Why are there no AAX versions of the plug-ins?
 
-Please keep it in place.
+Unfortunately, Avid are not particularly friendly to open-source and free plug-in projects.
 
 ## Keyboard shortcuts for search?
 

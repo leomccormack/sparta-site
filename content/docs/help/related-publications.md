@@ -2,8 +2,8 @@
 title: "Related publications"
 description: "A list of publications related to the included plug-ins."
 lead: "A list of publications related to the included plug-ins."
-date: 2020-11-12T15:22:20+01:00
-lastmod: 2020-11-12T15:22:20+01:00
+date: 2021-08-15T15:22:20+01:00
+lastmod: 2021-08-15T15:22:20+01:00
 draft: false
 images: []
 menu: 

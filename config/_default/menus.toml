@@ -6,9 +6,9 @@
 
 [[docs]]
   name = "Source code"
-  weight = 20
-  identifier = "source-code"
-  url = "/docs/source-code/"
+  weight = 40
+  identifier = "sourcecode"
+  url = "/docs/sourcecode/"
 
 [[docs]]
   name = "Help"
@@ -19,12 +19,17 @@
 [[main]]
   name = "Documentation"
   url = "/docs/plugins/overview/"
-  weight = 10
+  weight = 20
 
 [[main]]
   name = "Source code"
-  url = "/docs/source-code/overview/"
+  url = "/docs/sourcecode/overview/"
   weight = 40
+
+[[main]]
+  name = "Download"
+  url = "https://github.com/leomccormack/SPARTA/releases/"
+  weight = 10
 
 #[[main]]
 #  name = "Blog"
@@ -44,7 +49,7 @@
   post = "v0.1.0"
   weight = 20
 
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
+[[footer]]
+  name = "Privacy"
+  url = "/privacy-policy/"
+  weight = 10

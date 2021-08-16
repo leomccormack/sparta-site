@@ -2,8 +2,8 @@
 title: "COMPASS suite"
 description: "Plug-in descriptions for the COMPASS suite."
 lead: "Plug-in descriptions for the COMPASS suite."
-date: 2020-10-13T15:21:01+02:00
-lastmod: 2020-10-13T15:21:01+02:00
+date: 2021-08-15T15:21:01+02:00
+lastmod: 2021-08-15T15:21:01+02:00
 draft: false
 images: []
 menu:

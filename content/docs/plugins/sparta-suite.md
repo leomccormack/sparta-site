@@ -23,7 +23,7 @@ Thanks to help from Daniel Rudrich, the relevant plug-ins now also support impor
 The default HRIR set is an 836-point simulation of a Kemar Dummy head, courtesy of Genelec AuralID.
 
 ### AmbiBIN
-<img src="AmbiBIN_GUI.png" alt="AmbiBIN_GUI" caption="<em>AmbiBIN_GUI</em>" class="border-0" width="550"/><br/>
+<img src="AmbiBIN_GUI.png" alt="AmbiBIN_GUI" caption="<em>AmbiBIN_GUI</em>" class="border-1" width="550"/><br/>
 
 A binaural Ambisonic decoder for headphone playback of Ambisonic signals (aka spherical harmonic or B-format signals), with a built-in rotator and head-tracking support via OSC messages. The rotation angles are updated after the time-frequency transform, which allows for reduced latency compared to its loudspeaker counterpart 'AmbiDEC' when paired with 'Rotator'. The plug-in also allows the user to import their own HRIRs via the SOFA standard. The plug-in offers a variety of different decoding methods, including: Least-Squares (LS), Spatial re-sampling (SPR), Time-Alignment (TA) [11], and Magnitude Least-Squares (MagLS) [12]. It can also impose a diffuse-coherence contraint/correction on the current decoder, as described in [11].
 
@@ -57,8 +57,8 @@ A bare-bones Ambisonic encoder which takes input signals (up to 64 channels) and
 This plug-in was developed by Leo McCormack.
     
 ### AmbiRoomSim 
-<img src="ambiRoomSim_GUI.png" alt="" width="700"/><br/>
-    
+<img src="ambiRoomSim_GUI.png" alt="" width="700"  /><br/>
+
 An Ambisonic room encoder that includes room reflections. It is based on the image source method using a shoebox room model. It permits multiple sources, and also multiple Ambisonic receivers up to 64 channels in total; e.g. 16x first-order or 4x third-order receivers, or 1x 7th order receiver. The output receiver channels are stacked, e.g. 1-4 channels are for the 1st first-order receiver, 5-8 for the second etc.
     
 This plug-in was developed by Leo McCormack.
@@ -66,7 +66,7 @@ This plug-in was developed by Leo McCormack.
 ### Array2SH 
 <img src="Array2SH_GUI.png" alt="" width="700"/><br/>
     
-The Array2SH plug-in is related to [this publication](http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2018real.pdf).
+The Array2SH plug-in is related to [this publication](../../help/related-publications/#mccormack2018real).
     
 'Array2SH' spatially encodes spherical/cylindrical array signals into spherical harmonic signals (aka: Ambisonic or B-Format signals). The plug-in utilises analytical descriptors, which ascertain the frequency and order-dependent influence that the physical properties of the array have on the plane-waves arriving at its surface. The plug-in allows the user to specify: the array type (spherical or cylindrical), whether the array has an open or rigid enclosure, the radius of the array, the radius of the sensors (in cases where they protrude out from the array), the sensor coordinates (up to 64 channels), sensor directivity (omni-dipole-cardioid), the speed of sound, and the acoustical admittance of the array material (in the case of rigid arrays). The plug-in then determines the order-dependent equalisation curves that need to be imposed onto the initial spherical harmonic signals estimate, in order to remove the influence of the array itself. However, especially for higher-orders, this generally results in a large amplification of the low frequencies (including the sensor noise at these frequencies that accompanies it); therefore, four different regularisation approaches have been integrated into the plug-in, which allow the user to make a compromise between noise amplification and transform accuracy. These target and regularised equalisation curves are depicted on the user interface to provide visual feedback. 
     
@@ -104,7 +104,7 @@ This plug-in was developed by Leo McCormack.
 ### DirASS
 <img src="DirASS_GUI.png" alt="" width="700"/><br/>
     
-The DirASS plug-in is related to these publications: [Link1](http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2019applications.pdf), [Link2](http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2019sharpening.pdf).
+The DirASS plug-in is related to these publications: [Link1](../../help/related-publications/#mccormack2019applications), [Link2](../../help/related-publications/#mccormack2019sharpening).
     
 A sound-field visualiser, which is based on the directional re-assignment of beamformer energy. This energy re-assignment is based on local DoA estimates for each scanning direction, and may be quantised to the nearest direction or upscaled to a higher-order than the input; resulting in sharper activity-maps. For example, a second-order input may be displayed with (up to) 20th order output resolution. The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.
     
@@ -117,7 +117,7 @@ A simple matrix convolver with an (optional) partitioned-convolution mode. The m
 
 * Example 1, **spatial reverberation**: if you have a B-Format/Ambisonic room impulse response (RIR), you may convolve it with a monophonic input signal and the output will exhibit (much of) the spatial characteristics of the measured room. Simply load this Ambisonic RIR into the plug-in and set the number of input channels to 1. You may then decode the resulting Ambisonic output to your loudspeaker array (e.g. using SPARTA|AmbiDEC) or to headphones (e.g. using SPARTA|AmbiBIN). However, please note that the limitations of lower-order Ambisonics for signals (namely, colouration and poor spatial accuracy) will also be present with lower-order Ambisonic RIRs; at least, when applied in this manner. Consider referring to Example 3, for a more spatially accurate method of reproducing the spatial characteristics of rooms, which are captured as B-Format/Ambisonic RIRs.
 * Example 2, **microphone array to Ambisonics encoding**: if you have a matrix of filters to go from an Eigenmike (32 channel) recording to 4th order Ambisonics (25 channel), then the plugin requires a 25-channel wav file to be loaded, and the number of input channels to be set to 32. In this case: the first 32 filters will map the input to the first output channel, filters 33-64 will map the input to the second output channel, ... , and the last 32 filters will map the input to the 25th output channel. An example of such an encoding matrix may be downloaded from [here](http://research.spa.aalto.fi/projects/sparta_vsts/extras/M_eigen2sh_radinv_o4_ACN_N3D_15dB_max.wav). Note that these example filters employ the ACN/**N3D** convention, Tikhonov regularisation, and 15dB of maximum gain amplification; using the Matlab scripts from [**here**](https://github.com/polarch/Spherical-Array-Processing). This should be the same as SPARTA|Array2SH when it is set to the Eigenmike preset and default settings (except N3D not SN3D).
-* Example 3, **more advanced spatial reverberation**: if you have a monophonic recording of a trumpet and you wish to reproduce it as if it were in your favourite concert hall, first measure a B-Format/Ambisonic room impulse response (RIR) of the hall, and then convert this Ambisonic RIR to your loudspeaker set-up using [HO-SIRR](http://research.spa.aalto.fi/projects/sparta_vsts/hosirr.html). Then load the resulting rendered loudspeaker array RIR into the plug-in and set the number of input channels to 1. Note that you may prefer to use HO-SIRR (which is a parametric renderer), to convert your arbitrary order B-Format/Ambisonic IRs to arbitrary loudspeaker array IRs, as the resulting output will generally be much more spatially accurate when compared to linear (non-parametric) Ambisonic decoding; as described in Example 1. For the curious reader, an example of a 12point T-design loudspeaker array IR, made using a simulation [15] of the Vienna Musikverein concert hall, may be downloaded from [**here**](http://research.spa.aalto.fi/projects/sparta_vsts/extras/Vienna__12point-Tdesign.wav). To listen to the convolved output, either arrange 12 loudspeakers in a t-design for the playback (a bit cumbersome), or use the SPARTA|Binauraliser plug-in set to "T-Design (12)" and listen over headphones.
+* Example 3, **more advanced spatial reverberation**: if you have a monophonic recording of a trumpet and you wish to reproduce it as if it were in your favourite concert hall, first measure a B-Format/Ambisonic room impulse response (RIR) of the hall, and then convert this Ambisonic RIR to your loudspeaker set-up using [HO-SIRR](../hosirr). Then load the resulting rendered loudspeaker array RIR into the plug-in and set the number of input channels to 1. Note that you may prefer to use HO-SIRR (which is a parametric renderer), to convert your arbitrary order B-Format/Ambisonic IRs to arbitrary loudspeaker array IRs, as the resulting output will generally be much more spatially accurate when compared to linear (non-parametric) Ambisonic decoding; as described in Example 1. For the curious reader, an example of a 12point T-design loudspeaker array IR, made using a simulation [15] of the Vienna Musikverein concert hall, may be downloaded from [**here**](http://research.spa.aalto.fi/projects/sparta_vsts/extras/Vienna__12point-Tdesign.wav). To listen to the convolved output, either arrange 12 loudspeakers in a t-design for the playback (a bit cumbersome), or use the SPARTA|Binauraliser plug-in set to "T-Design (12)" and listen over headphones.
 * Example 4, **virtual monitoring of a multichannel setup**: if you have a set of binaural head-related impulse responses (BRIRs) which correspond to the loudspeaker directions of a measured listening room, you may use this 2 x L matrix of filters to reproduce loudspeaker mixes (L-channels) over headphones. Simply concatenate the BRIRs for each input channel into a two channel wav file and load them into the plugin, then set the number of inputs to be the number of BRIRs/loudspeakers in the mix.  
     
 This plug-in was developed by Leo McCormack and Archontis Politis.
@@ -145,7 +145,7 @@ This plug-in was developed by Leo McCormack, Archontis Politis and Ville Pulkki.
 ### PowerMap
 <img src="Powermap_GUI.png" alt="" width="700"/><br/>
     
-The PowerMap plug-in is a modified version of the plug-in described in [**this publication**](http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2017parametric.pdf).
+The PowerMap plug-in is a modified version of the plug-in described in [**this publication**](../../help/related-publications/#mccormack2017parametric).
     
 'PowerMap' is a plug-in that represents the relative sound energy, or the statistical likelihood of a source, arriving at the listening position from a particular direction, using a colour gradient; where yellow indicates high sound energy/likelihood and blue indicates low sound energy/likelihood. The plug-in integrates a variety of different approaches, including: standard Plane-Wave Decomposition (PWD) beamformer-based, Minimum-Variance Distortionless Response (MVDR) beamformer-based, Multiple Signal Classification (MUSIC) pseudo-spectrum-based, and the Cross-Pattern Coherence (CroPaC) algorithm [3]; all of which are written to operate on Ambisonic signals up to 7th order. Note that the analysis order per frequency band is entirely user definable, and presets for higher order microphone arrays have been included for convience (which provide some rough yet appropriate starting values). The plug-in utilises a 812 point uniformly-distributed spherical grid, which is then interpolated into a 2D powermap using amplitude-normalised VBAP gains (i.e. triangular interpolation). The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.
      
@@ -161,7 +161,7 @@ This plug-in was developed by Leo McCormack.
 ### SLDoA
 <img src="SLDoA_GUI.png" alt="" width="600"/><br/>
     
-The SLDoA plug-in is related to these publications: [**Link1**](http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2018real.pdf), [**Link2**](http://research.spa.aalto.fi/projects/sparta_vsts/publications/mccormack2019applications.pdf).
+The SLDoA plug-in is related to these publications: [**Link1**](../../help/related-publications/#mccormack2018real), [**Link2**](../../help/related-publications/#mccormack2019applications).
     
 A spatially localised direction-of-arrival (DoA) estimator. The plug-in first uses VBAP beam patterns (for directions that are uniformly distributed on the surface of a shere) to obtain spatially-biased zeroth and first-order signals, which are subsequently used for the active-intensity vector estimation; therefore, allowing for DoA estimation in several spatially-constrained sectors for each sub-band. The low frequency estimates are then depicted with blue icons, mid-frequencies with green, and high-frequencies with red. The size of the icon and its opacity correspond to the energy of the sector, which are normalised and scaled in ascending order for each frequency band. The plug-in employs two times as many sectors as the analysis order, with the exception of the first-order analysis, which uses the traditional active-intensity approach. The analysis order per frequency band is user definable, as is the frequency range at which to analyse. This approach to sound-field visualisation/DoA estimation represents a much more computationally efficient option, when compared to the algorithms that are integrated into the 'Powermap' plug-in, for instance. The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.  
     
@@ -196,25 +196,25 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 [6] Ivanic, J., Ruedenberg, K. (1998). Rotation Matrices for Real Spherical Harmonics. Direct Determination by Recursion Page: Additions and Corrections. </b> <br>Journal of Physical Chemistry A, 102(45), 9099?9100.
 
 [7] Faller, C. (2006). **Multiple-loudspeaker playback of stereo signals.** <br> Journal of the Audio Engineering Society, 54(11), 1051-1064. 
-        
+
 [8] Moreau, S., Daniel, J., Bertet, S. (2006). **3D sound field recording with higher order ambisonics-objective measurements and validation of spherical microphone.** <br> in Audio Engineering Society Convention 120, Audio Engineering Society 
 
 [9] Delikaris-Manias, S., McCormack, L., Huhtakallio, I., and Pulkki, V. (2018) **Real-time underwater spatial audio: a feasibility study.** <br> in Audio Engineering Society Convention 144, Audio Engineering Society.
-        
+
 [10] Politis, A., Gamper, H. (2017). **Comparing Modelled And Measurement-Based Spherical Harmonic Encoding Filters For Spherical Microphone Arrays.** <br> In IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA).
 
 [11] Zaunschirm, M., Sch&ouml;rkhuber, C., and H&ouml;ldrich, R. (2018). **Binaural rendering of Ambisonic signals by head-related impulse response time alignment and a diffuseness constraint.** <br> The Journal of the Acoustical Society of America, 143(6), 3616-3627.
-        
+
 [12] Sch&ouml;rkhuber, C., Zaunschirm, M., and H&ouml;ldrich, R. (2018). **Binaural Rendering of Ambisonic Signals via Magnitude Least Squares.** <br> In Proceedings of the DAGA (Vol. 44).
-        
+
 [13] Politis, A., Tervo S., and Pulkki, V. (2018) **COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.** <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
-        
+
 [14] McCormack, L., and Delikaris-Manias, S. (2019) **Parametric First-order Ambisonic Decoding for Headphones Utilising the Cross-Pattern Coherence Algorithm** <br> In Proceedings of the 1st EAA Spatial Audio Signal Processing Symposium, Paris, France, September 6-7th 2019.
-    
+
 [15] Favrot, S. and Buchholz, J.M., (2019).  **LoRA: A loudspeaker-based room auralization system.** <br> Acta Acustica united with Acustica, 96(2), pp.364-375.
-    
+
 [16] Bernschutz, B., (2013). **A spherical far field HRIR/HRTF compilation of the Neumann KU 100.** <br> In Proceedings of the 40th Italian (AIA) annual conference on acoustics and the 39th German annual conference on acoustics (DAGA) conference on acoustics (p. 29). AIA/DAGA.
-    
+
 
 ## Other included plug-ins
 

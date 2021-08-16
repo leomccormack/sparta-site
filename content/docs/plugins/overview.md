@@ -1,5 +1,5 @@
 ---
-title: "Overview"
+title: "Overview of the plug-ins"
 description: "What's included in the SPARTA installer?"
 lead: "SPARTA is a collection of flexible VST audio plug-ins for spatial audio production, reproduction and visualisation, developed primarily by members of the Acoustics Lab at Aalto University, Finland."
 date: 2021-08-15T08:48:57+00:00
@@ -24,21 +24,21 @@ More detailed descriptions can be found in [SPARTA Suite →]({{< relref "sparta
 
 * [**sparta_ambiBIN**](../sparta-suite/#ambibin) - A binaural ambisonic decoder (up to 7th order) with a built-in SOFA loader and head-tracking support via OSC messages. Includes: Least-Squares (LS), spatial re-sampling (SPR), time-alignment (TA), and magnitude least-squares (Mag-LS) decoding options.
 * [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 7th order) with user specifiable loudspeaker directions (up to 64), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may also be binauralised for headphone playback.
-* **sparta_ambiDRC** - A frequency-dependent dynamic range compressor for ambisonic signals (up to 7th order).
-* **sparta_ambiENC** - An ambisonic encoder/panner (up to 7th order), with support for up to 64 input channels; the directions for which may also be imported via JSON configuration files.
-* **sparta_ambiRoomSim** - A shoebox room simulator based on the image-source method, supporting multiple sources and ambisonic receivers..
-* **sparta_array2sh** - A microphone array spatial encoder (up to 7th order), with presets for several commercially available A-format and higher-order microphone arrays. The plug-in can also present objective evaluation metrics for the currently selected configuration.
-* **sparta_beamformer** - A spherical harmonic domain beamforming plug-in with multiple beamforming strategies (up to 64 output beams).
-* **sparta_binauraliser** - A binaural panner (up to 64 input channels) with a built-in SOFA loader and head-tracking support via OSC messages.
-* **sparta_decorrelator** - A simple multi-channel signal decorrelator (up to 64 input channels).
-* **sparta_dirass** - A sound-field visualiser based on re-assigning the energy of beamformers. This re-assigment is based on DoA estimates extracted from "spatially-constrained" regions, which are centred around each beamformer look-direction.
-* **sparta_matrixconv** - A basic matrix convolver with an optional partitioned convolution mode. The user need only specify the number of inputs and load the filters via a wav file.
-* **sparta_multiconv** - A basic multi-channel convolver with an optional partitioned convolution mode. Unlike "MatrixConv", this plug-in does not perform any matrixing. Instead, each input channel is convolved with the respective filter; i.e. numInputs = numFilters = numOutputs.
-* **sparta_panner** - A frequency-dependent 3-D panner using the VBAP method (up to 64 inputs and outputs).
-* **sparta_powermap** - A sound-field visualisation plug-in based on ambisonic signals as input (up to 7th order), with PWD/MVDR/MUSIC/Min-Norm options.
-* **sparta_rotator** - A flexible ambisonic rotator (up to 7th order) with head-tracking support via OSC messages.
-* **sparta_sldoa** - A frequency-dependent sound-field visualiser (up to 7th order), based on depicting the direction-of-arrival (DoA) estimates derived from spatially localised active-intensity vectors. The low frequency estimates are shown with blue icons, mid-frequencies with green, and high-frequencies with red.
-* **sparta_spreader** - An arbitrary array (e.g. HRIRs or microphone array IRs) panner with coherent and incoherent spreading options.
+* [**sparta_ambiDRC**](../sparta-suite/#ambidrc) - A frequency-dependent dynamic range compressor for ambisonic signals (up to 7th order).
+* [**sparta_ambiENC**](../sparta-suite/#ambienc) - An ambisonic encoder/panner (up to 7th order), with support for up to 64 input channels; the directions for which may also be imported via JSON configuration files.
+* [**sparta_ambiRoomSim**](../sparta-suite/#ambiroomsim) - A shoebox room simulator based on the image-source method, supporting multiple sources and ambisonic receivers..
+* [**sparta_array2sh**](../sparta-suite/#array2sh) - A microphone array spatial encoder (up to 7th order), with presets for several commercially available A-format and higher-order microphone arrays. The plug-in can also present objective evaluation metrics for the currently selected configuration.
+* [**sparta_beamformer**](../sparta-suite/#beamformer) - A spherical harmonic domain beamforming plug-in with multiple beamforming strategies (up to 64 output beams).
+* [**sparta_binauraliser**](../sparta-suite/#binauraliser) - A binaural panner (up to 64 input channels) with a built-in SOFA loader and head-tracking support via OSC messages.
+* [**sparta_decorrelator**](../sparta-suite/#decorrelator) - A simple multi-channel signal decorrelator (up to 64 input channels).
+* [**sparta_dirass**](../sparta-suite/#dirass) - A sound-field visualiser based on re-assigning the energy of beamformers. This re-assigment is based on DoA estimates extracted from "spatially-constrained" regions, which are centred around each beamformer look-direction.
+* [**sparta_matrixconv**](../sparta-suite/#matrixconv) - A basic matrix convolver with an optional partitioned convolution mode. The user need only specify the number of inputs and load the filters via a wav file.
+* [**sparta_multiconv**](../sparta-suite/#multiconv) - A basic multi-channel convolver with an optional partitioned convolution mode. Unlike "MatrixConv", this plug-in does not perform any matrixing. Instead, each input channel is convolved with the respective filter; i.e. numInputs = numFilters = numOutputs.
+* [**sparta_panner**](../sparta-suite/#panner) - A frequency-dependent 3-D panner using the VBAP method (up to 64 inputs and outputs).
+* [**sparta_powermap**](../sparta-suite/#powermap) - A sound-field visualisation plug-in based on ambisonic signals as input (up to 7th order), with PWD/MVDR/MUSIC/Min-Norm options.
+* [**sparta_rotator**](../sparta-suite/#rotator) - A flexible ambisonic rotator (up to 7th order) with head-tracking support via OSC messages.
+* [**sparta_sldoa**](../sparta-suite/#sldoa) - A frequency-dependent sound-field visualiser (up to 7th order), based on depicting the direction-of-arrival (DoA) estimates derived from spatially localised active-intensity vectors. The low frequency estimates are shown with blue icons, mid-frequencies with green, and high-frequencies with red.
+* [**sparta_spreader**](../sparta-suite/#spreader) - An arbitrary array (e.g. HRIRs or microphone array IRs) panner with coherent and incoherent spreading options.
 
 ### COMPASS plug-ins
 {{< alert icon="👉" text="These plug-ins are intended for experienced users." />}}
