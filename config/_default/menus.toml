@@ -5,15 +5,26 @@
   url = "/docs/plugins/"
 
 [[docs]]
+  name = "Source code"
+  weight = 20
+  identifier = "source-code"
+  url = "/docs/source-code/"
+
+[[docs]]
   name = "Help"
   weight = 60
   identifier = "help"
   url = "/docs/help/"
 
 [[main]]
-  name = "Docs"
+  name = "Documentation"
   url = "/docs/plugins/overview/"
   weight = 10
+
+[[main]]
+  name = "Source code"
+  url = "/docs/source-code/overview/"
+  weight = 40
 
 #[[main]]
 #  name = "Blog"

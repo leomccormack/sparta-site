@@ -2,8 +2,8 @@
 title: "SPARTA Suite"
 description: "Plug-in descriptions for the SPARTA suite."
 lead: "Plug-in descriptions for the SPARTA suite."
-date: 2020-11-16T13:59:39+01:00
-lastmod: 2020-11-16T13:59:39+01:00
+date: 2021-08-15T13:59:39+01:00
+lastmod: 2021-08-15T13:59:39+01:00
 draft: false
 images: []
 menu:
@@ -12,8 +12,6 @@ menu:
 weight: 110
 toc: true
 ---
-
-
 
 ## Plug-in descriptions 
 All plug-ins are tested using REAPER (64-bit), which is a very affordable and flexible DAW and is currently the only recommended host for these plug-ins; although, other hosts are also known to work. Currently, the plug-ins support sampling rates of 44.1 or 48kHz. All spherical harmonic-related plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes; note that the AmbiX format uses ACN/SN3D. The maximum transform order for these plug-ins is 7.
@@ -222,4 +220,4 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 
 The SPARTA installer also includes:
 * The COMPASS suite [COMPASS →]({{< relref "compass-suite" >}})
-* The HO-DirAC suite [HO-DirAC →]({{< relref "compass-suite" >}})
+* The HO-DirAC suite [HO-DirAC →]({{< relref "hodirac-suite" >}})
