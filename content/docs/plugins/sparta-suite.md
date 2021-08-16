@@ -1,5 +1,5 @@
 ---
-title: "SPARTA Suite"
+title: "SPARTA suite"
 description: "Plug-in descriptions for the SPARTA suite."
 lead: "Plug-in descriptions for the SPARTA suite."
 date: 2021-08-15T13:59:39+01:00
@@ -14,6 +14,7 @@ toc: true
 ---
 
 ## Plug-in descriptions 
+
 All plug-ins are tested using REAPER (64-bit), which is a very affordable and flexible DAW and is currently the only recommended host for these plug-ins; although, other hosts are also known to work. Currently, the plug-ins support sampling rates of 44.1 or 48kHz. All spherical harmonic-related plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes; note that the AmbiX format uses ACN/SN3D. The maximum transform order for these plug-ins is 7.
 
 You may also hover your mourse cursor over any of the combo boxes/sliders/toggle buttons etc., in order to be presented with helpful tooltips regarding the purpose of the parameter.
@@ -181,6 +182,10 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 * **Archontis Politis**: post doctorate researcher at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.  
 * **Ville Pulkki**: Professor at Aalto University, known for VBAP, SIRR, DirAC and eccentric behaviour. 
 * **Christoph Hold**: a doctoral candidate at Aalto University. 
+
+## License
+
+All of the plug-ins in the SPARTA suite may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
     
 ## References
 [1] Zotter, F., Frank, M. (2012). **All-Round Ambisonic Panning and Decoding.** <br/> Journal of the Audio Engineering Society, 60(10), 807-820.
@@ -221,3 +226,5 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 The SPARTA installer also includes:
 * The COMPASS suite [COMPASS →]({{< relref "compass-suite" >}})
 * The HO-DirAC suite [HO-DirAC →]({{< relref "hodirac-suite" >}})
+* The HO-SIRR application [HO-SIRR →]({{< relref "hosirr" >}})
+* The CroPaC-Binaural decoder [CroPaC-Binaural →]({{< relref "cropac-binaural" >}})

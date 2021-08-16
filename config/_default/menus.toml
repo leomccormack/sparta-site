@@ -27,6 +27,11 @@
   weight = 40
 
 [[main]]
+  name = "Help"
+  url = "/docs/help/install-instructions/"
+  weight = 50
+
+[[main]]
   name = "Download"
   url = "https://github.com/leomccormack/SPARTA/releases/"
   weight = 10
@@ -49,7 +54,7 @@
   post = "v0.1.0"
   weight = 20
 
-[[footer]]
-  name = "Privacy"
-  url = "/privacy-policy/"
-  weight = 10
+#[[footer]]
+#  name = "Privacy"
+#  url = "/privacy-policy/"
+#  weight = 10

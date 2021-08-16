@@ -1,7 +1,7 @@
 ---
 title: "HO-SIRR"
-description: "Plug-in description for the HO-SIRR application."
-lead: "Plug-in description for the HO-SIRR application."
+description: "Description for the HO-SIRR application."
+lead: "Description for the HO-SIRR application."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -13,7 +13,7 @@ weight: 160
 toc: true
 ---
 
-## Plug-in description
+## Application description
     
 Higher-order Spatial Impulse Response Rendering (HO-SIRR) is a rendering method, which can synthesise output loudspeaker array room impulse responses (RIRs) using input spherical harmonic (Ambisonic/B-Format) RIRs of arbitrary order [<a href="../../help/related-publications/#mccormack2020higher"><b>1</b></a>,<a href="../../help/related-publications/#mccormack2019higher"><b>2</b></a>]. The method makes assumptions regarding the composition of the sound-field and extracts spatial parameters over time, which allows it to map the input to the output in an adaptive and more informed manner; when compared to purely linear methods such as Ambisonics. 
 
@@ -42,6 +42,9 @@ The perceptual performance of HO-SIRR was evaluated based on formal listening te
 * **Archontis Politis**: post doctorate researcher at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.
 * **Ville Pulkki**: Professor at Aalto University, known for VBAP, SIRR, DirAC and eccentric behaviour.
 
+## License
+
+This application may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
     
 ## References
     

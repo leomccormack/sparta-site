@@ -99,7 +99,7 @@ McCormack, L. and Delikaris-Manias, S., 2019, September. **Parametric first-orde
 
 ## mccormack2019higher
 
-McCormack, L., Politis, A., Scheuregger, O. and Pulkki, V., 2019. **Higher-order processing of spatial impulse responses.** Universitätsbibliothek der RWTH Aachen.
+McCormack, L., Politis, A., Scheuregger, O. and Pulkki, V., 2019. **Higher-order processing of spatial impulse responses.** In 23rd International Congress on Acoustics (ICA).
 
 <object data="mccormack2019higher.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="mccormack2019higher.pdf">
@@ -108,11 +108,11 @@ McCormack, L., Politis, A., Scheuregger, O. and Pulkki, V., 2019. **Higher-order
 </object>
 
 ```
-@book{mccormack2019higher,
+@inproceedings{mccormack2019higher,
   title={Higher-order processing of spatial impulse responses},
   author={McCormack, Leo and Politis, Archontis and Scheuregger, Oliver and Pulkki, Ville},
   year={2019},
-  publisher={Universit{\"a}tsbibliothek der RWTH Aachen}
+  booktitle={23rd International Congress on Acoustics (ICA)}
 }
 ```
 

@@ -19,7 +19,7 @@ COMPASS VSTs is a collection of flexible VST audio plug-ins for spatial audio pr
 
 COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) or HARPEX have gained notoriety recently for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and track the model parameters in the Ambisonics recording, in both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of lower-order Ambisonics. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
 
-The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Leo McCormack, and published in <a href="#ref_compass">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M is the number of channels):  
+The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Leo McCormack, and published in <a href="../../help/related-publications/#politis2018compass">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M is the number of channels):  
 
 <img src="parametric_ambisonic_models.png" alt="" width="700"></br>
     
@@ -96,6 +96,7 @@ This plug-in was developed by Leo McCormack.
 ### SpatEdit
 <img src="spatEdit_A.png" alt="" width="650;">
 <img src="spatEdit_B.png" alt="" width="650;"></br>
+</br>
 
 The SpatEdit plug-in is intended to be used with two instances. The first instance of the plug-in allows the user to place markers on an equirectangular representation of the sphere. Alternatively the markers can automatically follow the directions of sound sources through use of the tracker. The source beamformer signals are then outputted by the first instance of the plug-in (A), where the user can then apply any conventional single-channel audio effect, re-balance their levels, or re-order the signals. These manipulated beamformer signals are then passed to the second instance of the plug-in (B), which also receives the residual signals from the first plug-in instance internally, and the COMPASS synthesis is conducted to obtain the output SH signals. Alternatively, the residual stream signals may be outputted by the first plug-in instance instead (and the beamformer signals passed internally to the second plug-in instance), which instead allows conventional linear  Ambisonics transformations to be applied to only the ambient parts of the scene.
   
@@ -112,10 +113,14 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
     
 * **Leo McCormack**: a doctoral candidate at Aalto University.  
 * **Archontis Politis** post doctorate researcher at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.  
+
+## License
+
+All of the plug-ins in the COMPASS suite may be used for academic, personal, and/or commercial use.
     
 ## References
 
-<a id="ref_compass"></a>[1] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="http://research.spa.aalto.fi/projects/sparta_vsts/publications/politis2019compass.pdf"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
+[1] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/#politis2018compass"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
     
 [2] Pulkki, V. (2007) <b>Spatial sound reproduction with directional audio coding.</b> <br> Journal of the Audio Engineering Society 55.6: 503-516.
     
@@ -123,20 +128,18 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
     
 [4] Berge, S. and Barrett, N. (2010). <b>High angular resolution planewave expansion.</b> <br> 2nd International Symposium on Ambisonics and Spherical Acoustics.
     
-<a id="hodirac_2015"></a>[5] Politis, A., Vilkamo, J., and Pulkki, V. (2015). <b><a href="http://research.spa.aalto.fi/projects/sparta_vsts/publications/politis2015sector.pdf"><b>Sector-based parametric sound field reproduction in the spherical harmonic domain.</b></a></b> <br>
-    IEEE Journal of Selected Topics in Signal Processing, 9(5), 852-866.
+[5] Politis, A., Vilkamo, J., and Pulkki, V. (2015). <a href="../../help/related-publications/#politis2015sector"> <b>Sector-based parametric sound field reproduction in the spherical harmonic domain.</b></a> <br> IEEE Journal of Selected Topics in Signal Processing, 9(5), 852-866.
 
-<a id="hodirac_2017"></a>[6] Politis, A., McCormack, L., and Pulkki, V. (2017, October). <b><a href="http://research.spa.aalto.fi/projects/sparta_vsts/publications/politis2017enhancement.pdf"><b> Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing</b></a>.</b> <br> In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
+[6] Politis, A., McCormack, L., and Pulkki, V. (2017, October). <a href="../../help/related-publications/#politis2017enhancement"> <b>Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing</b></a>.</b> <br> In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
 
-    <p>[7] Politis, A. and Pulkki, V. (2017). <b>Higher-Order Directional Audio Coding.</b> <br>
-    <i>in</i> Parametric Time-Frequency Domain Spatial Audio, Wiley, p.141.</p>
+[7] Politis, A. and Pulkki, V. (2017). <b>Higher-Order Directional Audio Coding.</b> <br><i>in</i> Parametric Time-Frequency Domain Spatial Audio, Wiley, p.141.
 
-    <p>[8] Wabnitz, A., Epain, N., McEwan, A., Jin, C. (2011). <b>Upscaling ambisonic sound scenes using compressed sensing techniques.</b> <br> IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA).</p>
+[8] Wabnitz, A., Epain, N., McEwan, A., Jin, C. (2011). <b>Upscaling ambisonic sound scenes using compressed sensing techniques.</b> <br> IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA).
+
+[9] Kolundzija, M., and Faller, C. (2018). <b>Advanced B-Format Analysis.</b><br> Audio Engineering Society Convention 144.
     
-    <p>[9] Kolundzija, M., and Faller, C. (2018). <b>Advanced B-Format Analysis.</b><br> Audio Engineering Society Convention 144.</p>
+[10] Sch&ouml;rkhuber, C., and H&ouml;ldrich, R. (2019, March). <b>Linearly and Quadratically Constrained Least-Squares Decoder for Signal-Dependent Binaural Rendering of Ambisonic Signals.</b> <br> In Audio Engineering Society Conference: 2019 AES International Conference on Immersive and Interactive Audio. Audio Engineering Society.
     
-    <p>[10] Sch&ouml;rkhuber, C., and H&ouml;ldrich, R. (2019, March). <b>Linearly and Quadratically Constrained Least-Squares Decoder for Signal-Dependent Binaural Rendering of Ambisonic Signals.</b> 
-        <br> <i>in</i> Audio Engineering Society Conference: 2019 AES International Conference on Immersive and Interactive Audio. Audio Engineering Society. </p>
-    
-    <p>[11] S&auml;rkk&auml;, S., Vehtari, A. and Lampinen, J., 2004, June. <b>Rao-Blackwellized Monte Carlo data association for multiple target tracking. </b> <br><i>in</i> Proceedings of the seventh international conference on information fusion (Vol. 1, pp. 583-590). I.</p>
+[11] S&auml;rkk&auml;, S., Vehtari, A. and Lampinen, J., 2004, June. <b>Rao-Blackwellized Monte Carlo data association for multiple target tracking. </b> <br> <i>in</i> Proceedings of the seventh international conference on information fusion (Vol. 1, pp. 583-590). I.
+
     
