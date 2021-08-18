@@ -46,3 +46,17 @@ The source code for the HO-SIRR application is made available under the [GNU GPL
 The source code for the CroPaC-Binaural decoder is made available under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.
 
 * Source code for the [CroPaC-Binaural decoder →](https://github.com/leomccormack/CroPaC-Binaural)
+
+## Other related source code
+
+The following repositories were created by the same developers of SPARTA, which may be of interest to you:
+
+* Source code for [ultrasonic](../../help/related-publications/#pulkki2021superhuman) and [underwater](../../help/related-publications/#delikaris2018real) sound scene auralisation [Super-Hearing →](https://github.com/leomccormack/Super-Hearing)
+* Source code for the [Spatial Audio Python Package →](https://github.com/chris-hld/spaudiopy)
+* Source code for the MATLAB library [Spherical-Harmonic-Transform →](https://github.com/polarch/Spherical-Harmonic-Transform)
+* Source code for the MATLAB library [Spherical-Array-Processing →](https://github.com/polarch/Spherical-Array-Processing)
+* Source code for the MATLAB library [Higher-Order-Ambisonics →](https://github.com/polarch/Higher-Order-Ambisonics)
+* Source code for the MATLAB library [Vector-Base-Amplitude-Panning →](https://github.com/polarch/Vector-Base-Amplitude-Panning)
+* Source code for the MATLAB library [Array-Response-Simulator →](https://github.com/polarch/Array-Response-Simulator)
+* Source code for the MATLAB library [shoebox-roomsim →](https://github.com/polarch/shoebox-roomsim)
+* Source code for JavaScript/Web Audio Ambisonics playback [JSAmbisonics →](https://github.com/polarch/JSAmbisonics)

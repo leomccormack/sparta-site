@@ -24,7 +24,7 @@ Thanks to help from Daniel Rudrich, the relevant plug-ins now also support impor
 The default HRIR set is an 836-point simulation of a Kemar Dummy head, courtesy of Genelec AuralID.
 
 ### AmbiBIN
-<img src="AmbiBIN_GUI.png" alt="AmbiBIN_GUI" caption="<em>AmbiBIN_GUI</em>" class="border-1" width="550"/><br/>
+<img src="AmbiBIN_GUI.png" alt="AmbiBIN_GUI" caption="<em>AmbiBIN_GUI</em>" class="border-0" width="550"/><br/>
 
 A binaural Ambisonic decoder for headphone playback of Ambisonic signals (aka spherical harmonic or B-format signals), with a built-in rotator and head-tracking support via OSC messages. The rotation angles are updated after the time-frequency transform, which allows for reduced latency compared to its loudspeaker counterpart 'AmbiDEC' when paired with 'Rotator'. The plug-in also allows the user to import their own HRIRs via the SOFA standard. The plug-in offers a variety of different decoding methods, including: Least-Squares (LS), Spatial re-sampling (SPR), Time-Alignment (TA) [11], and Magnitude Least-Squares (MagLS) [12]. It can also impose a diffuse-coherence contraint/correction on the current decoder, as described in [11].
 
