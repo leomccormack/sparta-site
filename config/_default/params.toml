@@ -37,7 +37,7 @@ schemaGitHub = "https://github.com/leomccormack/SPARTA"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
-siteLinksSearchBox = false
+siteLinksSearchBox = true
 
 ## Chrome Browser
 themeColor = "#fff"

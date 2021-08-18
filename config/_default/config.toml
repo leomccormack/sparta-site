@@ -1,4 +1,3 @@
-googleAnalytics = "G-W28P3YNXV6"
 baseurl = "/"
 canonifyURLs = false
 disableAliases = true
@@ -9,6 +8,7 @@ enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
 rssLimit = 10
+googleAnalytics = "G-W28P3YNXV6"
 
 # add redirects/headers
 [outputs]
@@ -77,28 +77,19 @@ rel  = "sitemap"
 [permalinks]
   blog = "/blog/:title/"
 
+[minify.tdewolff.html]
+  keepWhitespace = false
+
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.80.0"
     max = ""
   [[module.mounts]]
-    source = "node_modules/@hyas/doks/archetypes"
-    target = "archetypes"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/assets"
+    source = "assets"
     target = "assets"
-#  [[module.mounts]]
-#    source = "node_modules/@hyas/doks/content"
-#    target = "content"
   [[module.mounts]]
-    source = "node_modules/@hyas/doks/data"
-    target = "data"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/layouts"
-    target = "layouts"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/static"
+    source = "static"
     target = "static"
   [[module.mounts]]
     source = "node_modules/flexsearch"
@@ -107,20 +98,5 @@ rel  = "sitemap"
     source = "node_modules/katex"
     target = "assets/js/vendor/katex"
   [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-  [[module.mounts]]
-    source = "content"
-    target = "content"
-  [[module.mounts]]
-    source = "layouts"
-    target = "layouts"
-  [[module.mounts]]
-    source = "archetypes"
-    target = "archetypes"
-  [[module.mounts]]
-    source = "data"
-    target = "data"
+    source = "node_modules/mermaid"
+    target = "assets/js/vendor/mermaid"
