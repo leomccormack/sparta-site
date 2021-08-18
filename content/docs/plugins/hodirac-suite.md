@@ -22,7 +22,7 @@ These particular audio plug-in implementations use the higher-order analysis des
 All plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) scalings (note: AmbiX uses ACN/SN3D). The maximum Ambisonic order for these plug-ins is 3.
 
 ### Decoder 
-<img src="HODirAC_decoder_GUI.png" alt="" width="600;"></br>
+<img src="HODirAC_decoder_GUI.png" alt="" style="max-width: 85%"></br>
     
 This plug-in is based on the design detailed in [**this publication**](../../help/related-publications/#politis2015sector).
     
@@ -35,7 +35,7 @@ The "Diffuse-to-Direct" control allows the user to give more prominence to the d
 The plug-in is considered by the authors a production tool and, due to its time-frequency processing, requires internal audio buffer sizes of at least 2048 samples. Hence we do not consider it as a low-latency plug-in and therefore it is not suitable for interactive input. For cases such as interactive binaural rendering for VR with head-tracking, refer to the <b>HO-DirAC|Binaural</b> version.
  
 ### Binaural
-<img src="HODirAC_binaural_GUI.png" alt="" width="600;"></br>
+<img src="HODirAC_binaural_GUI.png" alt="" style="max-width: 85%"></br>
     
 This plug-in is based on the design detailed [**this publication**](../../help/related-publications/#politis2017enhancement).
     
@@ -44,7 +44,7 @@ This is an optimised version of the HO-DirAC decoder for binaural playback, whic
 This version is intended mostly for head-tracked binaural playback of Ambisonic content at interactive update rates, usually in conjunction with a head-mounted display (HMD). The plugin requires an audio buffer size of at least 512 samples (~10msec at 48kHz). The averaging parameters can be used to make the parametric analysis and synthesis more or less responsive, providing the user with a means to adjust them optimally for a particular sound scene.
      
 ### Upmixer
-<img src="HODirAC_upmixer_GUI.png" alt="" width="600;"></br>
+<img src="HODirAC_upmixer_GUI.png" alt="" style="max-width: 85%"></br>
 
 This VST is intended for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is essentially a wrapper for HO-DirAC|Decoder, as it first decodes the input to an appropriate uniform arrangement of virtual loudspeakers (e.g. a t-design) followed by re-encoding the virtual loudspeaker signals into the target order. It can be used by users who are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) to up-to seventh-order material (64 channels).
  

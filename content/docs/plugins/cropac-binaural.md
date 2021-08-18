@@ -23,13 +23,13 @@ Binaural ambisonics decoding is a means of reproducing a captured or synthesised
     
 The proposed first-order decoder employs a sound-field model comprising one source component and one non-isotropic ambient component per time-frequency tile. The method first estimates the source DoA via steered-response power (SRP) beamforming and subsequent peak-finding. The source stream is then segregated by steering a beamformer toward the estimated DoA, and employing an additional CroPaC [1] post-filtering operation to improve its spatial selectivity. The ambient stream is then simply the residual, once the source component has been subtracted from the input sound-field. The two streams are then binauralised and fed into an optimal mixing unit [2], along with the ambisonic prototype covariance matrix, in order to generate the binaural output. A block diagram of the proposed method is depicted below:
     
-<img src="cropac_binaural.png" alt="" width="600;">
+<img src="cropac_binaural.png" alt="" style="max-width: 90%">
     
 The proposed approach is inspired by the COMPASS method [3]. However, along with the CroPaC post-filter, it also employs instantaneous source direction estimation and synthesises the output in a linear manner as much as possible; in order to improve the fidelity of the output signals.
 
 ## Plug-in description
     
-<img src="CroPaC_Binaural_GUI.png" alt="" width="600;"></br>
+<img src="CroPaC_Binaural_GUI.png" alt="" style="max-width: 85%"></br>
 
 This implementation employs the magnitude least-squares (magLS) ambisonic decoder [4] as the prototype, contrary to the spatial-resampling decoder employed for the listening tests described in the paper. The plug-in allows the user to import their own HRTFs via SOFA files, and also supports head-tracking via OSC messages. The user may also influence the direct/diffuse balance per frequency band; note that the streams are balanced when set in the middle (default). 
     
@@ -37,9 +37,9 @@ This implementation employs the magnitude least-squares (magLS) ambisonic decode
 ## Listening test results at a glance
 Formal listening tests indicate that the proposed first-order decoder (CroPaC1) performs similarly to (or exceeds) third-order spatial re-sampling ambisonics decoding (Ambi3), in terms of the perceived spatial and timbral attributes of the reproduction; as shown in the plots below:
      
-<img src="Spatial_results.png" alt="" style="width:650px;height:300px;">   
+<img src="Spatial_results.png" alt="" style="max-width: 90%">   
     
-<img src="Results_Timbral.png" alt="" style="width:650px;height:300px;"></br>
+<img src="Results_Timbral.png" alt="" style="max-width: 90%"></br>
      
 It should be highlighted that third- order ambisonics employs four times the number of input channels than that of the proposed method. This, therefore, represents a significant reduction in bandwidth, without compromising the perceived spatial accuracy or fidelity.
    

@@ -24,14 +24,14 @@ Thanks to help from Daniel Rudrich, the relevant plug-ins now also support impor
 The default HRIR set is an 836-point simulation of a Kemar Dummy head, courtesy of Genelec AuralID.
 
 ### AmbiBIN
-<img src="AmbiBIN_GUI.png" alt="AmbiBIN_GUI" caption="<em>AmbiBIN_GUI</em>" class="border-0" width="550"/><br/>
+<img src="AmbiBIN_GUI.png" alt="AmbiBIN_GUI" caption="<em>AmbiBIN_GUI</em>" class="border-0" style="max-width: 80%;"/><br/>
 
 A binaural Ambisonic decoder for headphone playback of Ambisonic signals (aka spherical harmonic or B-format signals), with a built-in rotator and head-tracking support via OSC messages. The rotation angles are updated after the time-frequency transform, which allows for reduced latency compared to its loudspeaker counterpart 'AmbiDEC' when paired with 'Rotator'. The plug-in also allows the user to import their own HRIRs via the SOFA standard. The plug-in offers a variety of different decoding methods, including: Least-Squares (LS), Spatial re-sampling (SPR), Time-Alignment (TA) [11], and Magnitude Least-Squares (MagLS) [12]. It can also impose a diffuse-coherence contraint/correction on the current decoder, as described in [11].
 
 This plug-in was developed by Leo McCormack, Archontis Politis, and Christoph Hold.
 
 ### AmbiDEC
-<img src="AmbiDEC_GUI.png" alt=""  width="550"/><br/>
+<img src="AmbiDEC_GUI.png" alt="" style="max-width: 80%;"/><br/>
     
 A frequency-dependent Ambisonic decoder for loudspeakers. The loudspeaker directions can be user-specified for up to 64 channels, or alternatively presets for popular 2D and 3D set-ups can be selected. For headphone reproduction, the loudspeaker audio is convolved with interpolated HRTFs for each loudspeaker direction (i.e. virtual loudspeaker decoding). The plug-in also permits importing custom HRIRs via the SOFA standard.  
 
@@ -42,7 +42,7 @@ Note that when the loudspeakers are uniformly distributed (e.g. a t-design), all
 This plug-in was developed by Leo McCormack and Archontis Politis. 
 
 ### AmbiDRC 
-<img src="AmbiDRC_GUI.png" alt="" width="450"/><br/>
+<img src="AmbiDRC_GUI.png" alt="" style="max-width: 70%;"/><br/>
 
 The AmbiDRC plug-in is based on the design proposed in [this publication](https://www.researchgate.net/publication/321319451_FFT-based_Dynamic_Range_Compression).
     
@@ -51,21 +51,21 @@ A frequency-dependent Ambisonic dynamic range compressor (DRC). The gain factors
 This plug-in was developed by Leo McCormack. 
     
 ### AmbiENC 
-<img src="AmbiENC_GUI.png" alt="" width="550"/><br/>
+<img src="AmbiENC_GUI.png" alt="" style="max-width: 80%"/><br/>
     
 A bare-bones Ambisonic encoder which takes input signals (up to 64 channels) and encodes them into Ambisonic signals at specified directions. Essentially, these Ambisonic signals describe a synthetic sound-field, where the spatial resolution of this encoding is determined by the transform order. Several presets have been included for convenience (which allow for 22.x etc. audio to be encoded into 1-7th order Ambisonics, for example). The panning window is also fully mouse driven, and uses an equirectangular respresentation of the sphere to depict the azimuth and elevation angles of each source. 
     
 This plug-in was developed by Leo McCormack.
     
 ### AmbiRoomSim 
-<img src="ambiRoomSim_GUI.png" alt="" width="700"  /><br/>
+<img src="ambiRoomSim_GUI.png" alt="" style="max-width: 95%"  /><br/>
 
 An Ambisonic room encoder that includes room reflections. It is based on the image source method using a shoebox room model. It permits multiple sources, and also multiple Ambisonic receivers up to 64 channels in total; e.g. 16x first-order or 4x third-order receivers, or 1x 7th order receiver. The output receiver channels are stacked, e.g. 1-4 channels are for the 1st first-order receiver, 5-8 for the second etc.
     
 This plug-in was developed by Leo McCormack.
 
 ### Array2SH 
-<img src="Array2SH_GUI.png" alt="" width="700"/><br/>
+<img src="Array2SH_GUI.png" alt="" style="max-width: 95%"/><br/>
     
 The Array2SH plug-in is related to [this publication](../../help/related-publications/#mccormack2018real).
     
@@ -80,14 +80,14 @@ For convenience, the specifications for several commercially available microphon
 This plug-in was developed by Leo McCormack, Symeon Delikaris-Manias and Archontis Politis.
     
 ### Beamformer
-<img src="Beamformer_GUI.png" alt="" width="550"/><br/>
+<img src="Beamformer_GUI.png" alt="" style="max-width: 80%"/><br/>
 
 A simple beamforming plug-in. Currently includes static beam patterns only (cardioid, hyper-cardioid or max_rE weighted hyper-cardioid). More pattern options to follow in future. 
     
 This plug-in was developed by Leo McCormack. 
  
 ### Binauraliser    
-<img src="Binauraliser_GUI.png" alt="" width="700"/><br/>
+<img src="Binauraliser_GUI.png" alt="" style="max-width: 95%"/><br/>
     
 {{< alert icon="👉" text="Please note that this plug-in is only suitable for HRTF-based convolution." />}}
 
@@ -96,14 +96,14 @@ A plug-in which convolves input audio (up to 64 channels) with interpolated HRTF
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### Decorrelator
-<img src="decorrelator_GUI.png" alt="" width="450"/> <br/>
+<img src="decorrelator_GUI.png" alt="" style="max-width: 75%"/> <br/>
     
 A simple multi-channel signal decorrelator (up to 64 channels) based on randomised time-frequency delays and cascaded all-pass filters.
     
 This plug-in was developed by Leo McCormack.
     
 ### DirASS
-<img src="DirASS_GUI.png" alt="" width="700"/><br/>
+<img src="DirASS_GUI.png" alt="" style="max-width: 90%"/><br/>
     
 The DirASS plug-in is related to these publications: [Link1](../../help/related-publications/#mccormack2019applications), [Link2](../../help/related-publications/#mccormack2019sharpening).
     
@@ -112,7 +112,7 @@ A sound-field visualiser, which is based on the directional re-assignment of bea
 This plug-in was developed by Leo McCormack and Archontis Politis. 
 
 ### MatrixConv
-<img src="MatrixConv_GUI.png" alt="" width="450"/><br/>
+<img src="MatrixConv_GUI.png" alt="" style="max-width: 75%"/><br/>
     
 A simple matrix convolver with an (optional) partitioned-convolution mode. The matrix of filters should be concatenated for each output channel and loaded as a .wav file. You need only inform the plug-in of the number if input channels, and it will take care of the rest. 
 
@@ -124,7 +124,7 @@ A simple matrix convolver with an (optional) partitioned-convolution mode. The m
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### MultiConv
-<img src="MultiConv_GUI.png" alt="" width="450"/><br/>
+<img src="MultiConv_GUI.png" alt="" style="max-width: 75%"/><br/>
     
 A simple multi-channel convolver with an (optional) partitioned-convolution mode. The plugin will convolve each input channel with the respective filter up to the maximum of 64 channels/filters. The filters are loaded as a multi-channel .wav file.
     
@@ -135,7 +135,7 @@ Please note that this is not to be confused with the MatrixConv plug-in. For thi
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### Panner
-<img src="Panner_GUI.png" alt="" width="700"/> <br/>
+<img src="Panner_GUI.png" alt="" style="max-width: 95%"/> <br/>
     
 A frequency-dependent 3D panner based on the Vector-base Amplitude Panning (VBAP) method [4]. Presets for popular 2D and 3D formats are included for convenience; however, the directions for up to 64 channels can be independently controlled for both inputs and outputs; allowing, for example, 9.x input audio to be panned for a 22.2 setup. The panning is frequency-dependent to accommodate the method described in [5], which allows for more consistent loudness when sources are panned in-between the loudspeaker directions.
     
@@ -144,7 +144,7 @@ Set the "Room Coeff" parameter to 0 for standard power-normalisation, 0.5 for a 
 This plug-in was developed by Leo McCormack, Archontis Politis and Ville Pulkki.  
     
 ### PowerMap
-<img src="Powermap_GUI.png" alt="" width="700"/><br/>
+<img src="Powermap_GUI.png" alt="" style="max-width: 90%"/><br/>
     
 The PowerMap plug-in is a modified version of the plug-in described in [**this publication**](../../help/related-publications/#mccormack2017parametric).
     
@@ -153,14 +153,14 @@ The PowerMap plug-in is a modified version of the plug-in described in [**this p
 This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias. 
     
 ### Rotator
-<img src="Rotator_GUI.png" alt="" width="450"/><br/>
+<img src="Rotator_GUI.png" alt="" style="max-width: 75%"/><br/>
     
 This plug-in applies a Ambisonic rotation matrix [6] to the input Ambisonic signals. The rotation angles can be controlled using a head tracker via OSC messages. Simply configure the headtracker to send a vector: '\ypr[3]' to OSC port 9000 (default); where \ypr[0], \ypr[1], \ypr[2] are the yaw-pitch-roll angles, respectively. The angles can also be flipped +/- in order to support a wider range of devices. The rotation order (yaw-pitch-roll (default) or roll-pitch-yaw) can also be specified. Alternatively, the rotation can be based on a Quaternion by sending vector: '\quaternion[4]'; where \quaternion[0], \quaternion[1], \quaternion[2], \quaternion[3], are the W, X, Y, Z parts of the Quaternion, respectively.
     
 This plug-in was developed by Leo McCormack. 
     
 ### SLDoA
-<img src="SLDoA_GUI.png" alt="" width="600"/><br/>
+<img src="SLDoA_GUI.png" alt="" style="max-width: 80%"/><br/>
     
 The SLDoA plug-in is related to these publications: [**Link1**](../../help/related-publications/#mccormack2018real), [**Link2**](../../help/related-publications/#mccormack2019applications).
     
@@ -169,7 +169,7 @@ A spatially localised direction-of-arrival (DoA) estimator. The plug-in first us
 This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias. 
     
 ### Spreader 
-<img src="spreader_GUI.png" alt="" width="700"/> <br/>
+<img src="spreader_GUI.png" alt="" style="max-width: 95%"/> <br/>
     
 An arbitrary array (e.g., HRIRs or microphone array IRs) panner with coherent and incoherent spreading options.
     

@@ -21,7 +21,7 @@ The idea is that you then convolve a monophonic source with this loudspeaker arr
     
 Note that the HO-SIRR application is a direct port of the HO-SIRR MATLAB toolbox, which is slighly more configurable than the C/C++ implementation, and can be found <a href="https://github.com/leomccormack/HO-SIRR"><b>here</b></a>.  
 
-<img src="HOSIRR_GUI.png" alt="" width="600;"></br>
+<img src="HOSIRR_GUI.png" alt="" style="max-width: 85%"></br>
 
 The suggested workflow is:
     
@@ -34,7 +34,7 @@ The suggested workflow is:
     
 The perceptual performance of HO-SIRR was evaluated based on formal listening tests in [1], where it was compared to Mode-Matching Ambisonics decoding. It was found that if the mono signal is quite stationary (such as a trombone recording), then first-order SIRR renderings can sound almost equivalent to 5th order Ambisonics. However, if the mono signal is more transient (such as a kick drum or speech sample), then the benefits of the higher-order SIRR renderings are revealed. For an in-depth description of the listening test and a discussion of the results, see: <a href="../../help/related-publications/#mccormack2020higher">[<b>1</b>]</a>.
     
-<img src="JAES_orderTest_post_review.png" alt="" width="700;"> </br>
+<img src="JAES_orderTest_post_review.png" alt="" style="max-width: 100%"> </br>
      
 ## About the authors
     

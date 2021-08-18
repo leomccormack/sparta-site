@@ -21,12 +21,12 @@ COMPASS is a framework for parametric spatial audio processing of sound scenes c
 
 The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Leo McCormack, and published in <a href="../../help/related-publications/#politis2018compass">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M is the number of channels):  
 
-<img src="parametric_ambisonic_models.png" alt="" width="700"></br>
+<img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
     
 In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The VST plugins apply this framework to different spatial audio production tasks. Note that the plugins are still work in progress and we expect to keep improving them in the future, however, we believe that they can already prove useful to users and creators.
 
 ### Decoder
-<img src="Decoder_GUI.png" alt="" width="600;"></br>
+<img src="Decoder_GUI.png" alt="" style="max-width: 85%"></br>
     
 The COMPASS decoder is a parametric decoder for first, second, and third-order Ambisonics to arbitrary loudspeaker setups. The plugin offers the following functionality:
 * User-specified loudspeaker angles for up to 64 channels, or alternatively, presets for popular 2D and 3D set-ups. 
@@ -40,14 +40,14 @@ The "Linear-to-Parametric" control allows the user to mix the output between sta
     
 The plugin is considered by the authors a production tool and, due to its time-frequency processing, requires audio buffer sizes of at least 1024 samples. Hence we do not consider it as a low-latency plugin and therefore it is not suitable for interactive input. For cases such as interactive binaural rendering for VR with head-tracking, see the <b>COMPASS|Binaural</b> variant.
 
-A video showing the plugin in action and demonstrating its functionality can be found here:
+A video demonstrating the functionality of the plug-in can be viewed here:
 
-<iframe src="https://player.vimeo.com/video/312282907" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/312282907" style="max-width: 100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 This plug-in was developed by Leo McCormack and Archontis Politis.
 
 ### Binaural
-<img src="Binaural_GUI.png" alt="" width="600;"></br>
+<img src="Binaural_GUI.png" alt="" style="max-width: 85%"></br>
     
 This is an optimised version of the COMPASS decoder for binaural playback, bypassing loudspeaker rendering and using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plugin parameters, see the description of the <b>Binaural|Decoder</b> above. Additionally the plugin can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
 
@@ -56,7 +56,7 @@ This version is intended mostly for head-tracked binaural playback of Ambisonic 
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### BinauralVR
-<img src="binauralVR_GUI.png" alt="" width="700;"></br>
+<img src="binauralVR_GUI.png" alt="" style="max-width: 95%"></br>
     
 Same as the COMPASS|Binaural plug-in, except it also supports listener translation around the receiver position. The user must first select the assumed distance of the sources. For simplicity, it is assumed that all sources are projected onto the surface of a sphere. The plug-in may then be informed of the listener position and orientation, either via its user interface sliders, or by sending  the Cartesian coordinates and rotation angles outputted by an external tracking device; such as a virtual or augmented reality headset.
     
@@ -65,7 +65,7 @@ The listener position and head orientation can be passed via an OSC message: \xy
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### Tracker
-<img src="tracker_GUI.png" alt="" width="720;"></br>
+<img src="tracker_GUI.png" alt="" style="max-width: 98%"></br>
 
 This VST builds on the spatial analysis conducted by the Coding and Multidirectional Parameterisation of Ambisonic Sound Scenes (COMPASS) framework, but instead of using the information for synthesising loudspeaker or binaural signals, a multi-source tracker is employed to associate the estimated directions with their corresponding sources/targets. Therefore, this VST can be used to visualise the trajectory of sound sources present in an Ambisonic sound scene.
     
@@ -78,14 +78,14 @@ The tracker implementation builds on the Rao-Blackwelized Monte Carlo Data Assoc
 This plug-in was developed by Leo McCormack.
     
 ### Upmixer
-<img src="upmixer_GUI.png" alt="" width="530;"></br>
+<img src="upmixer_GUI.png" alt="" style="max-width: 80%"></br>
 
 This VST employs COMPASS for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is intended for users that are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) to up-to seventh-order material (64 channels).
     
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### SideChain
-<img src="sidechain_GUI.png" alt="" width="400;"></br>
+<img src="sidechain_GUI.png" alt="" style="max-width: 60%"></br>
 
 This VST is a bit of an experiment. Applying the COMPASS analysis to two different sound scenes (scene A [channels 1-16] and scene B [channels 17-32]), and using the estimated spatial parameters from one scene to manipulate the signals of the other scene.
     
@@ -94,8 +94,8 @@ Note that, if scene A and B are the same, then the plugin is functionally identi
 This plug-in was developed by Leo McCormack.
     
 ### SpatEdit
-<img src="spatEdit_A.png" alt="" width="650;">
-<img src="spatEdit_B.png" alt="" width="650;"></br>
+<img src="spatEdit_A.png" alt="" style="max-width: 90%">
+<img src="spatEdit_B.png" alt="" style="max-width: 90%"></br>
 </br>
 
 The SpatEdit plug-in is intended to be used with two instances. The first instance of the plug-in allows the user to place markers on an equirectangular representation of the sphere. Alternatively the markers can automatically follow the directions of sound sources through use of the tracker. The source beamformer signals are then outputted by the first instance of the plug-in (A), where the user can then apply any conventional single-channel audio effect, re-balance their levels, or re-order the signals. These manipulated beamformer signals are then passed to the second instance of the plug-in (B), which also receives the residual signals from the first plug-in instance internally, and the COMPASS synthesis is conducted to obtain the output SH signals. Alternatively, the residual stream signals may be outputted by the first plug-in instance instead (and the beamformer signals passed internally to the second plug-in instance), which instead allows conventional linear  Ambisonics transformations to be applied to only the ambient parts of the scene.
@@ -103,7 +103,7 @@ The SpatEdit plug-in is intended to be used with two instances. The first instan
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### Gravitator
-<img src="GravitatorGUI_alpha6_src%2076%200%20%20-24%2045%20-80%20-30.png" alt="" width="650;"></br>
+<img src="GravitatorGUI_alpha6_src%2076%200%20%20-24%2045%20-80%20-30.png" alt="" style="max-width: 90%"></br>
 
 A spatial focussor which pulls only the directional components of the sound scene towards user defined markers, with a certain degree of "gravitational-pull". The Ambient components of the sound scene remain unaltered.
   
