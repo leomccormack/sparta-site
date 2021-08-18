@@ -64,7 +64,7 @@ McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M., 2020.
 ## 2019
 ### mccormack2019sparta
 
-McCormack, L. and Politis, A., 2019, March. SPARTA & COMPASS: Real-time implementations of linear and parametric spatial audio reproduction and processing methods. In Audio Engineering Society Conference: 2019 AES International Conference on Immersive and Interactive Audio. Audio Engineering Society.
+McCormack, L. and Politis, A., 2019, March. **SPARTA & COMPASS: Real-time implementations of linear and parametric spatial audio reproduction and processing methods.** In Audio Engineering Society Conference: 2019 AES International Conference on Immersive and Interactive Audio. Audio Engineering Society.
 
 <object data="mccormack2019sparta.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="mccormack2019sparta.pdf">
