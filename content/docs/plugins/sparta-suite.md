@@ -198,7 +198,7 @@ All of the plug-ins in the SPARTA suite may be used for academic, personal, and/
         
 [5] Laitinen, M., Vilkamo, J., Jussila, K., Politis, A., Pulkki, V. (2014). **Gain normalization in amplitude panning as a function of frequency and room reverberance.** <br>55th International Conference of the AES. Helsinki, Finland.
 
-[6] Ivanic, J., Ruedenberg, K. (1998). Rotation Matrices for Real Spherical Harmonics. Direct Determination by Recursion Page: Additions and Corrections. </b> <br>Journal of Physical Chemistry A, 102(45), 9099?9100.
+[6] Ivanic, J., Ruedenberg, K. (1998). **Rotation Matrices for Real Spherical Harmonics. Direct Determination by Recursion Page: Additions and Corrections.** </b> <br>Journal of Physical Chemistry A, 102(45), 9099-9100.
 
 [7] Faller, C. (2006). **Multiple-loudspeaker playback of stereo signals.** <br> Journal of the Audio Engineering Society, 54(11), 1051-1064. 
 
