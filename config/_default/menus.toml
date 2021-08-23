@@ -33,7 +33,7 @@
 
 [[main]]
   name = "Download"
-  url = "https://github.com/leomccormack/SPARTA/releases/"
+  url = "https://github.com/leomccormack/SPARTA/releases/latest"
   weight = 10
 
 [[social]]

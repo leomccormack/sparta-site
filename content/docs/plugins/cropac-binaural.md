@@ -59,6 +59,6 @@ This plug-in may be used for academic, personal, and/or commercial use. The sour
      
 [2] Vilkamo, J., B&auml;ckstr&ouml;m, T., and Kuntz, A. (2013). <b>Optimized covariance domain framework for time--frequency processing of spatial audio. </b> <br>Journal of the Audio Engineering Society, 61(6), 403-411.
     
-[3] Politis, A., Tervo S., and Pulkki, V. (2018) <b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
+[3] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/#politis2018compass"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
      
 [4] Sch&ouml;rkhuber, C., Zaunschirm, M., and H&ouml;ldrich, R. (2018). <b>Binaural Rendering of Ambisonic Signals via Magnitude Least Squares.</b> <br> In Proceedings of the DAGA (Vol. 44).

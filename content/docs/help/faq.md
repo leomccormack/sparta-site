@@ -45,10 +45,6 @@ For more information regarding the issue, please refer to the following Steinber
 * [https://github.com/steinbergmedia/vst3sdk/issues/28](https://github.com/steinbergmedia/vst3sdk/issues/28) (17 January 2019)
 * [https://github.com/leomccormack/SPARTA/issues/28](https://github.com/leomccormack/SPARTA/issues/28) (6 March 2021)
 
-## Why are there no AAX versions of the plug-ins?
-
-Unfortunately, the Avid business model is not very compatible with open-source/free plug-in projects.
-
 ## Where can I learn more about Ambisonics?
 
 For newcomers to the field, we recommend starting with [this book](https://www.springer.com/gp/book/9783030172060), which is free to download and covers Ambisonics from a practical point-of-view.

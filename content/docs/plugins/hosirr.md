@@ -48,12 +48,12 @@ This application may be used for academic, personal, and/or commercial use. The 
     
 ## References
     
-<a style="color:#000000">[1] McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M. (2020). <b> <a href="../../help/related-publications/#mccormack2020higher"><b>Higher-Order Spatial Impulse Response Rendering: Investigating the Perceived Effects of Spherical Order, Dedicated Diffuse Rendering, and Frequency Resolution</b></a>. </b> <br>Journal of the Audio Engineering Society, 68(5), pp.338-354.
+[1] McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M. (2020). <b> <a href="../../help/related-publications/#mccormack2020higher"><b>Higher-Order Spatial Impulse Response Rendering: Investigating the Perceived Effects of Spherical Order, Dedicated Diffuse Rendering, and Frequency Resolution</b></a>. </b> <br>Journal of the Audio Engineering Society, 68(5), pp.338-354.
     
-<a style="color:#000000">[2] McCormack, L., Politis, A., Scheuregger, O., and Pulkki, V. (2019). <b> <a href="../../help/related-publications/#mccormack2019higher"><b>Higher-order processing of spatial impulse responses.</b></a></b> <br> Proceedings of the 23rd International Congress on Acoustics, 9--13 September 2019 in Aachen, Germany.
+[2] McCormack, L., Politis, A., Scheuregger, O., and Pulkki, V. (2019). <b> <a href="../../help/related-publications/#mccormack2019higher"><b>Higher-order processing of spatial impulse responses.</b></a></b> <br> Proceedings of the 23rd International Congress on Acoustics, 9--13 September 2019 in Aachen, Germany.
      
-<a style="color:#000000">[3] Merimaa, J. and Pulkki, V. (2005). <b>Spatial impulse response rendering I: Analysis and synthesis</b> <br> Journal of the Audio Engineering Society, 53(12), pp.1115-1127.
+[3] Merimaa, J. and Pulkki, V. (2005). <b>Spatial impulse response rendering I: Analysis and synthesis</b> <br> Journal of the Audio Engineering Society, 53(12), pp.1115-1127.
  
-<a style="color:#000000">[4] Pulkki, V. and Merimaa, J. (2006). <b>Spatial impulse response rendering II: Reproduction of diffuse sound and listening tests</b> <br> Journal of the Audio Engineering Society, 54(1/2), pp.3-20.
+[4] Pulkki, V. and Merimaa, J. (2006). <b>Spatial impulse response rendering II: Reproduction of diffuse sound and listening tests</b> <br> Journal of the Audio Engineering Society, 54(1/2), pp.3-20.
         
-<a style="color:#000000">[5] Politis, A. and Pulkki, V. (2016). <b>Acoustic intensity, energy-density and diffuseness estimation in a directionally-constrained region</b> <br> arXiv preprint arXiv:1609.03409.
+[5] Politis, A. and Pulkki, V. (2016). <b>Acoustic intensity, energy-density and diffuseness estimation in a directionally-constrained region</b> <br> arXiv preprint arXiv:1609.03409.

@@ -18,7 +18,7 @@ toc: true
 
 Pulkki, V., McCormack, L. and Gonzalez, R., 2021. **Superhuman spatial hearing technology for ultrasonic frequencies**. Scientific Reports, 11(1), pp.1-10.
 
-<object data="pulkki2021superhuman.pdf" type="application/pdf" width="700px" height="700px">
+<object data="pulkki2021superhuman.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="pulkki2021superhuman.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="pulkki2021superhuman.pdf">Download PDF</a>.</p>
     </embed>
@@ -42,7 +42,7 @@ Pulkki, V., McCormack, L. and Gonzalez, R., 2021. **Superhuman spatial hearing t
 
 McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M., 2020. **Higher-order spatial impulse response rendering: Investigating the perceived effects of spherical order, dedicated diffuse rendering, and frequency resolution.** Journal of the Audio Engineering Society, 68(5), pp.338-354.
 
-<object data="mccormack2020higher.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2020higher.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2020higher.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2020higher.pdf">Download PDF</a>.</p>
     </embed>
@@ -66,7 +66,7 @@ McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M., 2020.
 
 McCormack, L. and Politis, A., 2019, March. **SPARTA & COMPASS: Real-time implementations of linear and parametric spatial audio reproduction and processing methods.** In Audio Engineering Society Conference: 2019 AES International Conference on Immersive and Interactive Audio. Audio Engineering Society.
 
-<object data="mccormack2019sparta.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2019sparta.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2019sparta.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019sparta.pdf">Download PDF</a>.</p>
     </embed>
@@ -86,7 +86,7 @@ McCormack, L. and Politis, A., 2019, March. **SPARTA & COMPASS: Real-time implem
 
 McCormack, L., Politis, A. and Pulkki, V., 2019, May. **Sharpening of Angular Spectra Based on a Directional Re-assignment Approach for Ambisonic Sound-field Visualisation.** In ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 576-580). IEEE.
 
-<object data="mccormack2019sharpening.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2019sharpening.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2019sharpening.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019sharpening.pdf">Download PDF</a>.</p>
     </embed>
@@ -107,7 +107,7 @@ McCormack, L., Politis, A. and Pulkki, V., 2019, May. **Sharpening of Angular Sp
 
 McCormack, L. and Delikaris-Manias, S., 2019, September. **Parametric first-order ambisonic decoding for headphones utilising the cross-pattern coherence algorithm.** In EAA Spatial Audio Signal Processing Symposium (pp. 173-178).
 
-<object data="mccormack2019parametric.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2019parametric.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2019parametric.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019parametric.pdf">Download PDF</a>.</p>
     </embed>
@@ -127,7 +127,7 @@ McCormack, L. and Delikaris-Manias, S., 2019, September. **Parametric first-orde
 
 McCormack, L., Politis, A., Scheuregger, O. and Pulkki, V., 2019. **Higher-order processing of spatial impulse responses.** In 23rd International Congress on Acoustics (ICA).
 
-<object data="mccormack2019higher.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2019higher.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2019higher.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019higher.pdf">Download PDF</a>.</p>
     </embed>
@@ -146,7 +146,7 @@ McCormack, L., Politis, A., Scheuregger, O. and Pulkki, V., 2019. **Higher-order
 
 McCormack, L., Delikaris-Manias, S., Politis, A., Pavlidi, D., Farina, A., Pinardi, D. and Pulkki, V., 2019. **Applications of spatially localized active-intensity vectors for sound-field visualization.** Journal of the Audio Engineering Society, 67(11), pp.840-854.
 
-<object data="mccormack2019applications.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2019applications.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2019applications.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2019applications.pdf">Download PDF</a>.</p>
     </embed>
@@ -170,7 +170,7 @@ McCormack, L., Delikaris-Manias, S., Politis, A., Pavlidi, D., Farina, A., Pinar
 
 Politis, A., Tervo, S. and Pulkki, V., 2018, April. **COMPASS: Coding and multidirectional parameterization of ambisonic sound scenes.** In 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 6802-6806). IEEE.
 
-<object data="politis2018compass.pdf" type="application/pdf" width="700px" height="700px">
+<object data="politis2018compass.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="politis2018compass.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="politis2018compass.pdf">Download PDF</a>.</p>
     </embed>
@@ -191,7 +191,7 @@ Politis, A., Tervo, S. and Pulkki, V., 2018, April. **COMPASS: Coding and multid
 
 McCormack, L., Delikaris-Manias, S., Farina, A., Pinardi, D. and Pulkki, V., 2018, May. **Real-time conversion of sensor array signals into spherical harmonic signals with applications to spatially localized sub-band sound-field analysis.** In Audio Engineering Society Convention 144. Audio Engineering Society.
 
-<object data="mccormack2018real.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2018real.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2018real.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2018real.pdf">Download PDF</a>.</p>
     </embed>
@@ -211,7 +211,7 @@ McCormack, L., Delikaris-Manias, S., Farina, A., Pinardi, D. and Pulkki, V., 201
 
 Delikaris-Manias, S., McCormack, L., Huhtakallio, I. and Pulkki, V., 2018, May. **Real-time underwater spatial audio: a feasibility study**. In Audio Engineering Society Convention 144. Audio Engineering Society.
 
-<object data="delikaris2018real.pdf" type="application/pdf" width="700px" height="700px">
+<object data="delikaris2018real.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="delikaris2018real.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="delikaris2018real.pdf">Download PDF</a>.</p>
     </embed>
@@ -232,7 +232,7 @@ Delikaris-Manias, S., McCormack, L., Huhtakallio, I. and Pulkki, V., 2018, May. 
 
 McCormack, L., Delikaris-Manias, S. and Pulkki, V., 2017, September. **Parametric acoustic camera for real-time sound capture, analysis and tracking.** In Proceedings of the 20th International Conference on Digital Audio Effects (DAFx-17) (pp. 412-419).
 
-<object data="mccormack2017parametric.pdf" type="application/pdf" width="700px" height="700px">
+<object data="mccormack2017parametric.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2017parametric.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2017parametric.pdf">Download PDF</a>.</p>
     </embed>
@@ -252,7 +252,7 @@ McCormack, L., Delikaris-Manias, S. and Pulkki, V., 2017, September. **Parametri
 
 Politis, A., McCormack, L. and Pulkki, V., 2017, October. **Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing.** In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
 
-<object data="politis2017enhancement.pdf" type="application/pdf" width="700px" height="700px">
+<object data="politis2017enhancement.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="politis2017enhancement.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="politis2017enhancement.pdf">Download PDF</a>.</p>
     </embed>
@@ -274,7 +274,7 @@ Politis, A., McCormack, L. and Pulkki, V., 2017, October. **Enhancement of ambis
 
 Politis, A., Vilkamo, J. and Pulkki, V., 2015. **Sector-based parametric sound field reproduction in the spherical harmonic domain.** IEEE Journal of Selected Topics in Signal Processing, 9(5), pp.852-866.
 
-<object data="politis2015sector.pdf" type="application/pdf" width="700px" height="700px">
+<object data="politis2015sector.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="politis2015sector.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="politis2015sector.pdf">Download PDF</a>.</p>
     </embed>

@@ -32,7 +32,8 @@ The installer places the VSTs in the following folder:
 ```
 And also installs the following file:
 ```
-/usr/local/lib/libsaf_custom_mkl_lp64.dylib
+/usr/local/lib/libsaf_mkl_custom_lp64.dylib
+/usr/local/lib/libsaf_ipp_custom.dylib
 ```
 
 To uninstall, simply delete these files.
@@ -48,7 +49,8 @@ C:/Program Files/VSTPlugins
 ```
 And also installs the following file:
 ```
-/Windows/System32/saf_custom_mkl_lp64.dll
+/Windows/System32/saf_mkl_custom_lp64.dll
+/Windows/System32/saf_ipp_custom.dll
 ```
 To uninstall, simply delete these files.
 
@@ -60,7 +62,8 @@ Linux users can download, unzip and copy the plugins into any folder that is sca
 ```
 The following included file must then also be copied into:
 ```
-/usr/local/lib/libsaf_custom_mkl_lp64.so
+/usr/local/lib/libsaf_mkl_custom_lp64.so
+/usr/local/lib/libsaf_mkl_custom.so
 ```
 To uninstall, simply delete these files.
 
