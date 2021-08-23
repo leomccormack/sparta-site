@@ -30,7 +30,7 @@ The installer places the VSTs in the following folder:
 ```
 /Library/Audio/Plug-Ins/VST/
 ```
-And also installs the following file:
+And also installs the following files:
 ```
 /usr/local/lib/libsaf_mkl_custom_lp64.dylib
 /usr/local/lib/libsaf_ipp_custom.dylib
@@ -47,7 +47,7 @@ The installer places the VSTs in the following folder:
 ```
 C:/Program Files/VSTPlugins
 ```
-And also installs the following file:
+And also installs the following files:
 ```
 /Windows/System32/saf_mkl_custom_lp64.dll
 /Windows/System32/saf_ipp_custom.dll
@@ -60,7 +60,7 @@ Linux users can download, unzip and copy the plugins into any folder that is sca
 ```
 ~/.vst
 ```
-The following included file must then also be copied into:
+The following included files must then also be copied into:
 ```
 /usr/local/lib/libsaf_mkl_custom_lp64.so
 /usr/local/lib/libsaf_mkl_custom.so
