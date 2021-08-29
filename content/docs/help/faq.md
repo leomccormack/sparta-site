@@ -19,7 +19,7 @@ Reaper > MaxMSP = Plogue Bidule > Other.
 
 ## What does this slider/button/drop-down menu do?
 
-The vast majority of sliders, toggle buttons, and drop-down menus have detailed tooltips. Simply hover your mouse over the parameter in questions for a few seconds, and the respective tooltip will appear.
+The vast majority of sliders, toggle buttons, and drop-down menus have detailed tooltips. Simply hover your mouse over the parameter in question for a few seconds, and the respective tooltip will appear.
 
 ## Can I use the plug-ins for commercial purposes?
 

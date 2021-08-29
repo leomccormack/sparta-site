@@ -14,6 +14,28 @@ toc: true
 ---
 
 ## 2021
+
+### mccormack2021real
+
+McCormack, L., Politis, A. Särkkä, S., and Pulkki, V., 2021. **Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering.** In 29th European Signal Processing Conference (EUSIPCO), (pp. 206-210).
+
+<object data="mccormack2021real.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2021real.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2021real.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2021real,
+  title={Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering},
+  author={McCormack, Leo and Politis, Archontis and Särkkä, Simo and Pulkki, Ville},
+  booktitle={29th European Signal Processing Conference (EUSIPCO)},
+  pages={206--210},
+  year={2021},
+  organization={EURASIP}
+}
+```
+
 ### pulkki2021superhuman
 
 Pulkki, V., McCormack, L. and Gonzalez, R., 2021. **Superhuman spatial hearing technology for ultrasonic frequencies**. Scientific Reports, 11(1), pp.1-10.

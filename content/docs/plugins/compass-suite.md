@@ -42,7 +42,7 @@ The plugin is considered by the authors a production tool and, due to its time-f
 
 A video demonstrating the functionality of the plug-in can be viewed here:
 
-<iframe src="https://player.vimeo.com/video/312282907" style="max-width: 100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/312282907" width="600px" height="300px" style="max-width: 100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 This plug-in was developed by Leo McCormack and Archontis Politis.
 
@@ -67,13 +67,15 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### Tracker
 <img src="tracker_GUI.png" alt="" style="max-width: 98%"></br>
 
-This VST builds on the spatial analysis conducted by the Coding and Multidirectional Parameterisation of Ambisonic Sound Scenes (COMPASS) framework, but instead of using the information for synthesising loudspeaker or binaural signals, a multi-source tracker is employed to associate the estimated directions with their corresponding sources/targets. Therefore, this VST can be used to visualise the trajectory of sound sources present in an Ambisonic sound scene.
+This plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021real).
+
+The Tracker plug-in builds on the spatial analysis conducted by the COMPASS framework, but instead of using the information for synthesising loudspeaker or binaural signals, a multi-source tracker is employed to associate the estimated directions with their corresponding sources/targets. Therefore, this VST can be used to visualise the trajectory of multiple sound sources present in an Ambisonic sound scene.
     
 Optionally, a beamformer may then be steered to each target direction and outputted either as individual signals (one target signal per output channel; akin to decomposing the scene into its individual "stems"), or as a binauralisation of these individual "stems" (spatialised in their respective target directions).
     
-Note that multi-source tracking has been an active research topic for several decades, but it is still considered to be a very difficult task. While we are confident in the robustness of this tracker and its implementation, there is a quite large learning curve in order to effectively tune the parameters for a specific sound scene/distribution. If the sound scene is very noisy or complex and encoded with first-order/lower resolution, then robust tracking may not even be possible. A general starting point is to first disable "Plot Targets" and tune the "Analysis Settings" until the direction estimates (plotted in the colour red) look reasonably clean. If you can make out the trajectories of the sources, then re-enable "Plot Targets" and try a few of the "Tracker Settings" presets and tune things from there. Note that each tracker parameter also has a tooltip describing how it influences the tracking, and the more these parameters/priors match the direction estimates distribution, the better the tracking will be.
+Note that multi-source tracking has been an active research topic for several decades, but it is still considered to be a very difficult task. While we are confident in the robustness of this tracker and its implementation, there is still a learning curve to effectively tune the parameters for a specific sound scene/distribution. If the sound scene is very noisy or complex and encoded with first-order/lower resolution, then robust tracking may not even be possible. A general starting point is to first disable "Plot Targets" and tune the "Analysis Settings" until the direction estimates (plotted in the colour red) look reasonably clean. If you can make out the trajectories of the sources, then re-enable "Plot Targets" and try a few of the "Tracker Settings" presets and tune things from there. Note that each tracker parameter also has a tooltip describing how it influences the tracking, and the more these parameters/priors match the direction estimates distribution, the better the tracking will be.
     
-The tracker implementation builds on the Rao-Blackwelized Monte Carlo Data Association (RBMCDA) framework [11]. It should be noted that Sequential Monte Carlo (SMC) methods (also referred to as particle-filtering methods) involve making hundreds/thousands of hypotheses, which are then selected randomly based on their predicted likelihoods. Therefore, every time the tracker is run it will give you a different "answer" for the same input scene, but if the tracker is tuned well then the result should be substantially similar each time. 
+The tracker implementation builds on the Rao-Blackwelized Monte Carlo Data Association (RBMCDA) framework [11,12]. It should be noted that Sequential Monte Carlo (SMC) methods (also referred to as particle-filtering methods) involve making hundreds/thousands of hypotheses, which are then selected randomly based on their predicted likelihoods. Therefore, every time the tracker is run it will give you a different "answer" for the same input scene, but if the tracker is tuned well then the result should be substantially similar each time. 
     
 This plug-in was developed by Leo McCormack.
     
@@ -142,4 +144,4 @@ All of the plug-ins in the COMPASS suite may be used for academic, personal, and
     
 [11] S&auml;rkk&auml;, S., Vehtari, A. and Lampinen, J., 2004, June. <b>Rao-Blackwellized Monte Carlo data association for multiple target tracking. </b> <br> <i>in</i> Proceedings of the seventh international conference on information fusion (Vol. 1, pp. 583-590). I.
 
-    
+[12] McCormack, L., Politis, A., S&auml;rkk&auml;, S., and Pulkki, V., 2021. <b>Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering. </b> <br> <i>in</i> 29th European Signal Processing Conference, EUSIPCO 2021, (pp. 206-210).
