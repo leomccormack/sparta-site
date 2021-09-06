@@ -15,9 +15,29 @@ toc: true
 
 ## 2021
 
+### mccormack2021parametric
+
+McCormack, L., Politis, A., and Pulkki, V., 2021, September. **Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes.** In Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).
+
+<object data="mccormack2021parametric.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2021parametric.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2021parametric.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2021parametric,
+  title={Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes},
+  author={McCormack, Leo and Politis, Archontis and Pulkki, Ville},
+  booktitle={Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21)},
+  pages={214--221},
+  year={2021}
+}
+```
+
 ### mccormack2021real
 
-McCormack, L., Politis, A. Särkkä, S., and Pulkki, V., 2021. **Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering.** In 29th European Signal Processing Conference (EUSIPCO), (pp. 206-210).
+McCormack, L., Politis, A., Särkkä, S., and Pulkki, V., 2021. **Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering.** In 29th European Signal Processing Conference (EUSIPCO), (pp. 206-210).
 
 <object data="mccormack2021real.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2021real.pdf">

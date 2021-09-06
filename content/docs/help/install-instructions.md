@@ -63,7 +63,7 @@ Linux users can download, unzip and copy the plugins into any folder that is sca
 The following included files must then also be copied into:
 ```
 /usr/local/lib/libsaf_mkl_custom_lp64.so
-/usr/local/lib/libsaf_mkl_custom.so
+/usr/local/lib/libsaf_ipp_custom.so
 ```
 To uninstall, simply delete these files.
 

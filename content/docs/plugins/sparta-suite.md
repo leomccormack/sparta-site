@@ -155,7 +155,7 @@ This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias.
 ### Rotator
 <img src="Rotator_GUI.png" alt="" style="max-width: 75%"/><br/>
     
-This plug-in applies a Ambisonic rotation matrix [6] to the input Ambisonic signals. The rotation angles can be controlled using a head tracker via OSC messages. Simply configure the headtracker to send a vector: '\ypr[3]' to OSC port 9000 (default); where \ypr[0], \ypr[1], \ypr[2] are the yaw-pitch-roll angles, respectively. The angles can also be flipped +/- in order to support a wider range of devices. The rotation order (yaw-pitch-roll (default) or roll-pitch-yaw) can also be specified. Alternatively, the rotation can be based on a Quaternion by sending vector: '\quaternion[4]'; where \quaternion[0], \quaternion[1], \quaternion[2], \quaternion[3], are the W, X, Y, Z parts of the Quaternion, respectively.
+This plug-in applies a Ambisonic rotation matrix [6] to the input Ambisonic signals. The rotation angles can be controlled using a head tracker via OSC messages. Simply configure the headtracker to send a vector: '\ypr[3]' to OSC port 9000 (default); where \ypr[0], \ypr[1], \ypr[2] are the yaw-pitch-roll angles, in degrees, respectively. The angles can also be flipped +/- in order to support a wider range of devices. The rotation order (yaw-pitch-roll (default) or roll-pitch-yaw) can also be specified. Alternatively, the rotation can be based on a Quaternion by sending vector: '\quaternion[4]'; where \quaternion[0], \quaternion[1], \quaternion[2], \quaternion[3], are the W, X, Y, Z parts of the Quaternion, respectively.
     
 This plug-in was developed by Leo McCormack. 
     
