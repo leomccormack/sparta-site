@@ -15,11 +15,11 @@ toc: true
 
 ## Plug-in descriptions 
 
-All plug-ins are tested using REAPER (64-bit), which is a very affordable and flexible DAW and is currently the only recommended host for these plug-ins; although, other multi-channel friendly hosts (such as MaxMSP, Plogue Bidule) are also known to work. Currently, the plug-ins support sampling rates of 44.1 or 48kHz. All spherical harmonic-related plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes (note that the AmbiX format refers to ACN/SN3D). The maximum transform order for these plug-ins is 7.
+All plug-ins are tested using REAPER (64-bit), which is a very affordable and flexible DAW and is the most recommended host for these plug-ins; although, other multi-channel friendly hosts (such as MaxMSP, Plogue Bidule) are also known to work. Currently, the plug-ins support sampling rates of 44.1 or 48kHz. All Ambisonics-related plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes (note that the AmbiX format refers to ACN/SN3D). The maximum transform order for these plug-ins is 7.
 
 You may hover your mouse cursor over any of the combo boxes/sliders/toggle buttons etc., in order to be presented with helpful tooltips regarding the purpose of the respective parameter.
 
-Thanks to the efforts of Daniel Rudrich, the relevant plug-ins also support importing and exporting of loudspeaker, source, and sensors directions via .json configuration files; thus allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be [found here](https://plugins.iem.at/docs/configurationfiles/).
+Thanks to the efforts of Daniel Rudrich, the relevant plug-ins also support importing and exporting loudspeaker, source, and sensors directions via .json configuration files; thus allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be [found here](https://plugins.iem.at/docs/configurationfiles/).
 
 The default HRIR set is an 836-point simulation of a Kemar Dummy head, courtesy of Genelec AuralID.
 

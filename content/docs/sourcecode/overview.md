@@ -49,8 +49,9 @@ The source code for the CroPaC-Binaural decoder is made available under the [GNU
 
 ## Other related source code
 
-The following repositories were created by the same developers of SPARTA, which may be of interest to you:
+The following repositories were created by the same developers of SPARTA:
 
+* Source code for the reference MATLAB implementation [COMPASS-ref →](https://github.com/polarch/COMPASS-ref) 
 * Source code for [ultrasonic](../../help/related-publications/#pulkki2021superhuman) and [underwater](../../help/related-publications/#delikaris2018real) sound scene auralisation [Super-Hearing →](https://github.com/leomccormack/Super-Hearing)
 * Source code for the [Spatial Audio Python Package →](https://github.com/chris-hld/spaudiopy)
 * Source code for the MATLAB library [Spherical-Harmonic-Transform →](https://github.com/polarch/Spherical-Harmonic-Transform)
