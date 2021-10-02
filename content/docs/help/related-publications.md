@@ -35,6 +35,10 @@ McCormack, L., Politis, A., and Pulkki, V., 2021, September. **Parametric Spatia
 }
 ```
 
+Conference presentation:
+
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/Bp4TlDZx6mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### mccormack2021real
 
 McCormack, L., Politis, A., Särkkä, S., and Pulkki, V., 2021. **Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering.** In 29th European Signal Processing Conference (EUSIPCO), (pp. 206-210).
@@ -55,6 +59,10 @@ McCormack, L., Politis, A., Särkkä, S., and Pulkki, V., 2021. **Real-Time Trac
   organization={EURASIP}
 }
 ```
+
+Conference presentation:
+
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/owThCIunY4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### hold2021spatial
 

@@ -127,7 +127,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ## License
 
 All of the plug-ins in the COMPASS suite may be used for academic, personal, and/or commercial use.
-    
+
 ## References
 
 [1] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/#politis2018compass"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
@@ -155,3 +155,14 @@ All of the plug-ins in the COMPASS suite may be used for academic, personal, and
 [12] McCormack, L., Politis, A., S&auml;rkk&auml;, S., and Pulkki, V., 2021. <a href="../../help/related-publications/#mccormack2021real"><b>Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering. </b></a> <br> <i>in</i> 29th European Signal Processing Conference, EUSIPCO 2021, (pp. 206-210).
 
 [13] McCormack, L., Politis, A., and Pulkki, V., 2021, September. <a href="../../help/related-publications/#mccormack2021parametric"><b>Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes. </b></a> <br> <i>in</i> Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).
+
+## Conference presentations
+
+Presentation for [12]:
+
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/owThCIunY4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Presentation for [13]:
+
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/Bp4TlDZx6mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
