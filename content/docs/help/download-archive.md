@@ -14,4 +14,8 @@ toc: true
 ---
 
 * Old versions of the SPARTA plug-ins are still hosted on the original server, which [can be found here](http://research.spa.aalto.fi/projects/sparta_vsts/download/).
-* Newer versions are instead [hosted on GitHub](https://github.com/leomccormack/SPARTA/releases).
+* Newer versions are instead [hosted on GitHub](https://github.com/leomccormack/SPARTA/releases). 
+
+![GitHub release](https://img.shields.io/github/v/release/leomccormack/SPARTA)
+![GitHub release date](https://img.shields.io/github/release-date/leomccormack/SPARTA) 
+![Downloads Latest](https://img.shields.io/github/downloads/leomccormack/SPARTA/latest/total) ![Downloads Total](https://img.shields.io/github/downloads/leomccormack/SPARTA/total)
