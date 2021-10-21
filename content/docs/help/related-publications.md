@@ -15,6 +15,30 @@ toc: true
 
 ## 2021
 
+### mccormack2021rendering
+
+McCormack, L. Politis, A., and Pulkki, V., 2021, October. **Rendering of source spread for arbitrary playback setups based on spatial covariance matching.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
+
+<object data="mccormack2021rendering.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2021rendering.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2021rendering.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2021rendering,
+  title={Rendering of source spread for arbitrary playback setups based on spatial covariance matching},
+  author={McCormack, Leo and Politis, Archontis and Pulkki, Ville},
+  booktitle={2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+  year={2021},
+  organization={IEEE}
+}
+```
+
+Conference presentation:
+
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/A3hnPRwyECQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### mccormack2021parametric
 
 McCormack, L., Politis, A., and Pulkki, V., 2021, September. **Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes.** In Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).

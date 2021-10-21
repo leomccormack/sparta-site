@@ -96,7 +96,7 @@ A plug-in which convolves input audio (up to 64 channels) with interpolated HRTF
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### Decorrelator
-<img src="decorrelator_GUI.png" alt="" style="max-width: 75%"/> <br/>
+<img src="decorrelator_GUI.png" alt="" style="max-width: 65%"/> <br/>
     
 A simple multi-channel signal decorrelator (up to 64 channels) based on randomised time-frequency delays and cascaded all-pass filters.
     
@@ -112,7 +112,7 @@ A sound-field visualiser, which is based on the directional re-assignment of bea
 This plug-in was developed by Leo McCormack and Archontis Politis. 
 
 ### MatrixConv
-<img src="MatrixConv_GUI.png" alt="" style="max-width: 75%"/><br/>
+<img src="MatrixConv_GUI.png" alt="" style="max-width: 70%"/><br/>
     
 A simple matrix convolver with an (optional) partitioned-convolution mode. The matrix of filters should be concatenated for each output channel and loaded as a .wav file. You need only inform the plug-in of the number of input channels, and it will take care of the rest. 
 
@@ -124,7 +124,7 @@ A simple matrix convolver with an (optional) partitioned-convolution mode. The m
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
 ### MultiConv
-<img src="MultiConv_GUI.png" alt="" style="max-width: 75%"/><br/>
+<img src="MultiConv_GUI.png" alt="" style="max-width: 70%"/><br/>
     
 A simple multi-channel convolver with an (optional) partitioned-convolution mode. The plugin will convolve each input channel with the respective filter up to the maximum of 64 channels/filters. The filters are loaded as a multi-channel .wav file.
     
@@ -153,7 +153,7 @@ The PowerMap plug-in is a modified version of the plug-in described in [**this p
 This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias. 
     
 ### Rotator
-<img src="Rotator_GUI.png" alt="" style="max-width: 75%"/><br/>
+<img src="Rotator_GUI.png" alt="" style="max-width: 70%"/><br/>
     
 This plug-in applies a Ambisonic rotation matrix [6] to the input Ambisonic signals. The rotation angles can be controlled using a head tracker via OSC messages. Simply configure the headtracker to send a vector: '\ypr[3]' to OSC port 9000 (default); where \ypr[0], \ypr[1], \ypr[2] are the yaw-pitch-roll angles, in degrees, respectively. The angles can also be flipped +/- in order to support a wider range of devices. The rotation order (yaw-pitch-roll (default) or roll-pitch-yaw) can also be specified. Alternatively, the rotation can be based on a Quaternion by sending vector: '\quaternion[4]'; where \quaternion[0], \quaternion[1], \quaternion[2], \quaternion[3], are the W, X, Y, Z parts of the Quaternion, respectively.
     
@@ -170,8 +170,10 @@ This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias.
     
 ### Spreader 
 <img src="spreader_GUI.png" alt="" style="max-width: 95%"/> <br/>
-    
-An arbitrary array (e.g., HRIRs or microphone array IRs) panner with coherent and incoherent spreading options.
+
+The Spreader plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021rendering).
+
+This plugin uses an optimised framework for rendering spread sound sources over an arbitrary playback system, as described in [14]. In this particular implementation, the directional responses for the target system are loaded as impulse responses via the SOFA format (e.g., using HRIRs for binaural, or microphone array IRs for creating a synthetic recording). The algorithm is then tasked with mixing the input mono signals to produce the appropriate multi-channel signals (e.g. 2 for binaural playback, 4 or 32 for a synthetic tetrahedral microphone or Eigenmike array recording), such that the output signals create a diffuse, or rather: "incoherently spead" sound source. The solution is optimised to introduce decorrelated signal energy into the output only to the degree that is required to fulfill the target model. Therefore, the signal fidelity of the input signal is largely retained. The algorithm proposed in [14] is denoted as "OM" in this plug-in. For comparison, an unconstrained spatial covariance matching alternative is provided under the name "EVD", which also fulfills the target model, but does so without the constraints for preserving signal fidelity. Additionally, a coherent spreading baseline ("BL"), which is commonly employed in the industry (e.g. game audio engines) is included, which can sound very unnatural when compared to the incoherent spreading alternatives.
     
 This plug-in was developed by Leo McCormack and Archontis Politis.
 
@@ -213,6 +215,14 @@ All of the plug-ins in the SPARTA suite may be used for academic, personal, and/
 [12] Favrot, S. and Buchholz, J.M., (2019).  **LoRA: A loudspeaker-based room auralization system.** <br> Acta Acustica united with Acustica, 96(2), pp.364-375.
 
 [13] Bernschutz, B., (2013). **A spherical far field HRIR/HRTF compilation of the Neumann KU 100.** <br> In Proceedings of the 40th Italian (AIA) annual conference on acoustics and the 39th German annual conference on acoustics (DAGA) conference on acoustics (p. 29). AIA/DAGA.
+
+[14] McCormack, L. Politis, A., and Pulkki, V., 2021, October. **Rendering of source spread for arbitrary playback setups based on spatial covariance matching.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
+
+## Conference presentations
+
+Presentation for [14]:
+
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/A3hnPRwyECQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Other included plug-ins
