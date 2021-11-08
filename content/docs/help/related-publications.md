@@ -390,6 +390,26 @@ McCormack, L., Delikaris-Manias, S. and Pulkki, V., 2017, September. **Parametri
 }
 ```
 
+### mccormack2017fft
+
+McCormack, L., Välimäki, V. 2017, July. **FFT-based dynamic range compression.** In Proceedings of the 14th Sound and Music Computing Conference (pp. 42-49).
+
+<object data="mccormack2017fft.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2017fft.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2017fft.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2017fft,
+  title={{FFT}-based dynamic range compression},
+  author={McCormack, Leo and V{\"a}lim{\"a}ki, Vesa and others},
+  booktitle={Proceedings of the 14th Sound and Music Computing Conference, July},
+  pages={42--49},
+  year={2017}
+}
+```
+
 ## 2015
 ### politis2015sector
 

@@ -44,7 +44,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### AmbiDRC 
 <img src="AmbiDRC_GUI.png" alt="" style="max-width: 70%;"/><br/>
 
-The AmbiDRC plug-in is based on the design proposed in [**this publication**](https://www.researchgate.net/publication/321319451_FFT-based_Dynamic_Range_Compression).
+The AmbiDRC plug-in is related to [**this publication**](../../help/related-publications/#mccormack2017fft).
     
 A frequency-dependent Ambisonic dynamic range compressor (DRC). The gain factors are derived by analysing the omnidirectional component for each frequency band, which are then applied also to the higher-order components. The spatial properties of the original signals remains unchanged; although, your perception of them after decoding may change. The implementation also keeps track of the frequency-dependent gain factors for the omnidirectional component over time, which is then plotted on the user interface for visual feedback.
 
@@ -217,13 +217,6 @@ All of the plug-ins in the SPARTA suite may be used for academic, personal, and/
 [13] Bernschutz, B., (2013). **A spherical far field HRIR/HRTF compilation of the Neumann KU 100.** <br> In Proceedings of the 40th Italian (AIA) annual conference on acoustics and the 39th German annual conference on acoustics (DAGA) conference on acoustics (p. 29). AIA/DAGA.
 
 [14] McCormack, L. Politis, A., and Pulkki, V., 2021, October. **Rendering of source spread for arbitrary playback setups based on spatial covariance matching.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
-
-## Conference presentations
-
-Presentation for [14]:
-
-<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/A3hnPRwyECQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Other included plug-ins
 
