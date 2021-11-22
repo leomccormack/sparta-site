@@ -47,12 +47,17 @@ The source code for the CroPaC-Binaural decoder is made available under the [GNU
 
 * Source code for the [CroPaC-Binaural decoder →](https://github.com/leomccormack/CroPaC-Binaural)
 
+## UltrasonicSuperHearing source code
+
+The source code for the UltrasonicSuperHearing plugin is made available under the [ISC](https://choosealicense.com/licenses/isc) and [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) licenses (source-file dependent).
+
+* Source code for the [Super-Hearing →](https://github.com/leomccormack/Super-Hearing)
+
 ## Other related source code
 
 The following repositories were created by the same developers of SPARTA:
 
 * Source code for the reference MATLAB implementation [COMPASS-ref →](https://github.com/polarch/COMPASS-ref) 
-* Source code for [ultrasonic](../../help/related-publications/#pulkki2021superhuman) and [underwater](../../help/related-publications/#delikaris2018real) sound scene auralisation [Super-Hearing →](https://github.com/leomccormack/Super-Hearing)
 * Source code for the [Spatial Audio Python Package →](https://github.com/chris-hld/spaudiopy)
 * Source code for the MATLAB library [Spherical-Harmonic-Transform →](https://github.com/polarch/Spherical-Harmonic-Transform)
 * Source code for the MATLAB library [Spherical-Array-Processing →](https://github.com/polarch/Spherical-Array-Processing)

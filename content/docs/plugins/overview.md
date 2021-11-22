@@ -47,6 +47,7 @@ More detailed descriptions can be found in [COMPASS Suite →]({{< relref "compa
 * [**compass_binaural**](../compass-suite/#binaural) - An adaptive binaural ambisonic decoder (up to 3rd order input) based on the parametric COMPASS model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**compass_binauralVR**](../compass-suite/#binauralvr) - Same as the compass_binaural plugin, but also supporting listener translation around the receiver position and support for multiple simultaneous listeners.
 * [**compass_decoder**](../compass-suite/#decoder) - A parametrically enhanced loudspeaker ambisonic decoder (up to 3rd order input).
+* [**compass_6dof**](../compass-suite/#6dof) - A six degrees-of-freedom (6DoF) renderer based on multiple Ambisonic receivers as input, which supports listener translation both within and beyond the convex hull of the receiver arrangement.
 * [**compass_gravitator**](../compass-suite/#gravitator) - A parametric sound-field focussing plug-in.
 * [**compass_sidechain**](../compass-suite/#sidechain) - A plug-in that manipulates the spatial properties of one Ambisonic recording based on the spatial analysis of a different recording.
 * [**compass_spatedit**](../compass-suite/#spatedit) - A flexible spatial editing plug-in.
@@ -66,3 +67,4 @@ Note these plug-ins are released under their own [licensing terms](../hodirac-su
 ### Other plug-ins
 * [**cropac_binaural**](../cropac-binaural/#plug-in-description) - An adaptive binaural first.order ambisonic decoder based on the parametric CroPaC model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**HOSIRR**](../hosirr/#application-description) - An Ambisonic room impulse response (RIR) renderer for arbitrary loudspeaker setups, based on the Higher-order Spatial Impulse Response Rendering (HO-SIRR) algorithm.
+* [**UltrasonicSuperHearing**](../ultrasonicsuperhearing/#UltrasonicSuperHearing) - A plug-in for the binaural reproduction of ultrasonic sound sources captured using a 6-sensor ultrasonic microphone array, which uses direction-of-arrival estimation and pitch-down-shifting prior to binauralisation in order to provide the appropriate localisation cues.
