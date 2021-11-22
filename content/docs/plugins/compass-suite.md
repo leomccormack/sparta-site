@@ -74,6 +74,8 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 A WIP parametric six degrees-of-freedom (6DoF) renderer based on multiple Ambisonic receivers as input, which supports listener translation both within and beyond the convex hull of the receiver arrangement. The source positions may either be specified or tracked similarly as described in [[12]](../../help/related-publications/#mccormack2021real). The plug-in may be configured to either output only the isolated source object signals (one per track), or to spatialise the sound scene (including reverberation) from the perspective of the listener position/orientation over headphones or as Ambisonics output. If targetting Ambisonics, any Ambisonic decoder may then be used to auralise the translated sound scene.
 
 Note that all receiver channels must be stacked on-top of eachother, for example: 3 first-order receivers should be assigned to input channels 1-4, 5-8, 9-12, respectively. Therefore, due to the 64-channel VST2 limitation, the plug-in supports either: 16x first-order, 7x second-order, 4x third-order receivers etc.
+
+A reaper project example of this plug-in may be [found here](https://github.com/leomccormack/sparta-reaper-examples).
     
 This plug-in was developed by Leo McCormack and Archontis Politis.
     

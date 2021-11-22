@@ -21,9 +21,11 @@ Ultrasonic sound sources are inaudible to humans. While there do exist devices t
 
 However, by instead capturing the ultrasonic sound sources using an array of microphones, it is possible to estimate their direction of arrival (DoA), and use this information to spatialise a pitch shifted signal in this direction. Therefore, not only is the listener able to perceive these ultrasonic sound sources, but they are also able to localise them in the correct direction.
 
+This plug-in requires 192kHz sampling rate and relies on constructing the ultrasonic microphone array described below. Although, it is noted that the source code could be altered to support other arrays without too much difficulty. 
+
 ## Building a suitable ultrasonic microphone array
 
-The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array, which was employed for the study detailed in [1], can be found in the companion [**git repository**](https://github.com/leomccormack/Super-Hearing) folder. Further details regarding its construction can also be found in the paper.
+The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array, which was employed for the study detailed in [1], can be found in the [**companion git repository**](https://github.com/leomccormack/Super-Hearing). Further details regarding its construction can also be found in the paper.
 
 <img src="UltrasonicArray.png" alt="UltrasonicArray" width="450"/></br>
 
