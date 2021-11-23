@@ -17,7 +17,7 @@ toc: true
 
 ### mccrea2021sound
 
-McCrea, M., McCormack, L., and Pulkki, V. 2021, October. **Sound Source Localization Using Sector-Based Analysis With Multiple Receivers.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
+McCrea, M., McCormack, L., and Pulkki, V. 2021, November. **Sound Source Localization Using Sector-Based Analysis With Multiple Receivers.** In 2nd Nordic Sound and Music Conference (NordicSMC).
 
 <object data="mccrea2021sound.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccrea2021sound.pdf">
