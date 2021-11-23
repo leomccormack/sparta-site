@@ -15,6 +15,25 @@ toc: true
 
 ## 2021
 
+### mccrea2021sound
+
+McCrea, M., McCormack, L., and Pulkki, V. 2021, October. **Sound Source Localization Using Sector-Based Analysis With Multiple Receivers.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
+
+<object data="mccrea2021sound.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccrea2021sound.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccrea2021sound.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccrea2021sound,
+  title={Sound Source Localization Using Sector-Based Analysis With Multiple Receivers},
+  author={McCrea, Michael and McCormack, Leo and Pulkki, Ville},
+  booktitle={2nd Nordic Sound and Music Conference},
+  year={2021}
+}
+```
+
 ### mccormack2021rendering
 
 McCormack, L. Politis, A., and Pulkki, V., 2021, October. **Rendering of source spread for arbitrary playback setups based on spatial covariance matching.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
