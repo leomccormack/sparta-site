@@ -27,7 +27,7 @@ This plug-in requires 192kHz sampling rate and relies on constructing the ultras
 
 The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array, which was employed for the study detailed in [1], can be found in the [**companion git repository**](https://github.com/leomccormack/Super-Hearing). Further details regarding its construction can also be found in the paper.
 
-<img src="UltrasonicArray.png" alt="UltrasonicArray" width="450"/></br>
+<img src="UltrasonicArray.png" alt="UltrasonicArray" width="450" style="max-width: 70%"/></br>
 
 ## Auralising the captured ultrasonic sound sources
 
@@ -40,7 +40,7 @@ The audio plugin renders the 6 microphone signals to the 2 binaural channels. It
 
 The proposed ultrasonic super-hearing system is demonstrated in the following video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HMkZs7a1nQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/HMkZs7a1nQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 (Please wear headphones)
 
