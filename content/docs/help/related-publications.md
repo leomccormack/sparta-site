@@ -15,6 +15,27 @@ toc: true
 
 ## 2021
 
+### mckenzie2021dataset
+
+McKenzie, T., McCormack, L., and Hold, C. 2021, November. **Dataset of Spatial Room Impulse Responses in a Variable Acoustics Room for Six Degrees-of-Freedom Rendering and Analysis.** arXiv:2111.11882v1 [eess.AS].
+
+<object data="mckenzie2021dataset.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mckenzie2021dataset.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mckenzie2021dataset.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@misc{mckenzie2021dataset,
+      title={Dataset of Spatial Room Impulse Responses in a Variable Acoustics Room for Six Degrees-of-Freedom Rendering and Analysis}, 
+      author={Thomas McKenzie and Leo McCormack and Christoph Hold},
+      year={2021},
+      eprint={2111.11882},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS}
+}
+```
+
 ### mccrea2021sound
 
 McCrea, M., McCormack, L., and Pulkki, V. 2021, November. **Sound Source Localization Using Sector-Based Analysis With Multiple Receivers.** In 2nd Nordic Sound and Music Conference (NordicSMC).
