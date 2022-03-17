@@ -34,6 +34,7 @@ More detailed descriptions can be found in [SPARTA Suite →]({{< relref "sparta
 * [**sparta_dirass**](../sparta-suite/#dirass) - A sound-field visualiser based on re-assigning the energy of beamformers. This re-assignment is based on DoA estimates extracted from "spatially-constrained" regions, which are centred around each beamformer look-direction.
 * [**sparta_matrixconv**](../sparta-suite/#matrixconv) - A basic matrix convolver with an optional partitioned convolution mode. The user need only specify the number of inputs and load the filters via a wav file.
 * [**sparta_multiconv**](../sparta-suite/#multiconv) - A basic multi-channel convolver with an optional partitioned convolution mode. Unlike "MatrixConv", this plug-in does not perform any matrixing. Instead, each input channel is convolved with the respective filter; i.e. numInputs = numFilters = numOutputs.
+* [**sparta_6DoFconv**](../sparta-suite/#6dofconv) - A time-varying partitioned convolution multi-channel convolver for SOFA files containing RIRs with multiple listener positions.
 * [**sparta_panner**](../sparta-suite/#panner) - A 3D loudspeaker array panner using the VBAP method (up to 64 inputs and outputs).
 * [**sparta_powermap**](../sparta-suite/#powermap) - A sound-field visualisation plug-in based on ambisonic signals as input (up to 7th order), with PWD/MVDR/MUSIC/Min-Norm options.
 * [**sparta_rotator**](../sparta-suite/#rotator) - A flexible ambisonic rotator (up to 7th order) with head-tracking support via OSC messages.

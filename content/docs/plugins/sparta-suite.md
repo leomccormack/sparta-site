@@ -133,6 +133,15 @@ Please note that this is not to be confused with the MatrixConv plug-in. For thi
 * Example, **headphone equalisation**: post binauraliser/AmbiBIN etc., you may minimise the effect that your headphones have on the binaural output, by also convolving with (regularised) inverse filters. These filters may either be based on measurements of your own head and headphones, or you may download generic ones. For example, you can find equalisation filters for many commercially available headphones from [**here**](https://audiogroup.web.th-koeln.de/ku100hrir.html); which have been measured using a dummy head (more information can be found in [13]). 
    
 This plug-in was developed by Leo McCormack and Archontis Politis.
+
+### 6DoFconv
+<img src="6DoFconv_GUI.png" alt="" style="max-width: 90%"/><br/>
+    
+A time-varying partitioned convolution multi-channel convolver for SOFA files containing RIRs with multiple listener positions.
+
+* Example, **spatial reverberation**: if you have a SOFA file of a dataset of B-format/Ambisonic spatial room impulse responses (SRIRs) with varying listener position, you may convolve one with a monophonic input signal, whereby the listener position (X, Y and Z coordinates) determines the SRIR selection. You may then decode the resulting Ambisonic output to your loudspeaker array (e.g. using SPARTA|AmbiDEC) or to headphones (e.g. using SPARTA|AmbiBIN). An example of SOFA files in a compatible format is the coupled room transition dataset ([https://doi.org/10.5281/zenodo.4095493](https://doi.org/10.5281/zenodo.4095493)). For this, you may choose to use OSC signals in the format \xyzypr (denoting positional coordinates x, y, z and rotation yaw, pitch and roll) to control the listener position and orientation (enable rotation of the output). 
+
+This plug-in was developed by Rapolas Daugintis, Thomas McKenzie, Nils Meyer-Kahlen and Leo McCormack.
     
 ### Panner
 <img src="Panner_GUI.png" alt="" style="max-width: 95%"/> <br/>
