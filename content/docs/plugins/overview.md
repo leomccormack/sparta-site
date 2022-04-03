@@ -30,6 +30,7 @@ More detailed descriptions can be found in [SPARTA Suite →]({{< relref "sparta
 * [**sparta_array2sh**](../sparta-suite/#array2sh) - A microphone array Ambisonics encoder (up to 7th order), with presets for several commercially available A-format and higher-order microphone arrays. The plug-in can also present objective evaluation metrics for the currently selected configuration.
 * [**sparta_beamformer**](../sparta-suite/#beamformer) - A spherical harmonic domain beamforming plug-in with multiple beamforming strategies (up to 64 output beams).
 * [**sparta_binauraliser**](../sparta-suite/#binauraliser) - A binaural panner (up to 64 input channels) with a built-in SOFA loader and head-tracking support via OSC messages.
+* [**sparta_binauraliserNF**](../sparta-suite/#binauraliserNF) - Binauraliser, with the addition of proximity filtering for near field sound sources.
 * [**sparta_decorrelator**](../sparta-suite/#decorrelator) - A simple multi-channel signal decorrelator (up to 64 input channels).
 * [**sparta_dirass**](../sparta-suite/#dirass) - A sound-field visualiser based on re-assigning the energy of beamformers. This re-assignment is based on DoA estimates extracted from "spatially-constrained" regions, which are centred around each beamformer look-direction.
 * [**sparta_matrixconv**](../sparta-suite/#matrixconv) - A basic matrix convolver with an optional partitioned convolution mode. The user need only specify the number of inputs and load the filters via a wav file.

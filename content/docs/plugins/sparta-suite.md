@@ -95,6 +95,16 @@ A plug-in which convolves input audio (up to 64 channels) with interpolated HRTF
     
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
+
+### BinauraliserNF
+<img src="BinauraliserNF_GUI.png" alt="" style="max-width: 95%"/><br/>
+
+{{< alert icon="👉" text="Please note that this plug-in is only suitable for HRTF-based convolution." />}}
+
+This plug-in mirrors has the functionality of the [**Binauraliser**](#binauraliser), with the addition of proximity filtering which reproduces the binaural effects of nearby sound sources. The implementation follows a shelving filter scheme as described in [15].
+
+This plug-in was developed by Michael McCrea, Leo McCormack, and Sebastian Schlecht.
+
 ### Decorrelator
 <img src="decorrelator_GUI.png" alt="" style="max-width: 65%"/> <br/>
     
@@ -226,6 +236,8 @@ All of the plug-ins in the SPARTA suite may be used for academic, personal, and/
 [13] Bernschutz, B., (2013). **A spherical far field HRIR/HRTF compilation of the Neumann KU 100.** <br> In Proceedings of the 40th Italian (AIA) annual conference on acoustics and the 39th German annual conference on acoustics (DAGA) conference on acoustics (p. 29). AIA/DAGA.
 
 [14] McCormack, L. Politis, A., and Pulkki, V., 2021, October. **Rendering of source spread for arbitrary playback setups based on spatial covariance matching.** In 2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
+
+[15] Spagnol, S., Tavazzi, E., and Avanzini, F. **“Distance rendering and perception of nearby virtual sound sources with a near-field filter model.”** <br/> Applied Acoustics, vol. 115, pp. 61–73, Jan. 2017.
 
 ## Other included plug-ins
 
