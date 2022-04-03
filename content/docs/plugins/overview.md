@@ -66,6 +66,7 @@ Note these plug-ins are released under their own [licensing terms](../hodirac-su
 * [**hodirac_upmixer**](../hodirac-suite/#upmixer) - An Ambisonic upmixer (1-3rd order input, 2-7th order output).
 
 ### Other plug-ins
+* [**hades_renderer**](../hades/#plug-in-description) - A flexible microphone array to binaural renderer.
 * [**cropac_binaural**](../cropac-binaural/#plug-in-description) - An adaptive binaural first.order ambisonic decoder based on the parametric CroPaC model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**HOSIRR**](../hosirr/#application-description) - An Ambisonic room impulse response (RIR) renderer for arbitrary loudspeaker setups, based on the Higher-order Spatial Impulse Response Rendering (HO-SIRR) algorithm.
 * [**UltrasonicSuperHearing**](../ultrasonicsuperhearing/#UltrasonicSuperHearing) - A plug-in for the binaural reproduction of ultrasonic sound sources captured using a 6-sensor ultrasonic microphone array, which uses direction-of-arrival estimation and pitch-down-shifting prior to binauralisation in order to provide the appropriate localisation cues.
