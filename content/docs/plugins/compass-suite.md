@@ -19,7 +19,7 @@ COMPASS VSTs is a collection of flexible VST audio plug-ins for spatial audio pr
 
 COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) or HARPEX have gained notoriety recently for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and track the model parameters in the Ambisonics recording, in both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of lower-order Ambisonics. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
 
-The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Leo McCormack, and published in <a href="../../help/related-publications/#politis2018compass">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M is the number of channels):  
+The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Leo McCormack, and published in <a href="../../help/related-publications/politis2018compass.pdf">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M is the number of channels):  
 
 <img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
     
@@ -49,7 +49,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### Binaural
 <img src="Binaural_GUI.png" alt="" style="max-width: 85%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/#politis2018compass).
+This plug-in is related to [**this publication**](../../help/related-publications/politis2018compass.pdf).
     
 This is an optimised version of the COMPASS decoder for binaural playback, bypassing loudspeaker rendering and using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plugin parameters, see the description of the <b>Binaural|Decoder</b> above. Additionally the plugin can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
 
@@ -60,7 +60,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### BinauralVR
 <img src="binauralVR_GUI.png" alt="" style="max-width: 95%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021parametric).
+This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021parametric.pdf).
     
 Same as the COMPASS|Binaural plug-in, except it also supports listener translation around the receiver position. The user must first select the assumed distance of the sources. For simplicity, it is assumed that all sources are projected onto the surface of a sphere. The plug-in may then be informed of the listener position and orientation, either via its user interface sliders, or by sending  the Cartesian coordinates and rotation angles outputted by an external tracking device; such as a virtual or augmented reality headset.
     
@@ -71,7 +71,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### 6DoF
 <img src="COMPASS_6DoF_GUI.png" alt="" style="max-width: 100%"></br>
 
-A WIP parametric six degrees-of-freedom (6DoF) renderer based on multiple Ambisonic receivers as input, which supports listener translation both within and beyond the convex hull of the receiver arrangement. The source positions may either be specified or tracked similarly as described in [[12]](../../help/related-publications/#mccormack2021real). The plug-in may be configured to either output only the isolated source object signals (one per track), or to spatialise the sound scene (including reverberation) from the perspective of the listener position/orientation over headphones or as Ambisonics output. If targetting Ambisonics, any Ambisonic decoder may then be used to auralise the translated sound scene.
+A WIP parametric six degrees-of-freedom (6DoF) renderer based on multiple Ambisonic receivers as input, which supports listener translation both within and beyond the convex hull of the receiver arrangement. The source positions may either be specified or tracked similarly as described in [[12]](../../help/related-publications/mccormack2021real.pdf). The plug-in may be configured to either output only the isolated source object signals (one per track), or to spatialise the sound scene (including reverberation) from the perspective of the listener position/orientation over headphones or as Ambisonics output. If targetting Ambisonics, any Ambisonic decoder may then be used to auralise the translated sound scene.
 
 Note that all receiver channels must be stacked on-top of eachother, for example: 3 first-order receivers should be assigned to input channels 1-4, 5-8, 9-12, respectively. Therefore, due to the 64-channel VST2 limitation, the plug-in supports either: 16x first-order, 7x second-order, 4x third-order receivers etc.
     
@@ -80,7 +80,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### Tracker
 <img src="tracker_GUI.png" alt="" style="max-width: 98%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021real).
+This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021real.pdf).
 
 The Tracker plug-in builds on the spatial analysis conducted by the COMPASS framework, but instead of using the information for synthesising loudspeaker or binaural signals, a multi-source tracker is employed to associate the estimated directions with their corresponding sources/targets. Therefore, this VST can be used to visualise the trajectory of multiple sound sources present in an Ambisonic sound scene.
     
@@ -102,7 +102,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### SideChain
 <img src="sidechain_GUI.png" alt="" style="max-width: 60%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021parametric).
+This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021parametric.pdf).
 
 This plug-in applies the COMPASS analysis on one sound scene (either scene A [channels 1-16] and scene B [channels 17-32]), and uses the estimated spatial parameters to manipulate the signals of the second sound scene. If scene A and B are the same, then the plugin is functionally identical to compass_upmixer.
     
@@ -113,7 +113,7 @@ This plug-in was developed by Leo McCormack.
 <img src="spatEdit_B.png" alt="" style="max-width: 90%"></br>
 </br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021parametric).
+This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021parametric.pdf).
 
 The SpatEdit plug-in is intended to be used with two instances. The first instance of the plug-in allows the user to place markers on an equirectangular representation of the sphere. Alternatively the markers can automatically follow the directions of sound sources through use of the tracker. The source beamformer signals are then outputted by the first instance of the plug-in (A), where the user can then apply any conventional single-channel audio effect, re-balance their levels, or re-order the signals. These manipulated beamformer signals are then passed to the second instance of the plug-in (B), which also receives the residual signals from the first plug-in instance internally, and the COMPASS synthesis is conducted to obtain the output SH signals. Alternatively, the residual stream signals may be outputted by the first plug-in instance instead (and the beamformer signals passed internally to the second plug-in instance), which instead allows conventional linear  Ambisonics transformations to be applied to only the ambient parts of the scene.
   
@@ -122,7 +122,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### Gravitator
 <img src="GravitatorGUI_alpha6_src%2076%200%20%20-24%2045%20-80%20-30.png" alt="" style="max-width: 90%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021parametric).
+This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021parametric.pdf).
 
 A spatial "focussor" which pulls only the directional components of the sound scene towards user defined markers, with a certain degree of "gravitational-pull". The Ambient components of the sound scene remain unaltered.
   
@@ -139,7 +139,7 @@ All of the plug-ins in the COMPASS suite may be used for academic, personal, and
 
 ## References
 
-[1] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/#politis2018compass"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
+[1] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/politis2018compass.pdf"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
     
 [2] Pulkki, V. (2007) <b>Spatial sound reproduction with directional audio coding.</b> <br> Journal of the Audio Engineering Society 55.6: 503-516.
     
@@ -147,9 +147,9 @@ All of the plug-ins in the COMPASS suite may be used for academic, personal, and
     
 [4] Berge, S. and Barrett, N. (2010). <b>High angular resolution planewave expansion.</b> <br> 2nd International Symposium on Ambisonics and Spherical Acoustics.
     
-[5] Politis, A., Vilkamo, J., and Pulkki, V. (2015). <a href="../../help/related-publications/#politis2015sector"> <b>Sector-based parametric sound field reproduction in the spherical harmonic domain.</b></a> <br> IEEE Journal of Selected Topics in Signal Processing, 9(5), 852-866.
+[5] Politis, A., Vilkamo, J., and Pulkki, V. (2015). <a href="../../help/related-publications/politis2015sector.pdf"> <b>Sector-based parametric sound field reproduction in the spherical harmonic domain.</b></a> <br> IEEE Journal of Selected Topics in Signal Processing, 9(5), 852-866.
 
-[6] Politis, A., McCormack, L., and Pulkki, V. (2017, October). <a href="../../help/related-publications/#politis2017enhancement"> <b>Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing</b></a>.</b> <br> In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
+[6] Politis, A., McCormack, L., and Pulkki, V. (2017, October). <a href="../../help/related-publications/politis2017enhancement.pdf"> <b>Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing</b></a>.</b> <br> In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
 
 [7] Politis, A. and Pulkki, V. (2017). <b>Higher-Order Directional Audio Coding.</b> <br><i>in</i> Parametric Time-Frequency Domain Spatial Audio, Wiley, p.141.
 
@@ -161,6 +161,6 @@ All of the plug-ins in the COMPASS suite may be used for academic, personal, and
     
 [11] S&auml;rkk&auml;, S., Vehtari, A. and Lampinen, J., 2004, June. <b>Rao-Blackwellized Monte Carlo data association for multiple target tracking. </b> <br> <i>in</i> Proceedings of the seventh international conference on information fusion (Vol. 1, pp. 583-590). I.
 
-[12] McCormack, L., Politis, A., S&auml;rkk&auml;, S., and Pulkki, V., 2021. <a href="../../help/related-publications/#mccormack2021real"><b>Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering. </b></a> <br> <i>in</i> 29th European Signal Processing Conference, EUSIPCO 2021, (pp. 206-210).
+[12] McCormack, L., Politis, A., S&auml;rkk&auml;, S., and Pulkki, V., 2021. <a href="../../help/related-publications/mccormack2021real.pdf"><b>Real-Time Tracking of Multiple Acoustical Sources Utilising Rao-Blackwellised Particle Filtering. </b></a> <br> <i>in</i> 29th European Signal Processing Conference, EUSIPCO 2021, (pp. 206-210).
 
-[13] McCormack, L., Politis, A., and Pulkki, V., 2021, September. <a href="../../help/related-publications/#mccormack2021parametric"><b>Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes. </b></a> <br> <i>in</i> Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).
+[13] McCormack, L., Politis, A., and Pulkki, V., 2021, September. <a href="../../help/related-publications/mccormack2021parametric.pdf"><b>Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes. </b></a> <br> <i>in</i> Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).

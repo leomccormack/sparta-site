@@ -44,7 +44,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### AmbiDRC 
 <img src="AmbiDRC_GUI.png" alt="" style="max-width: 70%;"/><br/>
 
-The AmbiDRC plug-in is related to [**this publication**](../../help/related-publications/#mccormack2017fft).
+The AmbiDRC plug-in is related to [**this publication**](../../help/related-publications/mccormack2017fft.pdf).
     
 A frequency-dependent Ambisonic dynamic range compressor (DRC). The gain factors are derived by analysing the omnidirectional component for each frequency band, which are then applied also to the higher-order components. The spatial properties of the original signals remains unchanged; although, your perception of them after decoding may change. The implementation also keeps track of the frequency-dependent gain factors for the omnidirectional component over time, which is then plotted on the user interface for visual feedback.
 
@@ -67,7 +67,7 @@ This plug-in was developed by Leo McCormack.
 ### Array2SH 
 <img src="Array2SH_GUI.png" alt="" style="max-width: 95%"/><br/>
     
-The Array2SH plug-in is related to [**this publication**](../../help/related-publications/#mccormack2018real).
+The Array2SH plug-in is related to [**this publication**](../../help/related-publications/mccormack2018real.pdf).
     
 'Array2SH' spatially encodes spherical/cylindrical array signals into spherical harmonic (SH) signals, which are also referred to as Ambisonic or B-Format signals. The plug-in uses analytical descriptors, which ascertain the frequency and order-dependent influence that the physical properties of the array have on the plane-waves arriving at its surface. The plug-in allows the user to specify: the array type (spherical or cylindrical), whether the array has an open or rigid enclosure, the radius of the array, the radius of the sensors (in cases where they protrude out from the array), the sensor coordinates (up to 64 channels), sensor directivity (omni-dipole-cardioid), the speed of sound, and the acoustical admittance of the array material (in the case of rigid arrays). The plug-in then determines the order-dependent equalisation curves that need to be imposed onto the initial spherical harmonic signals estimate, in order to remove the influence of the array itself. However, especially for higher-orders, this generally results in a large amplification of the low frequencies (including the sensor noise at these frequencies that accompanies it); therefore, four different regularisation approaches have been integrated into the plug-in, which allow the user to make a compromise between noise amplification and transform accuracy. These target and regularised equalisation curves are depicted on the user interface to provide visual feedback. 
     
@@ -115,7 +115,7 @@ This plug-in was developed by Leo McCormack.
 ### DirASS
 <img src="DirASS_GUI.png" alt="" style="max-width: 90%"/><br/>
     
-The DirASS plug-in is related to these publications: [**Link1**](../../help/related-publications/#mccormack2019applications), [**Link2**](../../help/related-publications/#mccormack2019sharpening).
+The DirASS plug-in is related to these publications: [**Link1**](../../help/related-publications/mccormack2019applications.pdf), [**Link2**](../../help/related-publications/mccormack2019sharpening.pdf).
     
 A sound-field visualiser, which is based on the directional re-assignment of beamformer energy. This energy re-assignment is based on local DoA estimates for each scanning direction, and may be quantised to the nearest direction or upscaled to a higher-order than the input; resulting in sharper activity-maps. For example, a second-order input may be displayed with (up to) 20th order output resolution. The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.
     
@@ -165,7 +165,7 @@ This plug-in was developed by Leo McCormack, Archontis Politis and Ville Pulkki.
 ### PowerMap
 <img src="Powermap_GUI.png" alt="" style="max-width: 90%"/><br/>
     
-The PowerMap plug-in is a modified version of the plug-in described in [**this publication**](../../help/related-publications/#mccormack2017parametric).
+The PowerMap plug-in is a modified version of the plug-in described in [**this publication**](../../help/related-publications/mccormack2017parametric.pdf).
     
 'PowerMap' is a plug-in that represents the relative sound energy, or the statistical likelihood of a source, arriving at the listening position from a particular direction, using a colour gradient; where yellow indicates high sound energy/likelihood and blue indicates low sound energy/likelihood. The plug-in integrates a variety of different approaches, including: standard Plane-Wave Decomposition (PWD) beamformer-based, Minimum-Variance Distortionless Response (MVDR) beamformer-based, Multiple Signal Classification (MUSIC) pseudo-spectrum-based, and the Cross-Pattern Coherence (CroPaC) algorithm [3]; all of which are written to operate on Ambisonic signals up to 7th order. Note that the analysis order per frequency band is entirely user definable, and presets for higher order microphone arrays have been included for convenience, which provide some rough starting values. The plug-in utilises a 812 point uniformly-distributed spherical grid, which is then interpolated into a 2D powermap using amplitude-normalised VBAP gains (i.e. triangular interpolation). The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.
      
@@ -181,7 +181,7 @@ This plug-in was developed by Leo McCormack.
 ### SLDoA
 <img src="SLDoA_GUI.png" alt="" style="max-width: 80%"/><br/>
     
-The SLDoA plug-in is related to these publications: [**Link1**](../../help/related-publications/#mccormack2018real), [**Link2**](../../help/related-publications/#mccormack2019applications).
+The SLDoA plug-in is related to these publications: [**Link1**](../../help/related-publications/mccormack2018real.pdf), [**Link2**](../../help/related-publications/mccormack2019applications.pdf).
     
 A spatially localised direction-of-arrival (DoA) estimator. The plug-in first uses VBAP beam patterns (for directions that are uniformly distributed on the surface of a sphere) to obtain spatially-biased zeroth and first-order signals, which are subsequently used for the active-intensity vector estimation; therefore, allowing for DoA estimation in several spatially-constrained sectors for each sub-band. The low frequency estimates are then depicted with blue icons, mid-frequencies with green, and high-frequencies with red. The size of the icon and its opacity correspond to the energy of the sector, which are normalised and scaled in ascending order for each frequency band. The plug-in employs two times as many sectors as the analysis order, with the exception of the first-order analysis, which uses the traditional active-intensity approach. The analysis order per frequency band is user definable, as is the frequency range at which to analyse. This approach to sound-field visualisation/DoA estimation represents a much more computationally efficient option, when compared to the algorithms that are integrated into the 'Powermap' plug-in, for instance. The plug-in also allows the user to place real-time video footage behind the activity-map, in order to create a make-shift acoustic camera.  
     
@@ -190,7 +190,7 @@ This plug-in was developed by Leo McCormack and Symeon Delikaris-Manias.
 ### Spreader 
 <img src="spreader_GUI.png" alt="" style="max-width: 95%"/> <br/>
 
-The Spreader plug-in is related to [**this publication**](../../help/related-publications/#mccormack2021rendering).
+The Spreader plug-in is related to [**this publication**](../../help/related-publications/mccormack2021rendering.pdf).
 
 This plugin uses an optimised framework for rendering spread sound sources over an arbitrary playback system, as described in [14]. In this particular implementation, the directional responses for the target system are loaded as impulse responses via the SOFA format (e.g., using HRIRs for binaural, or microphone array IRs for creating a synthetic recording). The algorithm is then tasked with mixing the input mono signals to produce the appropriate multi-channel signals (e.g. 2 for binaural playback, 4 or 32 for a synthetic tetrahedral microphone or Eigenmike array recording), such that the output signals create a diffuse, or rather: "incoherently spead" sound source. The solution is optimised to introduce decorrelated signal energy into the output only to the degree that is required to fulfill the target model. Therefore, the signal fidelity of the input signal is largely retained. The algorithm proposed in [14] is denoted as "OM" in this plug-in. For comparison, an unconstrained spatial covariance matching alternative is provided under the name "EVD", which also fulfills the target model, but does so without the constraints for preserving signal fidelity. Additionally, a coherent spreading baseline ("BL"), which is commonly employed in the industry (e.g. game audio engines) is included, which can sound very unnatural when compared to the incoherent spreading alternatives.
     

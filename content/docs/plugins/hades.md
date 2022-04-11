@@ -43,4 +43,4 @@ This plug-in may be used for academic, personal, and/or commercial use. The sour
 ## References
 
 * [1] Fernandez, J., McCormack, L., Hyvärinen, P., Politis, A., Pulkki, V. (2022). "Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching." Accepted for publication in The Journal of the Acoustical Society of America.
-* [2] McCormack, L., Politis, A., and Pulkki, V., 2021, September. <a href="../../help/related-publications/#mccormack2021parametric"><b>Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes. </b></a> <br> <i>in</i> Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).
+* [2] McCormack, L., Politis, A., and Pulkki, V., 2021, September. <a href="../../help/related-publications/mccormack2021parametric.pdf"><b>Parametric Spatial Audio Effects Based on the Multi-Directional Decomposition of Ambisonic Sound Scenes. </b></a> <br> <i>in</i> Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), (pp. 214-221).

@@ -24,7 +24,7 @@ All plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention a
 ### Decoder 
 <img src="HODirAC_decoder_GUI.png" alt="" style="max-width: 85%"></br>
     
-This plug-in is based on the design detailed in [**this publication**](../../help/related-publications/#politis2015sector).
+This plug-in is based on the design detailed in [**this publication**](../../help/related-publications/politis2015sector.pdf).
     
 An Ambisonic loudspeaker decoder based on the Higher-order Directional Audio Coding (HO-DirAC) method.
     
@@ -37,7 +37,7 @@ The plug-in is considered by the authors a production tool and, due to its time-
 ### Binaural
 <img src="HODirAC_binaural_GUI.png" alt="" style="max-width: 85%"></br>
     
-This plug-in is based on the design detailed [**this publication**](../../help/related-publications/#politis2017enhancement).
+This plug-in is based on the design detailed [**this publication**](../../help/related-publications/politis2017enhancement.pdf).
     
 This is an optimised version of the HO-DirAC decoder for binaural playback, which bypasses loudspeaker rendering by using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plugin parameters, see the description of the <b>HO-DirAC|Decoder</b> above. Additionally the plugin can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
 
@@ -60,9 +60,9 @@ These VST plug-ins, which incorporate Aalto University's implementation of the D
  
 <a id="dirac_2007"></a>[1] Pulkki, V. (2007) <b>Spatial sound reproduction with directional audio coding.</b> <br> Journal of the Audio Engineering Society 55.6: 503-516.
     
-<a id="hodirac_2015"></a>[2] Politis, A., Vilkamo, J., and Pulkki, V. (2015). <b><a href="../../help/related-publications/#politis2015sector"><b>Sector-based parametric sound field reproduction in the spherical harmonic domain.</b></a></b> <br> IEEE Journal of Selected Topics in Signal Processing, 9(5), 852-866.
+<a id="hodirac_2015"></a>[2] Politis, A., Vilkamo, J., and Pulkki, V. (2015). <b><a href="../../help/related-publications/politis2015sector.pdf"><b>Sector-based parametric sound field reproduction in the spherical harmonic domain.</b></a></b> <br> IEEE Journal of Selected Topics in Signal Processing, 9(5), 852-866.
  
-<a id="hodirac_2017"></a>[3] Politis, A., McCormack, L., and Pulkki, V. (2017, October). <b><a href="../../help/related-publications/#politis2017enhancement"><b> Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing</b></a>.</b> <br> In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
+<a id="hodirac_2017"></a>[3] Politis, A., McCormack, L., and Pulkki, V. (2017, October). <b><a href="../../help/related-publications/politis2017enhancement.pdf"><b> Enhancement of ambisonic binaural reproduction using directional audio coding with optimal adaptive mixing</b></a>.</b> <br> In 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA) (pp. 379-383). IEEE.
      
 [4] Vilkamo, J., B&auml;ckstr&ouml;m, T., and Kuntz, A. (2013). <b>Optimized covariance domain framework for time-frequency processing of spatial audio. </b> <br> Journal of the Audio Engineering Society, 61(6), 403-411.
     

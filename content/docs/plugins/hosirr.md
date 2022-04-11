@@ -15,7 +15,7 @@ toc: true
 
 ## Application description
     
-Higher-order Spatial Impulse Response Rendering (HO-SIRR) is a rendering method, which can synthesise output loudspeaker array room impulse responses (RIRs) using input spherical harmonic (Ambisonic/B-Format) RIRs of arbitrary order [<a href="../../help/related-publications/#mccormack2020higher"><b>1</b></a>,<a href="../../help/related-publications/#mccormack2019higher"><b>2</b></a>]. The method makes assumptions regarding the composition of the sound-field and extracts spatial parameters over time, which allows it to map the input to the output in an adaptive and more informed manner; when compared to purely linear methods such as Ambisonics. 
+Higher-order Spatial Impulse Response Rendering (HO-SIRR) is a rendering method, which can synthesise output loudspeaker array room impulse responses (RIRs) using input spherical harmonic (Ambisonic/B-Format) RIRs of arbitrary order [<a href="../../help/related-publications/mccormack2020higher.pdf"><b>1</b></a>,<a href="../../help/related-publications/mccormack2019higher.pdf"><b>2</b></a>]. The method makes assumptions regarding the composition of the sound-field and extracts spatial parameters over time, which allows it to map the input to the output in an adaptive and more informed manner; when compared to purely linear methods such as Ambisonics. 
 
 The idea is that you then convolve a monophonic source with this loudspeaker array RIR, and it will be reproduced and exhibit the spatial characteristics of the captured space. Note that the HO-SIRR algorithm is an extention of the original first-order SIRR formulation, first proposed back in 2005 [3,4], by employing the higher-order analysis principles described in [5], which permits higher spatial accuracy during the mapping provided that higher-order components are available.
     
@@ -32,7 +32,7 @@ The suggested workflow is:
     
 ## Listening test results at a glance
     
-The perceptual performance of HO-SIRR was evaluated based on formal listening tests in [1], where it was compared to Mode-Matching Ambisonics decoding. It was found that if the mono signal is quite stationary (such as a trombone recording), then first-order SIRR renderings can sound almost equivalent to 5th order Ambisonics. However, if the mono signal is more transient (such as a kick drum or speech sample), then the benefits of the higher-order SIRR renderings are revealed. For an in-depth description of the listening test and a discussion of the results, see: <a href="../../help/related-publications/#mccormack2020higher">[<b>1</b>]</a>.
+The perceptual performance of HO-SIRR was evaluated based on formal listening tests in [1], where it was compared to Mode-Matching Ambisonics decoding. It was found that if the mono signal is quite stationary (such as a trombone recording), then first-order SIRR renderings can sound almost equivalent to 5th order Ambisonics. However, if the mono signal is more transient (such as a kick drum or speech sample), then the benefits of the higher-order SIRR renderings are revealed. For an in-depth description of the listening test and a discussion of the results, see: <a href="../../help/related-publications/mccormack2020higher.pdf">[<b>1</b>]</a>.
     
 <img src="JAES_orderTest_post_review.png" alt="" style="max-width: 100%"> </br>
      
@@ -48,9 +48,9 @@ This application may be used for academic, personal, and/or commercial use. The 
     
 ## References
     
-[1] McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M. (2020). <b> <a href="../../help/related-publications/#mccormack2020higher"><b>Higher-Order Spatial Impulse Response Rendering: Investigating the Perceived Effects of Spherical Order, Dedicated Diffuse Rendering, and Frequency Resolution</b></a>. </b> <br>Journal of the Audio Engineering Society, 68(5), pp.338-354.
+[1] McCormack, L., Pulkki, V., Politis, A., Scheuregger, O. and Marschall, M. (2020). <b> <a href="../../help/related-publications/mccormack2020higher.pdf"><b>Higher-Order Spatial Impulse Response Rendering: Investigating the Perceived Effects of Spherical Order, Dedicated Diffuse Rendering, and Frequency Resolution</b></a>. </b> <br>Journal of the Audio Engineering Society, 68(5), pp.338-354.
     
-[2] McCormack, L., Politis, A., Scheuregger, O., and Pulkki, V. (2019). <b> <a href="../../help/related-publications/#mccormack2019higher"><b>Higher-order processing of spatial impulse responses.</b></a></b> <br> Proceedings of the 23rd International Congress on Acoustics, 9--13 September 2019 in Aachen, Germany.
+[2] McCormack, L., Politis, A., Scheuregger, O., and Pulkki, V. (2019). <b> <a href="../../help/related-publications/mccormack2019higher.pdf"><b>Higher-order processing of spatial impulse responses.</b></a></b> <br> Proceedings of the 23rd International Congress on Acoustics, 9--13 September 2019 in Aachen, Germany.
      
 [3] Merimaa, J. and Pulkki, V. (2005). <b>Spatial impulse response rendering I: Analysis and synthesis</b> <br> Journal of the Audio Engineering Society, 53(12), pp.1115-1127.
  

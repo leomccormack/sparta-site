@@ -17,7 +17,7 @@ toc: true
 
 Binaural ambisonics decoding is a means of reproducing a captured or synthesised sound-field, as described by a spherical harmonic representation, over headphones. The majority of ambisonic decoders proposed to date are based on a signal-independent approach; operating via a linear mapping between the input spherical harmonic signals and the output binaural signals. While this approach is computationally efficient, an impractically high input order is often required to deliver a sufficiently accurate rendition of the original spatial cues to the listener. This is especially problematic, as the vast majority of commercially available Ambisonics microphones are first-order, which ultimately results in numerous perceptual deficiencies during reproduction. Therefore, in this paper, a signal-dependent and parametric binaural ambisonic decoder is proposed, which is specifically intended to reproduce first-order input with high perceptual accuracy. The proposed method assumes a sound-field model of one source and one non-isotropic ambient component per narrow-band. It then employs the Cross-Pattern Coherence (CroPaC) post-filter, in order to segregate these components with improved spatial selectivity. Listening test results indicate that the proposed method, when using first-order input, performs similarly to third-order Ambisonics reproduction.
     
-[The full paper can be found here →](../../help/related-publications/#mccormack2019parametric)
+[The full paper can be found here →](../../help/related-publications/mccormack2019parametric.pdf)
 
 ## Overview of the method
     
@@ -59,6 +59,6 @@ This plug-in may be used for academic, personal, and/or commercial use. The sour
      
 [2] Vilkamo, J., B&auml;ckstr&ouml;m, T., and Kuntz, A. (2013). <b>Optimized covariance domain framework for time--frequency processing of spatial audio. </b> <br>Journal of the Audio Engineering Society, 61(6), 403-411.
     
-[3] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/#politis2018compass"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
+[3] Politis, A., Tervo S., and Pulkki, V. (2018) <a href="../../help/related-publications/politis2018compass.pdf"><b>COMPASS: Coding and Multidirectional Parameterization of Ambisonic Sound Scenes.</b></a> <br> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
      
 [4] Sch&ouml;rkhuber, C., Zaunschirm, M., and H&ouml;ldrich, R. (2018). <b>Binaural Rendering of Ambisonic Signals via Magnitude Least Squares.</b> <br> In Proceedings of the DAGA (Vol. 44).
