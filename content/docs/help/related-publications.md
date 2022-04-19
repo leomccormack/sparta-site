@@ -18,7 +18,7 @@ toc: true
 
 ### fernandez2022enhancing
 
-Janani Fernandez, Leo McCormack, Petteri Hyvärinen, Archontis Politis, and Ville Pulkki , **"Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching"**, The Journal of the Acoustical Society of America 151, 2624-2635 (2022) [https://doi.org/10.1121/10.0010109](https://doi.org/10.1121/10.0010109)
+Fernandez, J., McCormack, L., Hyvärinen, P., Politis, A., and Pulkki V. 2022. **"Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching"**, The Journal of the Acoustical Society of America 151, 2624-2635 (2022) [https://doi.org/10.1121/10.0010109](https://doi.org/10.1121/10.0010109)
 
 <object data="fernandez2022enhancing.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="fernandez2022enhancing.pdf">
@@ -27,16 +27,17 @@ Janani Fernandez, Leo McCormack, Petteri Hyvärinen, Archontis Politis, and Vill
 </object>
 
 ```
-@misc{fernandez2022enhancing,
-      title={Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching}, 
-      author={Fernandez, Janani and McCormack, Leo and Hyvärinen, Petteri and Politis, Archontis and Pulkki, Ville},
-      year={2021},
-      eprint={2111.11882},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
+@article{fernandez2022enhancing,
+  title={Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching}, 
+  author={Fernandez, Janani and McCormack, Leo and Hyvärinen, Petteri and Politis, Archontis and Pulkki, Ville},
+  journal = {The Journal of the Acoustical Society of America},
+  volume = {151},
+  number = {4},
+  pages = {2624-2635},
+  year = {2022},
+  doi = {10.1121/10.0010109}
 }
 ```
-
 
 ## 2021
 
@@ -52,12 +53,12 @@ McKenzie, T., McCormack, L., and Hold, C. 2021, November. **Dataset of Spatial R
 
 ```
 @misc{mckenzie2021dataset,
-      title={Dataset of Spatial Room Impulse Responses in a Variable Acoustics Room for Six Degrees-of-Freedom Rendering and Analysis}, 
-      author={McKenzie, Thomas and McCormack, Leo and Hold, Christoph},
-      year={2021},
-      eprint={2111.11882},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
+  title={Dataset of Spatial Room Impulse Responses in a Variable Acoustics Room for Six Degrees-of-Freedom Rendering and Analysis}, 
+  author={McKenzie, Thomas and McCormack, Leo and Hold, Christoph},
+  year={2021},
+  eprint={2111.11882},
+  archivePrefix={arXiv},
+  primaryClass={eess.AS}
 }
 ```
 
