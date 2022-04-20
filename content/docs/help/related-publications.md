@@ -18,7 +18,7 @@ toc: true
 
 ### fernandez2022enhancing
 
-Fernandez, J., McCormack, L., Hyvärinen, P., Politis, A., and Pulkki V. 2022. **"Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching"**, The Journal of the Acoustical Society of America 151, 2624-2635 (2022) [https://doi.org/10.1121/10.0010109](https://doi.org/10.1121/10.0010109)
+Fernandez, J., McCormack, L., Hyvärinen, P., Politis, A., and Pulkki V. 2022. **"Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching"**, The Journal of the Acoustical Society of America 151(4), 2624-2635 [https://doi.org/10.1121/10.0010109](https://doi.org/10.1121/10.0010109)
 
 <object data="fernandez2022enhancing.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="fernandez2022enhancing.pdf">

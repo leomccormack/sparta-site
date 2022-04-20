@@ -18,6 +18,8 @@ toc: true
 In this article, the application of spatial covariance matching is investigated for the task of producing spatially enhanced binaural signals using head-worn microphone arrays. A two-step processing paradigm is followed, whereby an initial estimate of the binaural signals is first produced using one of three suggested binaural rendering approaches. The proposed spatial covariance matching enhancement is then applied to these estimated binaural signals, with the intention of producing refined binaural signals that more closely exhibit the correct spatial cues; as dictated by the employed sound-field model and associated spatial parameters.
 It is demonstrated, through both objective and subjective evaluations, that the proposed enhancements in the majority of cases produce binaural signals which more closely resemble the spatial characteristics of simulated reference signals, when the enhancement is applied to, and compared against, the three suggested starting binaural rendering approaches. Furthermore, it is shown that the enhancement produces spatially similar output binaural signals when using these three different approaches; thus, indicating that the enhancement is general in nature, and could therefore be employed to enhance the outputs of other similar binaural rendering algorithms. 
 
+[The full paper can be found here →](../../help/related-publications/fernandez2022enhancing.pdf)
+
 ## Plug-in description
 
 <img src="HADES_Renderer_GUI.png" alt="" style="max-width: 95%"/></br>
