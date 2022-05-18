@@ -16,6 +16,29 @@ toc: true
 
 ## 2022
 
+### mccormack2022object
+
+McCormack, L., Politis, A., McKenzie, T., Hold, C., and Pulkki V. 2022. **"Object-Based Six-Degrees-of-Freedom Rendering of Sound Scenes Captured with Multiple Ambisonic Receivers"**, The Journal of the Audio Engineering Society 70(5), 355-372 [https://doi.org/10.17743/jaes.2022.0010](https://doi.org/10.17743/jaes.2022.0010)
+
+<object data="mccormack2022object.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2022object.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2022object.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@article{mccormack2022object,
+  title={Object-Based Six-Degrees-of-Freedom Rendering of Sound Scenes Captured with Multiple Ambisonic Receivers}, 
+  author={McCormack, Leo and Politis, Archontis and McKenzie, Thomas and Hold, Christoph and Pulkki, Ville},
+  journal = {The Journal of the Audio Engineering Society},
+  volume = {70},
+  number = {5},
+  pages = {355-372},
+  year = {2022},
+  doi = {https://doi.org/10.17743/jaes.2022.0010}
+}
+```
+
 ### fernandez2022enhancing
 
 Fernandez, J., McCormack, L., Hyvärinen, P., Politis, A., and Pulkki V. 2022. **"Enhancing binaural rendering of head-worn microphone arrays through the use of adaptive spatial covariance matching"**, The Journal of the Acoustical Society of America 151(4), 2624-2635 [https://doi.org/10.1121/10.0010109](https://doi.org/10.1121/10.0010109)
