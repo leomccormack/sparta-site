@@ -16,6 +16,29 @@ toc: true
 
 ## 2022
 
+### mccormack2022parametric
+
+McCormack, L., Politis, A., Gonzalez, R., Lokki, T., and Pulkki, V. 2022. **"Parametric Ambisonic Encoding of Arbitrary Microphone Arrays"**, IEEE/ACM Transactions on Audio, Speech, and Language Processing 30, 2062-2075 [https://doi.org/10.1109/TASLP.2022.3182857](https://doi.org/10.1109/TASLP.2022.3182857)
+
+<object data="mccormack2022parametric.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2022parametric.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2022parametric.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@article{mccormack2022parametric,
+  title={Parametric Ambisonic Encoding of Arbitrary Microphone Arrays}, 
+  author={McCormack, Leo and Politis, Archontis and Gonzalez, Raimundo and Lokki, Tapio and Pulkki, Ville},
+  journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume = {30},
+  number = {},
+  pages = {2062-2075},
+  year = {2022},
+  doi = {10.1109/TASLP.2022.3182857}
+}
+```
+
 ### mccormack2022object
 
 McCormack, L., Politis, A., McKenzie, T., Hold, C., and Pulkki V. 2022. **"Object-Based Six-Degrees-of-Freedom Rendering of Sound Scenes Captured with Multiple Ambisonic Receivers"**, The Journal of the Audio Engineering Society 70(5), 355-372 [https://doi.org/10.17743/jaes.2022.0010](https://doi.org/10.17743/jaes.2022.0010)
