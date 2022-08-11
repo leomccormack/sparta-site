@@ -71,7 +71,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### 6DoF
 <img src="COMPASS_6DoF_GUI.png" alt="" style="max-width: 100%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/mccormack2022object.pdf).
+This plug-in is related to [**this publication**](../../help/related-publications/mccormack2022object.pdf), and an example REAPER project based on the scenario described in the publication can be [**found here**](https://zenodo.org/record/5767394).
 
 A parametric six degrees-of-freedom (6DoF) renderer based on multiple Ambisonic receivers as input, which supports listener translation both within and beyond the convex hull of the receiver arrangement. The source positions may either be specified or tracked similarly as described in [[12]](../../help/related-publications/mccormack2021real.pdf). The plug-in may be configured to either output only the isolated source object signals (one per track), or to spatialise the sound scene (including reverberation) from the perspective of the listener position/orientation over headphones or as Ambisonics output. If targetting Ambisonics, any Ambisonic decoder may then be used to auralise the translated sound scene.
 
