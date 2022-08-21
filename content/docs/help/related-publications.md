@@ -16,6 +16,26 @@ toc: true
 
 ## 2022
 
+### mccormack2022parametric_b 
+
+McCormack, L., Gonzalez, R.,  Fernandez, J., Hold, C., and Politis, A. 2022. **"Parametric Ambisonic Encoding using a Microphone Array with a One-plus-Three Configuration"**, In Audio Engineering Society Conference: AES 2022 International Audio for Virtual and Augmented Reality Conference. Audio Engineering Society.
+
+<object data="mccormack2022parametric_b.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2022parametric_b.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2022parametric_b.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2022parametric_b,
+  title={Parametric Ambisonic Encoding using a Microphone Array with a One-plus-Three Configuration},
+  author={McCormack, Leo and Gonzalez, Raimundo and Fernandez, Janani and Hold, Christoph and Politis, Archontis},
+  booktitle={Audio Engineering Society Conference: AES 2022 International Audio for Virtual and Augmented Reality Conference},
+  year={2022},
+  organization={Audio Engineering Society}
+}
+```
+
 ### mccormack2022parametric
 
 McCormack, L., Politis, A., Gonzalez, R., Lokki, T., and Pulkki, V. 2022. **"Parametric Ambisonic Encoding of Arbitrary Microphone Arrays"**, IEEE/ACM Transactions on Audio, Speech, and Language Processing 30, 2062-2075 [https://doi.org/10.1109/TASLP.2022.3182857](https://doi.org/10.1109/TASLP.2022.3182857)
