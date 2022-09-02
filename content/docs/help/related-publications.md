@@ -16,7 +16,28 @@ toc: true
 
 ## 2022
 
-### mccormack2022parametric_b 
+### mccormack2022estimating ([pdf](mccormack2022estimating.pdf))
+
+McCormack, L., and Politis A., 2022. **Estimating and Reproducing Ambience in Ambisonic Recordings.** In 30th European Signal Processing Conference (EUSIPCO), (pp. 314-318).
+
+<object data="mccormack2022estimating.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2022estimating.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2022estimating.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2022estimating,
+  title={Estimating and Reproducing Ambience in Ambisonic Recordings},
+  author={McCormack, Leo and Politis, Archontis},
+  booktitle={30th European Signal Processing Conference (EUSIPCO)},
+  pages={314--318},
+  year={2021},
+  organization={EURASIP}
+}
+```
+
+### [mccormack2022parametric_b](mccormack2022parametric_b.pdf)
 
 McCormack, L., Gonzalez, R.,  Fernandez, J., Hold, C., and Politis, A. 2022. **"Parametric Ambisonic Encoding using a Microphone Array with a One-plus-Three Configuration"**, In Audio Engineering Society Conference: AES 2022 International Audio for Virtual and Augmented Reality Conference. Audio Engineering Society.
 
@@ -36,7 +57,7 @@ McCormack, L., Gonzalez, R.,  Fernandez, J., Hold, C., and Politis, A. 2022. **"
 }
 ```
 
-### mccormack2022parametric
+### [mccormack2022parametric](mccormack2022parametric.pdf)
 
 McCormack, L., Politis, A., Gonzalez, R., Lokki, T., and Pulkki, V. 2022. **"Parametric Ambisonic Encoding of Arbitrary Microphone Arrays"**, IEEE/ACM Transactions on Audio, Speech, and Language Processing 30, 2062-2075 [https://doi.org/10.1109/TASLP.2022.3182857](https://doi.org/10.1109/TASLP.2022.3182857)
 

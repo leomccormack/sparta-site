@@ -49,7 +49,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### Binaural
 <img src="Binaural_GUI.png" alt="" style="max-width: 85%"></br>
 
-This plug-in is related to [**this publication**](../../help/related-publications/politis2018compass.pdf).
+This plug-in is related to [**this publication**](../../help/related-publications/politis2018compass.pdf), and includes the different ambience rendering options described in [**this publication**](../../help/related-publications/mccormack2022estimating.pdf).
     
 This is an optimised version of the COMPASS decoder for binaural playback, bypassing loudspeaker rendering and using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plugin parameters, see the description of the <b>Binaural|Decoder</b> above. Additionally the plugin can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
 
