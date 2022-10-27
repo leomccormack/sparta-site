@@ -25,7 +25,9 @@ This plug-in requires 192kHz sampling rate and relies on constructing the ultras
 
 ## Building a suitable ultrasonic microphone array
 
-The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array, which was employed for the study detailed in [1], can be found in the [**companion git repository**](https://github.com/leomccormack/Super-Hearing). Further details regarding its construction can also be found in the paper.
+The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array, which was employed for the study detailed in [1], can be found in the [**companion git repository**](https://github.com/leomccormack/Super-Hearing). Further details regarding its construction can also be found in the paper [1].
+
+A recent portable alternative hardware solution is also detailed in [2].
 
 <img src="UltrasonicArray.png" alt="UltrasonicArray" width="450" style="max-width: 70%"/></br>
 
@@ -49,6 +51,7 @@ The proposed ultrasonic super-hearing system is demonstrated in the following vi
 * **Leo McCormack**: a doctoral candidate at Aalto University.
 * **Ville Pulkki**: Professor at Aalto University, known for VBAP, SIRR, DirAC and eccentric behaviour.
 * **Raimundo Gonzalez**: a doctoral candidate at Aalto University.
+* **Ossi Miikkulainen**: a MSc. student at Aalto University.
 
 ## License
 
@@ -56,4 +59,6 @@ This application may be used for academic, personal, and/or commercial use. The 
 
 ## References
 
-* [1] Pulkki, V., McCormack, L. & Gonzalez, R. 2021. [**Superhuman spatial hearing technology for ultrasonic frequencies**](https://www.nature.com/articles/s41598-021-90829-9). Scientific Reports 11, 11608 (2021). https://doi.org/10.1038/s41598-021-90829-9
+* [1] Pulkki, V., McCormack, L. and Gonzalez, R. 2021. [**Superhuman spatial hearing technology for ultrasonic frequencies**](https://www.nature.com/articles/s41598-021-90829-9). Scientific Reports 11, 11608 (2021). https://doi.org/10.1038/s41598-021-90829-9
+
+* [2] Pulkki, V., Miikkulainen, O., and McCormack, L. 2022. <a href="../../help/related-publications/pulkki2022portable.pdf"><b>Superhuman spatial hearing technology for ultrasonic frequencies</b></a>. <i>in</i> 24th International Congress on Acoustics (ICA).

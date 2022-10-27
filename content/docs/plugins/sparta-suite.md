@@ -146,6 +146,8 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 
 ### 6DoFconv
 <img src="6DoFconv_GUI.png" alt="" style="max-width: 90%"/><br/>
+
+The 6DoFconv plug-in is related to [**this publication**](../../help/related-publications/mckenzie2022perceptually.pdf).
     
 A time-varying partitioned convolution multi-channel convolver for SOFA files containing RIRs with multiple listener positions.
 

@@ -16,9 +16,104 @@ toc: true
 
 ## 2022
 
+### fernandez2022spatial
+
+Fernandez, J., McCormack, L., Hyvärinen, P., Politis, A., and Pulkki, V. 2022. [**A spatial enhancement approach for binaural rendering of head-worn microphone arrays**](fernandez2022spatial.pdf). In 24th International Congress on Acoustics (ICA).
+
+<object data="fernandez2022spatial.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="fernandez2022spatial.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="fernandez2022spatial.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{fernandez2022spatial,
+  title={A spatial enhancement approach for binaural rendering of head-worn microphone arrays},
+  author={Fernandez, Janani and McCormack, Leo and Hyvärinen, Petteri and Politis, Archontis and Pulkki, Ville},
+  year={2022},
+  booktitle={24th International Congress on Acoustics (ICA)}
+}
+```
+
+### hold2022parametric
+
+Hold, C., McCormack, L., and Pulkki, V. 2022. [**Parametric binaural reproduction of higher-order spatial impulse responses**](hold2022parametric.pdf). In 24th International Congress on Acoustics (ICA).
+
+<object data="hold2022parametric.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="hold2022parametric.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="hold2022parametric.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{hold2022parametric,
+  title={Parametric binaural reproduction of higher-order spatial impulse responses},
+  author={Hold, Christoph and McCormack, Leo and Pulkki, Ville},
+  year={2022},
+  booktitle={24th International Congress on Acoustics (ICA)}
+}
+```
+
+### mccormack2022multi
+
+McCormack, L., Meyer-Kahlen, N., and Politis, A. 2022. [**Multi-directional parameterisation and rendering of spatial room impulse responses**](mccormack2022multi.pdf). In 24th International Congress on Acoustics (ICA).
+
+<object data="mccormack2022multi.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2022multi.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2022multi.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2022multi,
+  title={Multi-directional parameterisation and rendering of spatial room impulse responses},
+  author={McCormack, Leo and Meyer-Kahlen, Nils and Politis, Archontis},
+  year={2022},
+  booktitle={24th International Congress on Acoustics (ICA)}
+}
+```
+
+### mckenzie2022perceptually
+
+McKenzie, T., Meyer-Kahlen, N., Daugintis, R., McCormack, Leo., Schlecht, S., and Pulkki, V. 2022. [**Perceptually informed interpolation and rendering of spatial room impulse responses for room transitions**](mckenzie2022perceptually.pdf). In 24th International Congress on Acoustics (ICA).
+
+<object data="mckenzie2022perceptually.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mckenzie2022perceptually.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mckenzie2022perceptually.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mckenzie2022perceptually,
+  title={Perceptually informed interpolation and rendering of spatial room impulse responses for room transitions},
+  author={McKenzie, Thomas and Meyer-Kahlen, Nils and Daugintis, Rapolas and McCormack, Leo and Schlecht, Sebastian and Pulkki, Ville },
+  year={2022},
+  booktitle={24th International Congress on Acoustics (ICA)}
+}
+```
+
+### pulkki2022portable
+
+Pulkki, V., Miikkulainen, O., and McCormack, L. 2022. [**Portable Spatial Super-Hearing Technology For Ultrasound Range**](pulkki2022portable.pdf). In 24th International Congress on Acoustics (ICA).
+
+<object data="pulkki2022portable.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="pulkki2022portable.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="pulkki2022portable.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{pulkki2022portable,
+  title={Portable Spatial Super-Hearing Technology For Ultrasound Range},
+  author={Pulkki, Ville and Miikkulainen Ossi, and McCormack, Leo },
+  year={2022},
+  booktitle={24th International Congress on Acoustics (ICA)}
+}
+```
+
 ### mccormack2022estimating
 
-McCormack, L., and Politis A., 2022. [**Estimating and Reproducing Ambience in Ambisonic Recordings**](mccormack2022estimating.pdf). In 30th European Signal Processing Conference (EUSIPCO), (pp. 314-318).
+McCormack, L., and Politis A. 2022. [**Estimating and Reproducing Ambience in Ambisonic Recordings**](mccormack2022estimating.pdf). In 30th European Signal Processing Conference (EUSIPCO), (pp. 314-318).
 
 <object data="mccormack2022estimating.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2022estimating.pdf">
@@ -39,7 +134,7 @@ McCormack, L., and Politis A., 2022. [**Estimating and Reproducing Ambience in A
 
 ### mccormack2022parametric_b
 
-McCormack, L., Gonzalez, R.,  Fernandez, J., Hold, C., and Politis, A. 2022. [**"Parametric Ambisonic Encoding using a Microphone Array with a One-plus-Three Configuration"**](mccormack2022parametric_b.pdf), In Audio Engineering Society Conference: AES 2022 International Audio for Virtual and Augmented Reality Conference. Audio Engineering Society.
+McCormack, L., Gonzalez, R., Fernandez, J., Hold, C., and Politis, A. 2022. [**"Parametric Ambisonic Encoding using a Microphone Array with a One-plus-Three Configuration"**](mccormack2022parametric_b.pdf), In Audio Engineering Society Conference: AES 2022 International Audio for Virtual and Augmented Reality Conference. Audio Engineering Society.
 
 <object data="mccormack2022parametric_b.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="mccormack2022parametric_b.pdf">
