@@ -105,7 +105,7 @@ Pulkki, V., Miikkulainen, O., and McCormack, L. 2022. [**Portable Spatial Super-
 ```
 @inproceedings{pulkki2022portable,
   title={Portable Spatial Super-Hearing Technology For Ultrasound Range},
-  author={Pulkki, Ville and Miikkulainen Ossi, and McCormack, Leo },
+  author={Pulkki, Ville and Miikkulainen, Ossi and McCormack, Leo },
   year={2022},
   booktitle={24th International Congress on Acoustics (ICA)}
 }

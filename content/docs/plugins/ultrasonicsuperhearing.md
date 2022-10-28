@@ -61,4 +61,4 @@ This application may be used for academic, personal, and/or commercial use. The 
 
 * [1] Pulkki, V., McCormack, L. and Gonzalez, R. 2021. [**Superhuman spatial hearing technology for ultrasonic frequencies**](https://www.nature.com/articles/s41598-021-90829-9). Scientific Reports 11, 11608 (2021). https://doi.org/10.1038/s41598-021-90829-9
 
-* [2] Pulkki, V., Miikkulainen, O., and McCormack, L. 2022. <a href="../../help/related-publications/pulkki2022portable.pdf"><b>Superhuman spatial hearing technology for ultrasonic frequencies</b></a>. <i>in</i> 24th International Congress on Acoustics (ICA).
+* [2] Pulkki, V., Miikkulainen, O., and McCormack, L. 2022. <a href="../../help/related-publications/pulkki2022portable.pdf"><b>Portable Spatial Super-Hearing Technology For Ultrasound Range</b></a>. <i>in</i> 24th International Congress on Acoustics (ICA).
