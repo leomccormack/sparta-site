@@ -13,6 +13,30 @@ weight: 630
 toc: true
 ---
 
+## 2023
+
+### mccormack2023spatial
+
+McCormack, L., Meyer-Kahlen, N., and Politis, A. 2023. [**Spatial Reconstruction-Based Rendering of Microphone Array Room Impulse Responses.**](mccormack2023spatial.pdf) Journal of the Audio Engineering Society, 71(5), pp.267-280.
+
+<object data="mccormack2023spatial.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2023spatial.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2023spatial.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2023spatial,
+  title={Spatial Reconstruction-Based Rendering of Microphone Array Room Impulse Responses},
+  author={McCormack, Leo and Meyer-Kahlen, Nils and Politis, Archontis},
+  journal={Journal of the Audio Engineering Society},
+  volume={71},
+  number={5},
+  pages={267--280},
+  year={2023},
+  publisher={Audio Engineering Society}
+}
+```
 
 ## 2022
 
