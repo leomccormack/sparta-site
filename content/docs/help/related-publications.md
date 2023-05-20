@@ -26,7 +26,7 @@ McCormack, L., Meyer-Kahlen, N., and Politis, A. 2023. [**Spatial Reconstruction
 </object>
 
 ```
-@inproceedings{mccormack2023spatial,
+@article{mccormack2023spatial,
   title={Spatial Reconstruction-Based Rendering of Microphone Array Room Impulse Responses},
   author={McCormack, Leo and Meyer-Kahlen, Nils and Politis, Archontis},
   journal={Journal of the Audio Engineering Society},
