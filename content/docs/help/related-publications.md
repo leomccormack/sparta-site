@@ -15,6 +15,26 @@ toc: true
 
 ## 2023
 
+### mccormack2023parametric
+
+McCormack, L. Hold, C., and Politis, A., 2023. [**Parametric architecture for the transmission and binaural reproduction of microphone array recordings.**](mccormack2023parametric.pdf) In International Conference on Spatial and Immersive Audio. Audio Engineering Society.
+
+<object data="mccormack2023parametric.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="mccormack2023parametric.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mccormack2023parametric.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{mccormack2023parametric,
+  title={Parametric architecture for the transmission and binaural reproduction of microphone array recordings},
+  author={McCormack, Leo and Hold, Christoph and Politis, Archontis},
+  booktitle={International Conference on Spatial and Immersive Audio},
+  year={2023},
+  organization={Audio Engineering Society}
+}
+```
+
 ### mccormack2023spatial
 
 McCormack, L., Meyer-Kahlen, N., and Politis, A. 2023. [**Spatial Reconstruction-Based Rendering of Microphone Array Room Impulse Responses.**](mccormack2023spatial.pdf) Journal of the Audio Engineering Society, 71(5), pp.267-280.
