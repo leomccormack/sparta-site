@@ -15,6 +15,49 @@ toc: true
 
 ## 2023
 
+### hold2023optimizing
+
+Hold, C., McCormack, L. Politis, A., and Pulkki, V., 2023, October. [**Optimizing Higher-Order Directional Audio Coding with Adaptive Mixing and Energy Matching for Ambisonic Compression and Upmixing.**](hold2023optimizing.pdf) In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE.
+
+<object data="hold2023optimizing.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="hold2023optimizing.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="hold2023optimizing.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{hold2023optimizing,
+  title={Optimizing Higher-Order Directional Audio Coding with Adaptive Mixing and Energy Matching for Ambisonic Compression and Upmixing},
+  author={Hold, Christoph and McCormack, Leo and Politis, Archontis and Pulkki, Ville},
+  booktitle={2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+  year={2023},
+  organization={IEEE}
+}
+```
+
+### hold2023compression
+
+Hold, C., Pulkki, V., Politis, A., and McCormack, L. 2023. [**"Compression of Higher-Order Ambisonic Signals using Directional Audio Coding"**](hold2023compression.pdf). IEEE/ACM Transactions on Audio, Speech, and Language Processing 32, 651-665 [https://doi.org/10.1109/TASLP.2023.3328284](https://doi.org/10.1109/TASLP.2023.3328284)
+
+<object data="hold2023compression.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="hold2023compression.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="hold2023compression.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@article{hold2023compression,
+  title={Compression of Higher-Order Ambisonic Signals using Directional Audio Coding}, 
+  author={Hold, Christoph and Pulkki, Ville and Politis, Archontis and McCormack, Leo},
+  journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume = {32},
+  number = {},
+  pages = {651-665},
+  year = {2023},
+  doi = {10.1109/TASLP.2023.3328284}
+}
+```
+
 ### mccormack2023six
 
 McCormack, L., Meyer-Kahlen, N., Alon, D.L., Ben-Hur, Z., Amengual Garí, S.V., and Robinson, P.W. 2023. [**Six-Degrees-of-Freedom Binaural Reproduction of Head-Worn Microphone Array Capture.**](mccormack2023six.pdf) Journal of the Audio Engineering Society, 71(10), pp.638-649.
