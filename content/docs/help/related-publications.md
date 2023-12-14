@@ -13,6 +13,8 @@ weight: 630
 toc: true
 ---
 
+## 2024
+
 ### hold2024compression
 
 Hold, C., Pulkki, V., Politis, A., and McCormack, L. 2024. [**"Compression of Higher-Order Ambisonic Signals using Directional Audio Coding"**](hold2024compression.pdf). IEEE/ACM Transactions on Audio, Speech, and Language Processing 32, 651-665 [https://doi.org/10.1109/TASLP.2023.3328284](https://doi.org/10.1109/TASLP.2023.3328284)
