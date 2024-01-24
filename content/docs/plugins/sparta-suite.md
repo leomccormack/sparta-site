@@ -163,6 +163,13 @@ A frequency-dependent 3D panner based on the Vector-base Amplitude Panning (VBAP
 Set the "Room Coeff" parameter to 0 for standard power-normalisation, 0.5 for a listening room, and 1 for an anechoic chamber. 
         
 This plug-in was developed by Leo McCormack, Archontis Politis and Ville Pulkki.  
+
+### PitchShifter
+<img src="PitchShifter_GUI.png" alt="" style="max-width: 65%"/> <br/>
+    
+A simple multi-channel pitch shifter (up to 64 channels) based on the phase vocoder approach.
+    
+This plug-in was developed by Leo McCormack.
     
 ### PowerMap
 <img src="Powermap_GUI.png" alt="" style="max-width: 90%"/><br/>

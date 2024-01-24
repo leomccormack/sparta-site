@@ -20,9 +20,9 @@ Note that example REAPER projects may be [**found here**](https://github.com/leo
 
 ## All included plug-ins
 
-### SPARTA plug-ins
+### SPARTA 
 
-More detailed descriptions can be found in [SPARTA Suite →]({{< relref "sparta-suite" >}})
+[SPARTA Suite →]({{< relref "sparta-suite" >}})
 
 * [**sparta_ambiBIN**](../sparta-suite/#ambibin) - A binaural ambisonic decoder (up to 7th order) with a built-in SOFA loader and head-tracking support via OSC messages. Includes: Least-Squares (LS), spatial re-sampling (SPR, virtual loudspeakers), time-alignment (TA), and magnitude least-squares (Mag-LS) decoding options.
 * [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 7th order) with user specifiable loudspeaker directions (up to 64), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may also be binauralised for headphone playback.
@@ -39,14 +39,15 @@ More detailed descriptions can be found in [SPARTA Suite →]({{< relref "sparta
 * [**sparta_multiconv**](../sparta-suite/#multiconv) - A basic multi-channel convolver with an optional partitioned convolution mode. Unlike "MatrixConv", this plug-in does not perform any matrixing. Instead, each input channel is convolved with the respective filter; i.e. numInputs = numFilters = numOutputs.
 * [**sparta_6DoFconv**](../sparta-suite/#6dofconv) - A time-varying partitioned convolution multi-channel convolver for SOFA files containing RIRs with multiple listener positions.
 * [**sparta_panner**](../sparta-suite/#panner) - A 3D loudspeaker array panner using the VBAP method (up to 64 inputs and outputs).
+* [**sparta_pitchshifter**](../sparta-suite/#pitchshifter) - A simple multi-channel pitch shifter (up to 64 channels) based on the phase vocoder approach.
 * [**sparta_powermap**](../sparta-suite/#powermap) - A sound-field visualisation plug-in based on ambisonic signals as input (up to 7th order), with PWD/MVDR/MUSIC/Min-Norm options.
 * [**sparta_rotator**](../sparta-suite/#rotator) - A flexible ambisonic rotator (up to 7th order) with head-tracking support via OSC messages.
 * [**sparta_sldoa**](../sparta-suite/#sldoa) - A frequency-dependent sound-field visualiser (up to 7th order), based on depicting the direction-of-arrival (DoA) estimates derived from spatially localised active-intensity vectors. The low frequency estimates are shown with blue icons, mid-frequencies with green, and high-frequencies with red.
 * [**sparta_spreader**](../sparta-suite/#spreader) - An arbitrary array (e.g. HRIRs or microphone array IRs) panner with coherent and incoherent spreading options.
 
-### COMPASS plug-ins
+### COMPASS 
 
-More detailed descriptions can be found in [COMPASS Suite →]({{< relref "compass-suite" >}})
+[COMPASS Suite →]({{< relref "compass-suite" >}})
 
 * [**compass_binaural**](../compass-suite/#binaural) - An adaptive binaural ambisonic decoder (up to 3rd order input) based on the parametric COMPASS model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**compass_binauralVR**](../compass-suite/#binauralvr) - Same as the compass_binaural plugin, but also supporting listener translation around the receiver position and support for multiple simultaneous listeners.
@@ -58,18 +59,18 @@ More detailed descriptions can be found in [COMPASS Suite →]({{< relref "compa
 * [**compass_tracker**](../compass-suite/#tracker) - A multiple target acoustic tracker which can optionally steer a beamformer towards each target.
 * [**compass_upmixer**](../compass-suite/#upmixer) - An Ambisonic upmixer (1-3rd order input, 2-7th order output).
 
-### HO-DirAC plug-ins
+### HO-DirAC 
 
-More detailed descriptions can be found in [HO-DirAC Suite →]({{< relref "hodirac-suite" >}})
-
-Note these plug-ins are released under their own [licensing terms](../hodirac-suite/#license).
+[HO-DirAC Suite →]({{< relref "hodirac-suite" >}})
 
 * [**hodirac_binaural**](../hodirac-suite/#binaural) - An adaptive binaural ambisonic decoder (up to 3rd order input) based on the parametric HO-DirAC model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**hodirac_decoder**](../hodirac-suite/#decoder) - A parametrically enhanced loudspeaker ambisonic decoder (up to 3rd order input).
 * [**hodirac_upmixer**](../hodirac-suite/#upmixer) - An Ambisonic upmixer (1-3rd order input, 2-7th order output).
 
+Note these plug-ins are released under their own [licensing terms](../hodirac-suite/#license).
+
 ### Other plug-ins
-* [**hades_renderer**](../hades/#plug-in-description) - A flexible microphone array to binaural renderer.
-* [**cropac_binaural**](../cropac-binaural/#plug-in-description) - An adaptive binaural first.order ambisonic decoder based on the parametric CroPaC model, with a built-in SOFA loader and head-tracking support via OSC messages.
+* [**hades_renderer**](../hades/#plug-in-description) - A flexible head-worn microphone array to binaural renderer.
+* [**cropac_binaural**](../cropac-binaural/#plug-in-description) - An adaptive binaural first-order ambisonic decoder based on the parametric CroPaC model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**HOSIRR**](../hosirr/#application-description) - An Ambisonic room impulse response (RIR) renderer for arbitrary loudspeaker setups, based on the Higher-order Spatial Impulse Response Rendering (HO-SIRR) algorithm.
 * [**UltrasonicSuperHearing**](../ultrasonicsuperhearing/#UltrasonicSuperHearing) - A plug-in for the binaural reproduction of ultrasonic sound sources captured using a 6-sensor ultrasonic microphone array, which uses direction-of-arrival estimation and pitch-down-shifting prior to binauralisation in order to provide the appropriate localisation cues.
