@@ -13,13 +13,13 @@ weight: 640
 toc: true
 ---
 
-## Which VST2 hosts do you recommend for these plug-ins?
+## Which DAW do you recommend for these plug-ins?
 
 Reaper > MaxMSP = Plogue Bidule > Other.
 
 ## What does this slider/button/drop-down menu do?
 
-The vast majority of sliders, toggle buttons, and drop-down menus have detailed tooltips. Simply hover your mouse over the parameter in question for a few seconds, and the respective tooltip will appear.
+The vast majority of sliders, toggle buttons, and drop-down menus have detailed tooltips. Hover your mouse over a parameter for a few moments, and its tooltip will appear alongside it.
 
 ## Can I use the plug-ins for commercial purposes?
 
@@ -45,6 +45,10 @@ For more information regarding the issue, please refer to the following Steinber
 * [https://github.com/steinbergmedia/vst3sdk/issues/28](https://github.com/steinbergmedia/vst3sdk/issues/28) (17 January 2019)
 * [https://github.com/leomccormack/SPARTA/issues/28](https://github.com/leomccormack/SPARTA/issues/28) (6 March 2021)
 
+## Why are there no AAX versions of the plug-ins?
+
+Building AAX versions of the plugins is indeed possible. However, unfortunately, Avid does not support open-source projects.
+
 ## Where can I learn more about Ambisonics?
 
 For newcomers to the field, we recommend starting with [this book](https://www.springer.com/gp/book/9783030172060), which is free to download and covers Ambisonics from a practical point-of-view.
@@ -56,5 +60,5 @@ There a number of active Facebook groups, with some of the more popular ones inc
 * [3D, Ambisonic, Binaural & Surround Sound Production](https://www.facebook.com/groups/ambisonic)
 * [Ambisonics VR 360 Audio](https://www.facebook.com/groups/Ambisonics.VR.360.Audio)
 
-Outside of these Facebook groups, there is also the [SurSound mailing list](https://mail.music.vt.edu/mailman/listinfo/sursound) and the [SpatialAudio subreddit](https://www.reddit.com/r/SpatialAudio/).
+Outside of these Facebook groups, there is also the [SurSound mailing list](https://mail.music.vt.edu/mailman/listinfo/sursound). 
 

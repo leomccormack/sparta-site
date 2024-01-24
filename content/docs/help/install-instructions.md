@@ -20,9 +20,9 @@ MacOS users can simply unzip and run the installer.
 For MacOS versions 10.15 and above, you may need to give explicit permission for the installer to run via Settings->Security->"Open anyway". In rare cases, you may need to use the following command in the terminal for each plug-in:
 
 ```
-sudo xattr -d com.apple.quarantine /Library/Audio/Plug-Ins/VST/AmbiBIN.vst
+sudo xattr -d com.apple.quarantine /Library/Audio/Plug-Ins/VST/sparta_ambiBIN.vst
 ...
-sudo xattr -d com.apple.quarantine /Library/Audio/Plug-Ins/VST/Spreader.vst
+sudo xattr -d com.apple.quarantine /Library/Audio/Plug-Ins/VST/sparta_spreader.vst
 ... etc.
 ```
 
@@ -30,7 +30,7 @@ The installer places the VSTs in the following folder:
 ```
 /Library/Audio/Plug-Ins/VST/
 ```
-And also installs the following files:
+And also installs the following files for the non-ARM-compliant versions:
 ```
 /usr/local/lib/libsaf_mkl_custom_lp64.dylib
 /usr/local/lib/libsaf_ipp_custom.dylib
