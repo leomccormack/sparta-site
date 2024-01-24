@@ -1,5 +1,5 @@
 ---
-title: "COMPASS suite"
+title: "COMPASS"
 description: "Plug-in descriptions for the COMPASS suite."
 lead: "Plug-in descriptions for the COMPASS suite."
 date: 2021-08-15T15:21:01+02:00
@@ -15,15 +15,15 @@ toc: true
 
 ## Plug-in descriptions 
 
-COMPASS VSTs is a collection of flexible VST audio plug-ins for spatial audio production, manipulation, and reproduction, developed by Dr. Archontis Politis, Leo McCormack and Dr. Sakari Tervo in the Acoustics Lab at Aalto University. 
+COMPASS VSTs is a collection of flexible VST audio plug-ins for spatial audio production, manipulation, and reproduction, developed by Dr. Archontis Politis, Dr. Leo McCormack and Dr. Sakari Tervo at the Acoustics Lab, Aalto University. 
 
-COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) or HARPEX have gained notoriety recently for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and track the model parameters in the Ambisonics recording, in both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of lower-order Ambisonics. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
+COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) and HARPEX, have gained notoriety recently for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and track the model parameters in the Ambisonics recording, in both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of lower-order Ambisonics. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
 
-The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Leo McCormack, and published in <a href="../../help/related-publications/politis2018compass.pdf">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M is the number of channels):  
+The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Dr. Leo McCormack, and published in <a href="../../help/related-publications/politis2018compass.pdf">[1]</a>. The method is quite general in its model and estimates multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M refers to the number of channels):  
 
 <img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
     
-In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The VST plugins apply this framework to different spatial audio production tasks. Note that the plugins are still work in progress and we expect to keep improving them in the future, however, we believe that they can already prove useful to users and creators.
+In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The VST plugins apply this framework to different spatial audio production tasks. Note that the plugins are still a work in progress and we expect to keep improving them in the future, however, we believe that they can already prove useful to users and creators.
 
 ### Decoder
 <img src="Decoder_GUI.png" alt="" style="max-width: 85%"></br>
@@ -92,8 +92,6 @@ Note that multi-source tracking has been an active research topic for several de
     
 The tracker implementation builds on the Rao-Blackwelized Monte Carlo Data Association (RBMCDA) framework [11,12]. It should be noted that Sequential Monte Carlo (SMC) methods (also referred to as particle-filtering methods) involve making hundreds/thousands of hypotheses, which are then selected randomly based on their predicted likelihoods. Therefore, every time the tracker is run it will give you a different "answer" for the same input scene, but if the tracker is tuned well then the result should be substantially similar each time. 
     
-This plug-in was developed by Leo McCormack.
-    
 ### Upmixer
 <img src="upmixer_GUI.png" alt="" style="max-width: 80%"></br>
 
@@ -107,8 +105,6 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021parametric.pdf).
 
 This plug-in applies the COMPASS analysis on one sound scene (either scene A [channels 1-16] and scene B [channels 17-32]), and uses the estimated spatial parameters to manipulate the signals of the second sound scene. If scene A and B are the same, then the plugin is functionally identical to compass_upmixer.
-    
-This plug-in was developed by Leo McCormack.
     
 ### SpatEdit
 <img src="spatEdit_A.png" alt="" style="max-width: 90%">
@@ -132,8 +128,8 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
      
 ## About the developers
     
-* **Leo McCormack**: a doctoral candidate at Aalto University.  
-* **Archontis Politis** post doctorate researcher at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.  
+* **Leo McCormack**: a postdoctoral researcher at Aalto University.  
+* **Archontis Politis** a professor at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.  
 
 ## License
 

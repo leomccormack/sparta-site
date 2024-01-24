@@ -1,5 +1,5 @@
 ---
-title: "HO-DirAC suite"
+title: "HO-DirAC"
 description: "Plug-in descriptions for the HO-DirAC suite."
 lead: "Plug-in descriptions for the HO-DirAC suite."
 date: 2020-10-13T15:21:01+02:00
