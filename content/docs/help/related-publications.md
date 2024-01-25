@@ -15,6 +15,26 @@ toc: true
 
 ## 2024
 
+### hold2024perceptually
+
+Hold, C., McCormack, L., Politis, A. and Pulkki, V., 2024. [**Perceptually-motivated Spatial Audio Codec for Higher-Order Ambisonics Compression.**](hold2024perceptually.pdf) Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE.
+
+<object data="hold2024perceptually.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="hold2024perceptually.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="hold2024perceptually.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{hold2024perceptually,
+  title={Perceptually-motivated Spatial Audio Codec for Higher-Order Ambisonics Compression},
+  author={Hold, Christoph and McCormack, Leo and Politis, Archontis and Pulkki, Ville},
+  booktitle={Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2024},
+  organization={IEEE}
+}
+```
+
 ### hold2024compression
 
 Hold, C., Pulkki, V., Politis, A., and McCormack, L. 2024. [**"Compression of Higher-Order Ambisonic Signals using Directional Audio Coding"**](hold2024compression.pdf). IEEE/ACM Transactions on Audio, Speech, and Language Processing 32, 651-665 [https://doi.org/10.1109/TASLP.2023.3328284](https://doi.org/10.1109/TASLP.2023.3328284)
