@@ -24,12 +24,12 @@ Note that example REAPER projects may be [**found here**](https://github.com/leo
 
 [SPARTA Suite →]({{< relref "sparta-suite" >}})
 
-* [**sparta_ambiBIN**](../sparta-suite/#ambibin) - A binaural ambisonic decoder (up to 7th order) with a built-in SOFA loader and head-tracking support via OSC messages. Includes: Least-Squares (LS), spatial re-sampling (SPR, virtual loudspeakers), time-alignment (TA), and magnitude least-squares (Mag-LS) decoding options.
-* [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 7th order) with user specifiable loudspeaker directions (up to 64), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may also be binauralised for headphone playback.
-* [**sparta_ambiDRC**](../sparta-suite/#ambidrc) - A frequency-dependent dynamic range compressor for ambisonic signals (up to 7th order).
-* [**sparta_ambiENC**](../sparta-suite/#ambienc) - An ambisonic encoder/panner (up to 7th order), with support for up to 64 input channels; the directions for which may also be imported via JSON configuration files.
+* [**sparta_ambiBIN**](../sparta-suite/#ambibin) - A binaural ambisonic decoder (up to 10th order) with a built-in SOFA loader and head-tracking support via OSC messages. Includes: Least-Squares (LS), spatial re-sampling (SPR, virtual loudspeakers), time-alignment (TA), and magnitude least-squares (Mag-LS) decoding options.
+* [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 10th order) with user specifiable loudspeaker directions (up to 64), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may also be binauralised for headphone playback.
+* [**sparta_ambiDRC**](../sparta-suite/#ambidrc) - A frequency-dependent dynamic range compressor for ambisonic signals (up to 10th order).
+* [**sparta_ambiENC**](../sparta-suite/#ambienc) - An ambisonic encoder/panner (up to 10th order), with support for up to 64 input channels; the directions for which may also be imported via JSON configuration files.
 * [**sparta_ambiRoomSim**](../sparta-suite/#ambiroomsim) - A shoebox room simulator based on the image-source method, supporting multiple sources and ambisonic receivers.
-* [**sparta_array2sh**](../sparta-suite/#array2sh) - A microphone array Ambisonics encoder (up to 7th order), with presets for several commercially available A-format and higher-order microphone arrays. The plug-in can also present objective evaluation metrics for the currently selected configuration.
+* [**sparta_array2sh**](../sparta-suite/#array2sh) - A microphone array Ambisonics encoder (up to 10th order), with presets for several commercially available A-format and higher-order microphone arrays. The plug-in can also present objective evaluation metrics for the currently selected configuration.
 * [**sparta_beamformer**](../sparta-suite/#beamformer) - A spherical harmonic domain beamforming plug-in with multiple beamforming strategies (up to 64 output beams).
 * [**sparta_binauraliser**](../sparta-suite/#binauraliser) - A binaural panner (up to 64 input channels) with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**sparta_binauraliserNF**](../sparta-suite/#binauralisernf) - Binauraliser, with the addition of proximity filtering for near field sound sources.
@@ -40,9 +40,9 @@ Note that example REAPER projects may be [**found here**](https://github.com/leo
 * [**sparta_6DoFconv**](../sparta-suite/#6dofconv) - A time-varying partitioned convolution multi-channel convolver for SOFA files containing RIRs with multiple listener positions.
 * [**sparta_panner**](../sparta-suite/#panner) - A 3D loudspeaker array panner using the VBAP method (up to 64 inputs and outputs).
 * [**sparta_pitchshifter**](../sparta-suite/#pitchshifter) - A simple multi-channel pitch shifter (up to 64 channels) based on the phase vocoder approach.
-* [**sparta_powermap**](../sparta-suite/#powermap) - A sound-field visualisation plug-in based on ambisonic signals as input (up to 7th order), with PWD/MVDR/MUSIC/Min-Norm options.
-* [**sparta_rotator**](../sparta-suite/#rotator) - A flexible ambisonic rotator (up to 7th order) with head-tracking support via OSC messages.
-* [**sparta_sldoa**](../sparta-suite/#sldoa) - A frequency-dependent sound-field visualiser (up to 7th order), based on depicting the direction-of-arrival (DoA) estimates derived from spatially localised active-intensity vectors. The low frequency estimates are shown with blue icons, mid-frequencies with green, and high-frequencies with red.
+* [**sparta_powermap**](../sparta-suite/#powermap) - A sound-field visualisation plug-in based on ambisonic signals as input (up to 10th order), with PWD/MVDR/MUSIC/Min-Norm options.
+* [**sparta_rotator**](../sparta-suite/#rotator) - A flexible ambisonic rotator (up to 10th order) with head-tracking support via OSC messages.
+* [**sparta_sldoa**](../sparta-suite/#sldoa) - A frequency-dependent sound-field visualiser (up to 10th order), based on depicting the direction-of-arrival (DoA) estimates derived from spatially localised active-intensity vectors. The low frequency estimates are shown with blue icons, mid-frequencies with green, and high-frequencies with red.
 * [**sparta_spreader**](../sparta-suite/#spreader) - An arbitrary array (e.g. HRIRs or microphone array IRs) panner with coherent and incoherent spreading options.
 
 ### COMPASS 
