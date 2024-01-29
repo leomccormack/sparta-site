@@ -37,7 +37,6 @@ Since the method conducts a parameterisation of the input sound-field, the propo
 * **Leo McCormack**: a doctoral candidate at Aalto University.
 * **Janani Fernandez**: a doctoral candidate at Aalto University.
 
-
 ## License
 
 This plug-in may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
