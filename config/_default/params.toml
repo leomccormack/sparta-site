@@ -4,7 +4,7 @@
 title = "SPARTA"
 titleSeparator = "-"
 titleAddition = "Spatial Audio Real-Time Applications"
-description = "An open-source VST audio plug-in suite for creating and reproducing spatial sound scenes"
+description = "An open-source VST/LV2 audio plug-in suite for creating and reproducing spatial sound scenes"
 
 ## Open Graph
 images = ["doks.png"]

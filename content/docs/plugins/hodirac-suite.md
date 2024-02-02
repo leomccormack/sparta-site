@@ -46,7 +46,7 @@ This version is intended mostly for head-tracked binaural playback of Ambisonic 
 ### Upmixer
 <img src="HODirAC_upmixer_GUI.png" alt="" style="max-width: 85%"></br>
 
-This VST is intended for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is essentially a wrapper for HO-DirAC|Decoder, as it first decodes the input to an appropriate uniform arrangement of virtual loudspeakers (e.g. a t-design) followed by re-encoding the virtual loudspeaker signals into the target order. It can be used by users who are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) to up-to seventh-order material (64 channels).
+This plugin is intended for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is essentially a wrapper for HO-DirAC|Decoder, as it first decodes the input to an appropriate uniform arrangement of virtual loudspeakers (e.g. a t-design) followed by re-encoding the virtual loudspeaker signals into the target order. It can be used by users who are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) to up-to seventh-order material (64 channels).
  
 ## About the developers
     
@@ -54,7 +54,7 @@ These plug-ins were developed by Leo McCormack. However, a number of people were
     
 ## License
     
-These VST plug-ins, which incorporate Aalto University's implementation of the DirAC technology, are provided for academic, personal and/or non-commercial use by a non-enterprise end-user. Any exploitation of the plug-ins for other purposes may require a license from Fraunhofer IIS. For commercial implementations of DirAC technology, the user is instead referred to <a href="https://www.iis.fraunhofer.de/en/ff/amm/prod/upHear.html"><b>upHear</b></a>.
+These VST/LV2 plug-ins, which incorporate Aalto University's implementation of the DirAC technology, are provided for academic, personal and/or non-commercial use by a non-enterprise end-user. Any exploitation of the plug-ins for other purposes may require a license from Fraunhofer IIS. For commercial implementations of DirAC technology, the user is instead referred to <a href="https://www.iis.fraunhofer.de/en/ff/amm/prod/upHear.html"><b>upHear</b></a>.
     
 ## References
  

@@ -15,7 +15,7 @@ toc: true
 
 ## Plug-in descriptions 
 
-COMPASS VSTs is a collection of flexible VST audio plug-ins for spatial audio production, manipulation, and reproduction, developed by Dr. Archontis Politis, Dr. Leo McCormack and Dr. Sakari Tervo at the Acoustics Lab, Aalto University. 
+COMPASS is a collection of flexible VST/LV2 audio plug-ins for spatial audio production, manipulation, and reproduction, developed by Dr. Archontis Politis, Dr. Leo McCormack and Dr. Sakari Tervo at the Acoustics Lab, Aalto University. 
 
 COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) and HARPEX, have gained notoriety recently for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and track the model parameters in the Ambisonics recording, in both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of lower-order Ambisonics. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
 
@@ -23,7 +23,7 @@ The COMPASS framework has been developed by Dr. Archontis Politis with contribut
 
 <img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
     
-In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The VST plugins apply this framework to different spatial audio production tasks. Note that the plugins are still a work in progress and we expect to keep improving them in the future, however, we believe that they can already prove useful to users and creators.
+In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The VST/LV2 plugins apply this framework to different spatial audio production tasks. Note that the plugins are still a work in progress and we expect to keep improving them in the future, however, we believe that they can already prove useful to users and creators.
 
 ### Decoder
 <img src="Decoder_GUI.png" alt="" style="max-width: 85%"></br>
@@ -84,7 +84,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 
 This plug-in is related to [**this publication**](../../help/related-publications/mccormack2021real.pdf).
 
-The Tracker plug-in builds on the spatial analysis conducted by the COMPASS framework, but instead of using the information for synthesising loudspeaker or binaural signals, a multi-source tracker is employed to associate the estimated directions with their corresponding sources/targets. Therefore, this VST can be used to visualise the trajectory of multiple sound sources present in an Ambisonic sound scene.
+The Tracker plug-in builds on the spatial analysis conducted by the COMPASS framework, but instead of using the information for synthesising loudspeaker or binaural signals, a multi-source tracker is employed to associate the estimated directions with their corresponding sources/targets. Therefore, this plugin can be used to visualise the trajectory of multiple sound sources present in an Ambisonic sound scene.
     
 Optionally, a beamformer may then be steered to each target direction and outputted either as individual signals (one target signal per output channel; akin to decomposing the scene into its individual "stems"), or as a binauralisation of these individual "stems" (spatialised in their respective target directions).
     

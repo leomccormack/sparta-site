@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 description: "What's included in the SPARTA installer?"
-lead: "SPARTA is a collection of flexible VST audio plug-ins for spatial audio production, reproduction and visualisation, developed primarily by members of the Acoustics Lab at Aalto University, Finland."
+lead: "SPARTA is a collection of flexible VST/LV2 audio plug-ins for spatial audio production, reproduction and visualisation, developed primarily by members of the Acoustics Lab at Aalto University, Finland."
 date: 2021-08-15T08:48:57+00:00
 lastmod: 2021-08-15T08:48:57+00:00
 draft: false

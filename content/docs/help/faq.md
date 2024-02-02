@@ -31,7 +31,7 @@ Their source code may also be used for commercial purposes, provided that you fo
 
 The exception to the above is with the HO-DirAC suite, which can only be used for academic, personal, and/or non-commerical use. For more information, please refer to the [full license terms](../../plugins/hodirac-suite/#license) for the HO-DirAC plug-ins.
 
-## Why are the VST3 versions limited to 24 or 64 channels?
+## Why are the VST3 versions of the plugins limited to 24 or 64 channels?
 
 This is a known issue with the VST3 SDK, and is why we recommened that you use either the VST or LV2 versions of the plugins instead.
 
