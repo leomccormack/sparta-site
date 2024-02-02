@@ -15,7 +15,9 @@ toc: true
 
 ## Which DAW do you recommend for these plug-ins?
 
-Reaper > MaxMSP = Plogue Bidule > Other.
+REAPER > MaxMSP = Plogue Bidule > Other.
+
+Make sure you are using REAPER version 7 or higher, if you want to use up to 128 channels. Otherwise, the limit is 64.
 
 ## What does this slider/button/drop-down menu do?
 
@@ -29,15 +31,9 @@ Their source code may also be used for commercial purposes, provided that you fo
 
 The exception to the above is with the HO-DirAC suite, which can only be used for academic, personal, and/or non-commerical use. For more information, please refer to the [full license terms](../../plugins/hodirac-suite/#license) for the HO-DirAC plug-ins.
 
-## Why are there no VST3 versions of the plug-ins?
+## Why are the VST3 versions limited to 24 or 64 channels?
 
-Building VST3 versions of the plugins is indeed possible. However, unfortunately, switching from VST2 to VST3 would be a step back in terms of being able to flexibly change the channel layouts and would restrict the maximum Ambisonic order and/or number of channels.
-
-In a nutshell, the VST2 SDK can support flexibly changing the number of channels between 1 and 64 (i.e. up to 7th order Ambisonics, and loudspeaker arrangements of up to 64 channels), whereas the VST3 versions instead supports only up to 24 channels (i.e. 3rd order Ambisonics, and up to 24 loudspeakers), which is quite a significant downgrade.
-
-While Steinberg appear to be content with their self-imposed limitation for their own plugins, we are unable to do so as we frequently use these plugins with loudspeaker arrays comprising more than 24 channels (and 4th order+) for our own research and teaching purposes at Aalto University.
-
-If the VST3 SDK is updated, or a VST4 SDK comes along, which restores the features of the VST2 SDK, then we are happy to switch over. However, until then, we will have to stick with the VST2 SDK for our pre-compiled releases.
+This is a known issue with the VST3 SDK, and is why we recommened that you use either the VST or LV2 versions of the plugins instead.
 
 For more information regarding the issue, please refer to the following Steinberg forum posts and GitHub issues:
 * [https://sdk.steinberg.net/viewtopic.php?f=4&t=549](https://sdk.steinberg.net/viewtopic.php?f=4&t=549) (18 April 2018)

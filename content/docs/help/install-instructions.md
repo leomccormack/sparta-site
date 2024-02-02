@@ -15,7 +15,7 @@ toc: true
 
 ## MacOS (x86) users
 
-MacOS users can simply unzip and run the installer. 
+MacOS users can simply run the installer(s). 
 
 For MacOS versions 10.15 and above, you may need to give explicit permission for the installer to run via Settings->Security->"Open anyway". In rare cases, you may need to use the following command in the terminal for each plug-in:
 
@@ -26,14 +26,11 @@ sudo xattr -d com.apple.quarantine /Library/Audio/Plug-Ins/VST/sparta_spreader.v
 ... etc.
 ```
 
-The installer places the VSTs in the following folder:
+The installer places the VST/LV2/VST3s in the following respective folders:
 ```
 /Library/Audio/Plug-Ins/VST/
-```
-And also installs the following files for the non-ARM-compliant versions:
-```
-/usr/local/lib/libsaf_mkl_custom_lp64.dylib
-/usr/local/lib/libsaf_ipp_custom.dylib
+/Library/Audio/Plug-Ins/LV2/
+/Library/Audio/Plug-Ins/VST3/
 ```
 
 To uninstall, simply delete these files.
@@ -41,29 +38,33 @@ To uninstall, simply delete these files.
 
 ## Windows (x86) users
 
-Windows users can simply unzip and run the installer. 
+Windows users can simply run the installer(s). 
 
-The installer places the VSTs in the following folder:
+The installer places the VST/LV2/VST3s in the following respective folders:
 ```
-C:/Program Files/VSTPlugins
+C:/Program Files/Steinberg/VSTPlugins
+C:/Program Files/Common Files/LV2
+C:/Program Files/Common Files/VST3
 ```
 And also installs the following files:
 ```
 /Windows/System32/saf_mkl_custom_lp64.dll
-/Windows/System32/saf_ipp_custom.dll
 ```
 To uninstall, simply delete these files.
 
 ## Linux (x86) users
 
-Linux users can download, unzip and copy the plugins into any folder that is scanned by the VST host for VST plug-ins. For example:
+Linux users can download, unzip and copy the plugins into any folder that is scanned by the VST/LV2/VST3 host. For example:
 ```
 ~/.vst
+~/.lv2
+~/.vst3
 ```
-The following included files must then also be copied into:
+
+The following included files must then also be copied into one of these two folders:
 ```
+/usr/lib/libsaf_mkl_custom_lp64.so
 /usr/local/lib/libsaf_mkl_custom_lp64.so
-/usr/local/lib/libsaf_ipp_custom.so
 ```
 To uninstall, simply delete these files.
 
