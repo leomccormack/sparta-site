@@ -15,6 +15,29 @@ toc: true
 
 ## 2024
 
+### fernandez2024investigating
+
+Fernandez, J., McCormack, L., Hyvärinen, P., and Kressner A. 2024. [**"Investigating sound-field reproduction methods as perceived by bilateral hearing aid users and normal-hearing listeners"**](fernandez2024investigating.pdf). The Journal of the Acoustical Society of America 155(2), 1492–1502 [https://doi.org/10.1121/10.0024875](https://doi.org/10.1121/10.0024875)
+
+<object data="fernandez2024investigating.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="fernandez2024investigating.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="fernandez2024investigating.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@article{fernandez2024investigating,
+  title={Investigating sound-field reproduction methods as perceived by bilateral hearing aid users and normal-hearing listeners}, 
+  author={Fernandez, Janani and McCormack, Leo and Hyvärinen, Petteri and Kressner, Abigail Anne},
+  journal = {The Journal of the Acoustical Society of America},
+  volume = {155},
+  number = {2},
+  pages = {1492–1502},
+  year = {2024},
+  doi = {10.1121/10.0024875}
+}
+```
+
 ### hold2024perceptually
 
 Hold, C., McCormack, L., Politis, A. and Pulkki, V., 2024. [**Perceptually-motivated Spatial Audio Codec for Higher-Order Ambisonics Compression.**](hold2024perceptually.pdf) Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE.
