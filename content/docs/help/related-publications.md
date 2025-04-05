@@ -13,7 +13,72 @@ weight: 630
 toc: true
 ---
 
+## 2025
+
+### fernandez2025localization
+
+Fernandez, J., Hyvärinen, P., and Kressner A. 2025. [**"Localization accuracy of phantom sound sources on the horizontal plane by bilateral hearing aid users in aided free-field and non--free-field conditions"**](fernandez2025localization.pdf). The Journal of the Acoustical Society of America 157(2), 1151--1161 [https://doi.org/10.1121/10.0035828](https://doi.org/10.1121/10.0035828)
+
+<object data="fernandez2025localization.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="fernandez2025localization.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="fernandez2025localization.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@article{fernandez2025localization,
+  title={Localization accuracy of phantom sound sources on the horizontal plane by bilateral hearing aid users in aided free-field and non--free-field conditions},
+  author={Fernandez, Janani and Hyv{\"a}rinen, Petteri and Kressner, Abigail Anne},
+  journal={The Journal of the Acoustical Society of America},
+  volume={157},
+  number={2},
+  pages={1151--1161},
+  year={2025},
+  publisher={AIP Publishing}
+}
+```
+
 ## 2024
+
+### gonzalez2024sssmash
+
+Gonzalez, R., McCormack, L., and Politis, A. 2024. [**"S3MASH: Spatial Sound Scene Matching using Single-Channel Audio"**](gonzalez2024sssmash.pdf), In Audio Engineering Society Conference: AES 2024 International Audio for Virtual and Augmented Reality Conference. Audio Engineering Society.
+
+<object data="gonzalez2024sssmash.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="gonzalez2024sssmash.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="gonzalez2024sssmash.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{gonzalez2024sssmash,
+  title={S3MASH: Spatial Sound Scene Matching using Single-Channel Audio},
+  author={Gonzalez, Raimundo and McCormack, Leo and Politis, Archontis},
+  booktitle={Audio Engineering Society Conference: AES 2024 International Audio for Virtual and Augmented Reality Conference},
+  year={2024},
+  organization={Audio Engineering Society}
+}
+```
+
+### fernandez2024binaural
+
+Fernandez, J., Alon Lou, D., Ben-hur, Z., and Tourbabin, V. 2024. [**"Binaural reproduction of head-worn microphone array recordings with adjustable field-of-view control"**](fernandez2024binaural.pdf), In Audio Engineering Society Conference: AES 2024 International Audio for Virtual and Augmented Reality Conference. Audio Engineering Society.
+
+<object data="fernandez2024binaural.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
+    <embed src="fernandez2024binaural.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="fernandez2024binaural.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+```
+@inproceedings{fernandez2024binaural,
+  title={Binaural reproduction of head-worn microphone array recordings with adjustable field-of-view control},
+  author={Fernandez, Janani and Alon, David Lou and Ben-hur, Zamir and Tourbabin, Vladimir},
+  booktitle={Audio Engineering Society Conference: AES 2024 International Audio for Virtual and Augmented Reality Conference},
+  year={2024},
+  organization={Audio Engineering Society}
+}
+```
 
 ### fernandez2024investigating
 
@@ -40,7 +105,7 @@ Fernandez, J., McCormack, L., Hyvärinen, P., and Kressner A. 2024. [**"Investig
 
 ### hold2024perceptually
 
-Hold, C., McCormack, L., Politis, A. and Pulkki, V., 2024. [**Perceptually-motivated Spatial Audio Codec for Higher-Order Ambisonics Compression.**](hold2024perceptually.pdf) Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE.
+Hold, C., McCormack, L., Politis, A. and Pulkki, V., 2024. [**Perceptually-motivated Spatial Audio Codec for Higher-Order Ambisonics Compression.**](hold2024perceptually.pdf) IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE.
 
 <object data="hold2024perceptually.pdf" type="application/pdf" width="700px" height="700px" style="max-width: 100%">
     <embed src="hold2024perceptually.pdf">
@@ -52,7 +117,7 @@ Hold, C., McCormack, L., Politis, A. and Pulkki, V., 2024. [**Perceptually-motiv
 @inproceedings{hold2024perceptually,
   title={Perceptually-motivated Spatial Audio Codec for Higher-Order Ambisonics Compression},
   author={Hold, Christoph and McCormack, Leo and Politis, Archontis and Pulkki, Ville},
-  booktitle={Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year={2024},
   organization={IEEE}
 }
