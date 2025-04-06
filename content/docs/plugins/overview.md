@@ -16,7 +16,7 @@ toc: true
 The SPARTA installer also includes the COMPASS suite, the HO-DirAC suite, CroPaC Binaural Decoder, and the HO-SIRR room impulse response renderer. 
 These plug-ins employ parametric processing and are signal-dependent. They aim to go beyond conventional linear Ambisonics algorithms, used by the baseline SPARTA plug-ins, by extracting meaningful parameters over time and subsequently employing them to map the input to the output in an adaptive and informed manner.
 
-Note that example REAPER projects may be [**found here**](https://github.com/leomccormack/sparta-reaper-examples).
+[**Example REAPER projects may be found here**](https://github.com/leomccormack/sparta-reaper-examples).
 
 ## All included plug-ins
 
@@ -26,7 +26,7 @@ Note that example REAPER projects may be [**found here**](https://github.com/leo
 
 * [**sparta_ambiBIN**](../sparta-suite/#ambibin) - A binaural ambisonic decoder (up to 10th order) with a built-in SOFA loader and head-tracking support via OSC messages. Includes: Least-Squares (LS), spatial re-sampling (SPR, virtual loudspeakers), time-alignment (TA), and magnitude least-squares (Mag-LS) decoding options.
 * [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 10th order) with user specifiable loudspeaker directions (up to 128), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may also be binauralised for headphone playback.
-* [**sparta_ambiDRC**](../sparta-suite/#ambidrc) - A frequency-dependent dynamic range compressor for ambisonic signals (up to 10th order).
+* [**sparta_ambiDRC**](../sparta-suite/#ambidrc) - A frequency-dependent dynamic range compressor (DRC) for ambisonic signals (up to 10th order).
 * [**sparta_ambiENC**](../sparta-suite/#ambienc) - An ambisonic encoder/panner (up to 10th order), with support for up to 128 input channels; the directions for which may also be imported via JSON configuration files.
 * [**sparta_ambiRoomSim**](../sparta-suite/#ambiroomsim) - A shoebox room simulator based on the image-source method, supporting multiple sources and ambisonic receivers.
 * [**sparta_array2sh**](../sparta-suite/#array2sh) - A microphone array Ambisonics encoder (up to 10th order), with presets for several commercially available A-format and higher-order microphone arrays. The plug-in can also present objective evaluation metrics for the currently selected configuration.

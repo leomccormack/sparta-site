@@ -1,7 +1,7 @@
 ---
 title: "Related publications"
 description: "A list of publications authored by the developers, which are either directly or indirectly related to the plug-ins in the SPARTA installer."
-lead: "A list of publications related to the included plug-ins."
+lead: "This is a list of related journal articles and conference papers, which were written by the developers of the included plug-ins."
 date: 2021-08-15T15:22:20+01:00
 lastmod: 2021-08-15T15:22:20+01:00
 draft: false

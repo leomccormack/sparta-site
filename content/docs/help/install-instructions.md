@@ -13,7 +13,7 @@ weight: 600
 toc: true
 ---
 
-## MacOS (x86) users
+## MacOS (ARM/x86_64) users
 
 MacOS users can simply run the installer(s). 
 

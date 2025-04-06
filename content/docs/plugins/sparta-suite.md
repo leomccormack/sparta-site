@@ -17,7 +17,8 @@ toc: true
 
 All plug-ins are tested using REAPER (64-bit), which is a very affordable and flexible DAW and is the most recommended host for these plug-ins; although, other multi-channel friendly hosts (such as MaxMSP, Plogue Bidule) are also known to work. Currently, the plug-ins support sampling rates of 44.1 or 48kHz. All Ambisonics-related plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes (note that the AmbiX format refers to the combination of ACN and SN3D). The maximum transform order for these plug-ins is 10.
 
-Hovering your mouse cursor over plugin parameters will reveal tooltips regarding the purpose of that parameter.
+{{< alert icon="👉" text="Hovering your mouse cursor over plugin parameters will reveal tooltips regarding the purpose of that parameter." />}}
+
 
 Thanks to the efforts of Daniel Rudrich, the relevant plug-ins also support importing and exporting loudspeaker, source, and sensors directions via .json configuration files; thus allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be [found here](https://plugins.iem.at/docs/configurationfiles/).
 
@@ -31,7 +32,7 @@ This plug-in was developed by Leo McCormack, Archontis Politis, and Christoph Ho
 ### AmbiDEC
 <img src="AmbiDEC_GUI.png" alt="" style="max-width: 80%;"/><br/>
     
-A frequency-dependent Ambisonic decoder for loudspeakers. The loudspeaker directions can be user-specified for up to 64 channels, or alternatively presets for popular 2D and 3D set-ups can be selected. For headphone reproduction, the loudspeaker audio is convolved with interpolated HRTFs for each loudspeaker direction (i.e. virtual loudspeaker decoding). The plug-in also permits importing custom HRIRs via the SOFA standard.  
+A frequency-dependent Ambisonic decoder for loudspeakers. The loudspeaker directions can be user-specified for up to 128 channels, or alternatively presets for popular 2D and 3D set-ups can be selected. For headphone reproduction, the loudspeaker audio is convolved with interpolated HRTFs for each loudspeaker direction (i.e. virtual loudspeaker decoding). The plug-in also permits importing custom HRIRs via the SOFA standard.  
 
 The plug-in employs a dual decoding approach, whereby different decoder settings may be selected for the low and high frequencies, and this cross-over frequency may be dictated by the user. Several ambisonic decoders have been integrated, including the All-Round Ambisonic Decoder (AllRAD) [1] and Energy-Preserving Ambisonic Decoder (EPAD) [2]. The popular max-rE weighting/spatial-tapering [1] may also be enabled for either decoder. Furthermore, in the case of non-ideal Ambisonic signals as input (i.e. those derived from physical/simulated microphone arrays), the decoding order may be specified for the appropriate frequency ranges; where energy-preserving (EP) or amplitude-preserving (AP) normalisation is used to maintain consistent loudness between different decoding orders. This feature may also be used creatively. 
     
@@ -49,7 +50,7 @@ A frequency-dependent Ambisonic dynamic range compressor (DRC). The gain factors
 ### AmbiENC 
 <img src="AmbiENC_GUI.png" alt="" style="max-width: 80%"/><br/>
     
-A bare-bones Ambisonic encoder which takes input signals (up to 64 channels) and encodes them into Ambisonic signals at specified directions. These Ambisonic signals describe a synthetic sound scene, where the spatial resolution of the sound scene is determined by the encoding order. Several presets have been included for convenience, which allow for 22.x etc. audio to be encoded into 1-10th order Ambisonics, for example. The panning window is also fully mouse driven, and uses an equirectangular representation of the sphere to depict the azimuth and elevation angles of each source. 
+A bare-bones Ambisonic encoder which takes input signals (up to 128 channels) and encodes them into Ambisonic signals at specified directions. These Ambisonic signals describe a synthetic sound scene, where the spatial resolution of the sound scene is determined by the encoding order. Several presets have been included for convenience, which allow for 22.x etc. audio to be encoded into 1-10th order Ambisonics, for example. The panning window is also fully mouse driven, and uses an equirectangular representation of the sphere to depict the azimuth and elevation angles of each source. 
     
 ### AmbiRoomSim 
 <img src="ambiRoomSim_GUI.png" alt="" style="max-width: 95%"  /><br/>
@@ -61,7 +62,7 @@ An Ambisonic encoder which includes room reflections. It is based on the image s
     
 The Array2SH plug-in is related to [**this publication**](../../help/related-publications/mccormack2018real.pdf).
     
-'Array2SH' spatially encodes spherical/cylindrical array signals into spherical harmonic (SH) signals, which are also referred to as Ambisonic or B-Format signals. The plug-in uses analytical descriptors, which ascertain the frequency and order-dependent influence that the physical properties of the array have on the plane-waves arriving at its surface. The plug-in allows the user to specify: the array type (spherical or cylindrical), whether the array has an open or rigid enclosure, the radius of the array, the radius of the sensors (in cases where they protrude out from the array), the sensor coordinates (up to 64 channels), sensor directivity (omni-dipole-cardioid), and the speed of sound (so that both microphone and hydrophone arrays are supported). The plug-in then determines the order-dependent equalisation curves that need to be imposed onto the initial spherical harmonic signals estimate, in order to remove the influence of the array itself. However, especially for higher-orders, this generally results in a large amplification of the low frequencies (including the sensor noise at these frequencies that accompanies it); therefore, four different regularisation approaches have been integrated into the plug-in, which allow the user to make a compromise between noise amplification and transform accuracy. These target and regularised equalisation curves are depicted on the user interface to provide visual feedback. 
+'Array2SH' spatially encodes spherical/cylindrical array signals into spherical harmonic (SH) signals, which are also referred to as Ambisonic or B-Format signals. The plug-in uses analytical descriptors, which ascertain the frequency and order-dependent influence that the physical properties of the array have on the plane-waves arriving at its surface. The plug-in allows the user to specify: the array type (spherical or cylindrical), whether the array has an open or rigid enclosure, the radius of the array, the radius of the sensors (in cases where they protrude out from the array), the microphone/hydrophone coordinates (up to 128 channels), sensor directivity (omni-dipole-cardioid), and the speed of sound (so that both microphone and hydrophone arrays are supported). The plug-in then determines the order-dependent equalisation curves that need to be imposed onto the initial spherical harmonic signals estimate, in order to remove the influence of the array itself. However, especially for higher-orders, this generally results in a large amplification of the low frequencies (including the sensor noise at these frequencies that accompanies it); therefore, four different regularisation approaches have been integrated into the plug-in, which allow the user to make a compromise between noise amplification and transform accuracy. These target and regularised equalisation curves are depicted on the user interface to provide visual feedback. 
     
 The plug-in also allows the user to 'Analyse' the spatial encoding performance using objective measures described in [7,8], namely: the spatial correlation and the level difference. Here, the encoding matrices are applied to a simulated array, which is described by multichannel transfer functions of plane waves for 812 points on the surface of the spherical/cylindrical array. The resulting encoded array responses should ideally resemble spherical harmonic functions at the grid points. The spatial correlation is then derived by comparing the patterns of these responses with the patterns of ideal spherical harmonics, where '1' means they are perfect, and '0' completely uncorrelated; the spatial aliasing frequency can therefore be observed for each order, as the point where the spatial correlation tends towards 0. The level difference is then the mean level difference over all directions (diffuse level difference) between the ideal and simulated components. One can observe that higher permitted amplification limits [Max Gain (dB)] will result in noisier signals; however, this will also result in a wider frequency range of useful spherical harmonic components at each order. This analysis is primarily based on code written for publication [8], which compared the performance of various regularisation approaches of encoding filters, based on both theoretical and measured array responses. 
 
@@ -81,7 +82,7 @@ A simple beamforming plug-in, currently including the following static beam patt
     
 {{< alert icon="👉" text="Please note that this plug-in is only suitable for HRTF-based convolution." />}}
 
-A plug-in which convolves input audio (up to 64 channels) with interpolated HRTFs in the time-frequency domain. The HRTFs are interpolated by applying amplitude-normalised VBAP gains [4] to the HRTF magnitude responses and the estimated inter-aural time differences (ITDs) individually, before being re-combined. The plug-in also allows the user to specify an external SOFA file for the convolution. The directions for up to 64 channels can be independently controlled. However, presets for popular 2D and 3D formats are included for convenience. Head-tracking is also supported via OSC messages in the same manner as with the Rotator plug-in.
+A plug-in which convolves input audio (up to 128 channels) with interpolated HRTFs in the time-frequency domain. The HRTFs are interpolated by applying amplitude-normalised VBAP gains [4] to the HRTF magnitude responses and the estimated inter-aural time differences (ITDs) individually, before being re-combined. The plug-in also allows the user to specify an external SOFA file for the convolution. The directions for up to 128 channels can be independently controlled. However, presets for popular 2D and 3D formats are included for convenience. Head-tracking is also supported via OSC messages in the same manner as with the Rotator plug-in.
     
 This plug-in was developed by Leo McCormack and Archontis Politis.
     
@@ -98,7 +99,7 @@ This plug-in was developed by Michael McCrea, Leo McCormack, and Sebastian Schle
 ### Decorrelator
 <img src="decorrelator_GUI.png" alt="" style="max-width: 65%"/> <br/>
     
-A simple multi-channel signal decorrelator (up to 64 channels) based on randomised time-frequency delays and cascaded all-pass filters.
+A simple multi-channel signal decorrelator (up to 128 channels) based on randomised time-frequency delays and cascaded all-pass filters.
     
 ### DirASS
 <img src="DirASS_GUI.png" alt="" style="max-width: 90%"/><br/>
@@ -124,7 +125,7 @@ This plug-in was developed by Leo McCormack and Archontis Politis.
 ### MultiConv
 <img src="MultiConv_GUI.png" alt="" style="max-width: 70%"/><br/>
     
-A simple multi-channel convolver with an (optional) partitioned-convolution mode. The plugin will convolve each input channel with the respective filter up to the maximum of 64 channels/filters. The filters are loaded as a multi-channel .wav file.
+A simple multi-channel convolver with an (optional) partitioned-convolution mode. The plugin will convolve each input channel with the respective filter up to the maximum of 128 channels/filters. The filters are loaded as a multi-channel .wav file.
     
 Please note that this is not to be confused with the MatrixConv plug-in. For this plug-in, the number inputs = the number of filters = the number of outputs. i.e. no matrixing is applied.
     
@@ -146,7 +147,7 @@ This plug-in was developed by Rapolas Daugintis, Thomas McKenzie, Nils Meyer-Kah
 ### Panner
 <img src="Panner_GUI.png" alt="" style="max-width: 95%"/> <br/>
     
-A frequency-dependent 3D panner based on the Vector-base Amplitude Panning (VBAP) method [4]. Presets for popular 2D and 3D formats are included for convenience; however, the directions for up to 64 channels can be independently controlled for both inputs and outputs; allowing, for example, 9.x input audio to be panned for a 22.2 setup. The panning is frequency-dependent to accommodate the method described in [5], which allows for more consistent loudness when sources are panned in-between the loudspeaker directions.
+A frequency-dependent 3D panner based on the Vector-base Amplitude Panning (VBAP) method [4]. Presets for popular 2D and 3D formats are included for convenience; however, the directions for up to 128 channels can be independently controlled for both inputs and outputs; allowing, for example, 9.x input audio to be panned for a 22.2 setup. The panning is frequency-dependent to accommodate the method described in [5], which allows for more consistent loudness when sources are panned in-between the loudspeaker directions.
     
 Set the "Room Coeff" parameter to 0 for standard power-normalisation, 0.5 for a listening room, and 1 for an anechoic chamber. 
         
@@ -155,7 +156,7 @@ This plug-in was developed by Leo McCormack, Archontis Politis and Ville Pulkki.
 ### PitchShifter
 <img src="PitchShifter_GUI.png" alt="" style="max-width: 65%"/> <br/>
     
-A simple multi-channel pitch shifter (up to 64 channels) based on the phase vocoder approach.
+A simple multi-channel pitch shifter (up to 128 channels) based on the phase vocoder approach.
     
 ### PowerMap
 <img src="Powermap_GUI.png" alt="" style="max-width: 90%"/><br/>

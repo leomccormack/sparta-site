@@ -53,8 +53,7 @@ For newcomers to the field, we recommend starting with [this book](https://www.s
 
 There a number of active Facebook groups, with some of the more popular ones including:
 * [Spatial Audio in VR/AR/MR](https://www.facebook.com/groups/SpatialAudioVRARMR)
-* [3D, Ambisonic, Binaural & Surround Sound Production](https://www.facebook.com/groups/ambisonic)
-* [Ambisonics VR 360 Audio](https://www.facebook.com/groups/Ambisonics.VR.360.Audio)
+* [Spatial Sound Production](https://www.facebook.com/groups/spatialsound)
 
 Outside of these Facebook groups, there is also the [SurSound mailing list](https://mail.music.vt.edu/mailman/listinfo/sursound). 
 
