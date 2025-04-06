@@ -16,6 +16,7 @@ Note that running this website locally requires hugo and node to be installed. E
 ```
 brew install hugo
 brew install node
+npm install shx
 ```
 
 ## Deployment
