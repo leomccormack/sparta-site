@@ -24,7 +24,7 @@ All plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention a
 ### Decoder 
 <img src="HODirAC_decoder_GUI.png" alt="" style="max-width: 85%"></br>
     
-This plug-in is based on the design detailed in [**this publication**](../../help/related-publications/politis2015sector.pdf).
+**Input**: Ambisonics | **Output**: Arbitrary loudspeaker array | [**Related publication**](../../help/related-publications/politis2015sector.pdf)
     
 An Ambisonic loudspeaker decoder based on the Higher-order Directional Audio Coding (HO-DirAC) method.
     
@@ -37,7 +37,7 @@ The plug-in is considered by the authors a production tool and, due to its time-
 ### Binaural
 <img src="HODirAC_binaural_GUI.png" alt="" style="max-width: 85%"></br>
     
-This plug-in is based on the design detailed [**this publication**](../../help/related-publications/politis2017enhancement.pdf).
+**Input**: Ambisonics | **Output**: Binaural | [**Related publication**](../../help/related-publications/politis2017enhancement.pdf)
     
 This is an optimised version of the HO-DirAC decoder for binaural playback, which bypasses loudspeaker rendering by using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plugin parameters, see the description of the <b>HO-DirAC|Decoder</b> above. Additionally the plugin can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
 
@@ -46,11 +46,13 @@ This version is intended mostly for head-tracked binaural playback of Ambisonic 
 ### Upmixer
 <img src="HODirAC_upmixer_GUI.png" alt="" style="max-width: 85%"></br>
 
-This plugin is intended for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is essentially a wrapper for HO-DirAC|Decoder, as it first decodes the input to an appropriate uniform arrangement of virtual loudspeakers (e.g. a t-design) followed by re-encoding the virtual loudspeaker signals into the target order. It can be used by users who are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) to up-to seventh-order material (64 channels).
+**Input**: Ambisonics | **Output**: (higher-order) Ambisonics
+
+This plugin is intended for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is essentially a wrapper for HO-DirAC|Decoder, as it first decodes the input to an appropriate uniform arrangement of virtual loudspeakers (e.g. a t-design) followed by re-encoding the virtual loudspeaker signals into the target order. It can be used by users who are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) to up-to fifth-order material (36 channels).
  
 ## About the developers
     
-These plug-ins were developed by Leo McCormack. However, a number of people were involved in the research of the employed algorithms, and much of the internal C/C++ code is also based on Matlab code written by Archontis Politis and Juha Vilkamo; who, in turn, based their code and research on the code and research of: Mikko-Ville Laitinen, Jukka Ahonen, Tapani Pihlajam&auml;ki, and Ville Pulkki. For a detailed history, and for descriptions of both legacy and modern DirAC processing, the reader is referred to [5].
+These plug-ins were developed by Leo McCormack. However, a number of people were involved in the research of the implemented algorithms, and much of the internal C/C++ code is also based on Matlab code written by Archontis Politis and Juha Vilkamo; who, in turn, based their code and research on the code and research of: Mikko-Ville Laitinen, Jukka Ahonen, Tapani Pihlajam&auml;ki, and Ville Pulkki. For a detailed history, and for descriptions of both legacy and modern DirAC processing, the reader is referred to [5].
     
 ## License
     

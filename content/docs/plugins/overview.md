@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 description: "What's included in the SPARTA installer?"
-lead: "SPARTA is a collection of flexible VST/LV2 audio plug-ins for spatial audio production, reproduction and visualisation, developed primarily by members of the Acoustics Lab at Aalto University, Finland."
+lead: "SPARTA is a collection of flexible audio plug-ins for spatial audio production, editing, and reproduction, developed primarily by members of the Acoustics Lab at Aalto University, Finland."
 date: 2021-08-15T08:48:57+00:00
 lastmod: 2021-08-15T08:48:57+00:00
 draft: false
@@ -22,10 +22,10 @@ These plug-ins employ parametric processing and are signal-dependent. They aim t
 
 ### SPARTA 
 
-[SPARTA Suite →]({{< relref "sparta-suite" >}})
+Learn more about the [SPARTA Suite →]({{< relref "sparta-suite" >}})
 
 * [**sparta_ambiBIN**](../sparta-suite/#ambibin) - A binaural ambisonic decoder (up to 10th order) with a built-in SOFA loader and head-tracking support via OSC messages. Includes: Least-Squares (LS), spatial re-sampling (SPR, virtual loudspeakers), time-alignment (TA), and magnitude least-squares (Mag-LS) decoding options.
-* [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 10th order) with user specifiable loudspeaker directions (up to 128), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may also be binauralised for headphone playback.
+* [**sparta_ambiDEC**](../sparta-suite/#ambidec) - A frequency-dependent loudspeaker ambisonic decoder (up to 10th order) with user specifiable loudspeaker directions (up to 128), which may be optionally imported via JSON configuration files. Includes: All-Round (AllRAD), Energy-Preserving (EPAD), Spatial (SAD), and Mode-Matching (MMD) ambisonic decoding options. The loudspeaker signals may be optionally binauralised for headphone playback.
 * [**sparta_ambiDRC**](../sparta-suite/#ambidrc) - A frequency-dependent dynamic range compressor (DRC) for ambisonic signals (up to 10th order).
 * [**sparta_ambiENC**](../sparta-suite/#ambienc) - An ambisonic encoder/panner (up to 10th order), with support for up to 128 input channels; the directions for which may also be imported via JSON configuration files.
 * [**sparta_ambiRoomSim**](../sparta-suite/#ambiroomsim) - A shoebox room simulator based on the image-source method, supporting multiple sources and ambisonic receivers.
@@ -47,7 +47,7 @@ These plug-ins employ parametric processing and are signal-dependent. They aim t
 
 ### COMPASS 
 
-[COMPASS Suite →]({{< relref "compass-suite" >}})
+Learn more about the [COMPASS Suite →]({{< relref "compass-suite" >}})
 
 * [**compass_binaural**](../compass-suite/#binaural) - An adaptive binaural ambisonic decoder (up to 3rd order input) based on the parametric COMPASS model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**compass_binauralVR**](../compass-suite/#binauralvr) - Same as the compass_binaural plugin, but also supporting listener translation around the receiver position and support for multiple simultaneous listeners.
@@ -61,11 +61,11 @@ These plug-ins employ parametric processing and are signal-dependent. They aim t
 
 ### HO-DirAC 
 
-[HO-DirAC Suite →]({{< relref "hodirac-suite" >}})
+Learn more about the [HO-DirAC Suite →]({{< relref "hodirac-suite" >}})
 
 * [**hodirac_binaural**](../hodirac-suite/#binaural) - An adaptive binaural ambisonic decoder (up to 3rd order input) based on the parametric HO-DirAC model, with a built-in SOFA loader and head-tracking support via OSC messages.
 * [**hodirac_decoder**](../hodirac-suite/#decoder) - A parametrically enhanced loudspeaker ambisonic decoder (up to 3rd order input).
-* [**hodirac_upmixer**](../hodirac-suite/#upmixer) - An Ambisonic upmixer (1-3rd order input, 2-7th order output).
+* [**hodirac_upmixer**](../hodirac-suite/#upmixer) - An Ambisonic upmixer (1-3rd order input, 2-5th order output).
 
 Note these plug-ins are released under their own [licensing terms](../hodirac-suite/#license).
 

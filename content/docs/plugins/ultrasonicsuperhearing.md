@@ -17,6 +17,8 @@ toc: true
 
 <img src="UltrasonicSuperHearing_PluginGUI.png" alt="" style="max-width: 65%"/></br>
 
+**Input**: Ultrasonic microphone array | **Output**: Binaural | [**Related publication**](../../help/related-publications/pulkki2021superhuman.pdf)
+
 Ultrasonic sound sources are inaudible to humans. While there do exist devices that can capture, pitch shift and reproduce ultrasonic sound sources for humans to listen to, they generally only employ a single microphone and loudspeaker. Therefore, the listener is unable to localise where these pitch shifted ultrasonic sound sources are located.
 
 However, by instead capturing the ultrasonic sound sources using an array of microphones, it is possible to estimate their direction of arrival (DoA), and use this information to spatialise a pitch shifted signal in this direction. Therefore, not only is the listener able to perceive these ultrasonic sound sources, but they are also able to localise them in the correct direction.

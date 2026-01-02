@@ -24,6 +24,8 @@ It is demonstrated, through both objective and subjective evaluations, that the 
 
 <img src="HADES_Renderer_GUI.png" alt="" style="max-width: 95%"/></br>
 
+**Input**: Microphone array signals | **Output**: Binaural | [**Related publication**](../../help/related-publications/fernandez2022enhancing.pdf)
+
 An implementation of the general parametric binaural rendering framework described in [1], which primarily concerns head-worn microphone arrays such as: augmented reality (AR) headsets and binaural hearing aids. 
 
 The plug-in works by first loading a dense grid of microphone array impulse response (IR) measurements via a SOFA file. Note that the measurement grid will dictate the localisation and spatialisation precision of the algorithms, for example: loading 360 IR, measured for every 1 degree on the horizontal plane, will mean that horizontal performance will be high, but elevated sources will not be localised or spatialised (at least, not particularly well); whereas, loading 1000+ IR measurements for a spherical t-design will obtain similar spatial resolution achieved by e.g. the COMPASS decoders, over the whole sphere. 
@@ -33,9 +35,9 @@ Once the microphone array IRs have been loaded, the implemented algorithms will 
 Since the method conducts a parameterisation of the input sound-field, the proposed method [1] can accommodate spatial audio effects and sound-field modifications through simple parameter manipulations; such as those described in [2,3]. In this plug-in, the direct-to-diffuse balance may be manipulated per frequency band, and the gain of directional components may be adjusted for different directions.
 
 ## About the developers
-    
-* **Leo McCormack**: a doctoral candidate at Aalto University.
+
 * **Janani Fernandez**: a doctoral candidate at Aalto University.
+* **Leo McCormack**: a doctoral candidate at Aalto University.
 
 ## License
 

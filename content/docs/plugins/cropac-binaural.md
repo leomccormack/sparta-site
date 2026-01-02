@@ -31,6 +31,8 @@ The proposed approach is inspired by the COMPASS method [3]. However, along with
     
 <img src="CroPaC_Binaural_GUI.png" alt="" style="max-width: 85%"></br>
 
+**Input**: Ambisonics | **Output**: Binaural | [**Related publication**](../../help/related-publications/mccormack2019parametric.pdf)
+
 This implementation employs the magnitude least-squares (magLS) ambisonic decoder [4] as the prototype, contrary to the spatial-resampling decoder employed for the listening tests described in the paper. The plug-in allows the user to import their own HRTFs via SOFA files, and also supports head-tracking via OSC messages. The user may also influence the direct/diffuse balance per frequency band; note that the streams are balanced when set in the middle (default). 
     
 
