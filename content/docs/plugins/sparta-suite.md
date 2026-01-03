@@ -1,7 +1,7 @@
 ---
 title: "SPARTA"
 description: "Plug-in descriptions for the SPARTA suite."
-lead: "Plug-in descriptions for the SPARTA suite."
+lead: ""
 date: 2021-08-15T13:59:39+01:00
 lastmod: 2021-08-15T13:59:39+01:00
 draft: false
@@ -19,7 +19,7 @@ All Ambisonics-related plug-ins conform to the Ambisonic Channel Number (ACN) or
 
 Thanks to the efforts of Daniel Rudrich, the relevant plug-ins also support importing and exporting loudspeaker, source, and sensors directions via .json configuration files; thus allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be [found here](https://plugins.iem.at/docs/configurationfiles/).
 
-{{< alert icon="👉" text="Hovering your mouse cursor over plugin parameters will reveal tooltips regarding the purpose of that parameter." />}}
+{{< alert icon="👉" text="Hover your mouse cursor over plugin parameters to reveal tooltips :-)" />}}
 
 
 ### AmbiBIN
@@ -101,7 +101,7 @@ A plug-in that convolves input audio (up to 128 channels) with interpolated HRTF
 **Input**: Object audio signals | **Output**: Binaural
 {{< alert icon="👉" text="Please note that this plug-in is only suitable for HRTF-based convolution." />}}
 
-This plug-in mirrors has the functionality of the [**Binauraliser**](#binauraliser), with the addition of proximity filtering which reproduces the binaural effects of nearby sound sources. The implementation follows a shelving filter scheme as described in [15].
+This plug-in mirrors the functionality of the [**Binauraliser**](#binauraliser), with the addition of proximity filtering which reproduces the binaural effects of nearby sound sources. The implementation follows a shelving filter scheme described in [15].
 
 **Developers**: Michael McCrea, Leo McCormack, and Sebastian Schlecht.
 
@@ -213,21 +213,21 @@ This plugin uses an optimised framework for rendering spread sound sources over 
 
 ## About the developers
     
-* **Leo McCormack**: a postdoctoral researcher at Aalto University.  
-* **Symeon Delikaris-Manias**: post doctorate researcher at Aalto University, specialising in compact microphone array processing for DoA estimation and sound-field reproduction. His doctoral research included work on the Cross-Pattern Coherence (CroPaC) algorithm, which is a spatial post-filter optimised for high noise/reverberant environments. 
-* **Archontis Politis**: a professor at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.  
-* **Ville Pulkki**: Professor at Aalto University, known for VBAP, SIRR, DirAC and eccentric behaviour. 
-* **Christoph Hold**: a doctoral candidate at Aalto University. 
-* **Michael McCrea**: an audio R&D engineer.
-* **Sebastian Schlecht**: a professor at Aalto University.
-* **Rapolas Daugintis**: a doctoral candidate at Imperial College London.
-* **Thomas McKenzie**: a lecturer in acoustics at the University of Edinburgh. 
-* **Nils Meyer-Kahlen**: a doctoral candidate at Aalto University.
-* **Janani Fernandez**: a postdoctoral researcher at Tampere University.  
+* **Leo McCormack**: former postdoctoral researcher at Aalto University.
+* **Symeon Delikaris-Manias**: former postdoctoral researcher at Aalto University.
+* **Archontis Politis**: professor at Tampere University.
+* **Ville Pulkki**: professor at Aalto University.
+* **Christoph Hold**: doctor of science from Aalto University. 
+* **Michael McCrea**: audio R&D engineer.
+* **Sebastian Schlecht**: professor at Friedrich-Alexander-Universität Erlangen-Nürnberg.
+* **Rapolas Daugintis**: PhD from Imperial College London.
+* **Thomas McKenzie**: lecturer in acoustics at the University of Edinburgh. 
+* **Nils Meyer-Kahlen**: postdoctoral researcher at Aalto University.
+* **Janani Fernandez**: postdoctoral researcher at Tampere University.  
 
 ## License
 
-All of the plug-ins in the SPARTA suite may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
+All of the plug-ins in the SPARTA suite may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are honoured. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
     
 ## References
 [1] Zotter, F., Frank, M. (2012). **All-Round Ambisonic Panning and Decoding.** <br/> Journal of the Audio Engineering Society, 60(10), 807-820.

@@ -1,6 +1,6 @@
 ---
-title: "ProTools compatibility"
-description: "Compatibility list of hosting the plugins in ProTools."
+title: "Pro Tools Ultimate compatibility"
+description: "Compatibility list of hosting the plugins in Pro Tools Ultimate."
 lead: ""
 date: 2025-11-01T08:49:31+00:00
 lastmod: 2025-11-01T08:49:31+00:00

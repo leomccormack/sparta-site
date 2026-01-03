@@ -14,7 +14,7 @@ toc: true
 ---
 
 The SPARTA installer also includes the COMPASS suite, the HO-DirAC suite, CroPaC Binaural Decoder, and the HO-SIRR room impulse response renderer. 
-These plug-ins employ parametric processing and are signal-dependent. They aim to go beyond conventional linear Ambisonics algorithms, used by the baseline SPARTA plug-ins, by extracting meaningful parameters over time and subsequently employing them to map the input to the output in an adaptive and informed manner.
+These plug-ins employ parametric processing and are signal-dependent. They aim to go beyond conventional linear Ambisonics algorithms, used by the baseline SPARTA plug-ins, by extracting meaningful spatial parameters over time and subsequently employing them to map the input to the output in an adaptive and informed manner.
 
 [**Example REAPER projects may be found here**](https://github.com/leomccormack/sparta-reaper-examples).
 

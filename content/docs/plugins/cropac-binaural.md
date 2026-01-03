@@ -1,7 +1,7 @@
 ---
 title: "CroPaC-Binaural"
 description: "Plug-in description for the CroPaC binaural decoder."
-lead: "Plug-in description for the CroPaC binaural decoder."
+lead: ""
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -12,6 +12,16 @@ menu:
 weight: 170
 toc: true
 ---
+
+## Plug-in description
+    
+<img src="CroPaC_Binaural_GUI.png" alt="" style="max-width: 85%"></br>
+
+**Input**: Ambisonics | **Output**: Binaural | [**Related publication**](../../help/related-publications/mccormack2019parametric.pdf)
+
+This first-order Ambisonic binaural decoder uses the magnitude least-squares (MagLS) ambisonic decoding approach [4] as a starting point. This is then followed by an adaptive algorithm that adjusts the interaural level differences and coherence to better match the adopted sound-field model, using the estimated spatial parameters.
+
+The plug-in allows the user to import their own HRTFs via SOFA files, and also supports head-tracking via OSC messages. The user may also influence the direct/diffuse balance per frequency band. Note that the streams are balanced when set in the middle (which is the default). 
 
 ## Paper abstract
 
@@ -27,15 +37,6 @@ The proposed first-order decoder employs a sound-field model comprising one sour
     
 The proposed approach is inspired by the COMPASS method [3]. However, along with the CroPaC post-filter, it also employs instantaneous source direction estimation and synthesises the output in a linear manner as much as possible; in order to improve the fidelity of the output signals.
 
-## Plug-in description
-    
-<img src="CroPaC_Binaural_GUI.png" alt="" style="max-width: 85%"></br>
-
-**Input**: Ambisonics | **Output**: Binaural | [**Related publication**](../../help/related-publications/mccormack2019parametric.pdf)
-
-This implementation employs the magnitude least-squares (magLS) ambisonic decoder [4] as the prototype, contrary to the spatial-resampling decoder employed for the listening tests described in the paper. The plug-in allows the user to import their own HRTFs via SOFA files, and also supports head-tracking via OSC messages. The user may also influence the direct/diffuse balance per frequency band; note that the streams are balanced when set in the middle (default). 
-    
-
 ## Listening test results at a glance
 Formal listening tests indicate that the proposed first-order decoder (CroPaC1) performs similarly to (or exceeds) third-order spatial re-sampling ambisonics decoding (Ambi3), in terms of the perceived spatial and timbral attributes of the reproduction; as shown in the plots below:
      
@@ -48,12 +49,12 @@ It should be highlighted that third- order ambisonics employs four times the num
    
 ## Developers
     
-* **Leo McCormack**: a doctoral candidate at Aalto University.
-* **Symeon Delikaris-Manias**: post doctorate researcher at Aalto University, specialising in compact microphone array processing for DoA estimation and sound-field reproduction. His doctoral research included work on the Cross-Pattern Coherence (CroPaC) algorithm, which is a spatial post-filter optimised for high noise/reverberant environments. 
+* **Leo McCormack**: former postdoctoral researcher at Aalto University.
+* **Symeon Delikaris-Manias**: former postdoctoral researcher at Aalto University.
 
 ## License
 
-This plug-in may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
+This plug-in may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are honoured. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
     
 ## References
 

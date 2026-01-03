@@ -1,7 +1,7 @@
 ---
 title: "UltrasonicSuperHearing"
 description: "Plug-in description for the UltrasonicSuperHearing."
-lead: "Plug-in description for the UltrasonicSuperHearing."
+lead: ""
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -19,17 +19,17 @@ toc: true
 
 **Input**: Ultrasonic microphone array | **Output**: Binaural | [**Related publication**](../../help/related-publications/pulkki2021superhuman.pdf)
 
-Ultrasonic sound sources are inaudible to humans. While there do exist devices that can capture, pitch shift and reproduce ultrasonic sound sources for humans to listen to, they generally only employ a single microphone and loudspeaker. Therefore, the listener is unable to localise where these pitch shifted ultrasonic sound sources are located.
+Ultrasonic sound sources are inaudible to humans. While there do exist devices that can capture, pitch shift and reproduce ultrasonic sound sources for humans to listen to, they generally only employ a single microphone and loudspeaker. Therefore, the listener is unable to also localise the direction of these pitch shifted ultrasonic sound sources.
 
-However, by instead capturing the ultrasonic sound sources using an array of microphones, it is possible to estimate their direction of arrival (DoA), and use this information to spatialise a pitch shifted signal in this direction. Therefore, not only is the listener able to perceive these ultrasonic sound sources, but they are also able to localise them in the correct direction.
+By instead capturing the ultrasonic sound sources using an array of microphones, it is possible to estimate their direction of arrival (DoA), and use this information to spatialise a pitch shifted sources in the estimated direction.
 
 This plug-in requires 192kHz sampling rate and relies on constructing the ultrasonic microphone array described below. Although, it is noted that the source code could be altered to support other arrays without too much difficulty. 
 
 ## Building a suitable ultrasonic microphone array
 
-The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array, which was employed for the study detailed in [1], can be found in the [**companion git repository**](https://github.com/leomccormack/Super-Hearing). Further details regarding its construction can also be found in the paper [1].
+The CAD files and drawings used for 3D printing the 6 sensor proof-of-concept array described in [1] can be found in the [**companion git repository**](https://github.com/leomccormack/Super-Hearing). Further details regarding its construction can also be found in the paper.
 
-A recent portable alternative hardware solution is also detailed in [2].
+A recent portable alternative hardware solution was also described in [2].
 
 <img src="UltrasonicArray.png" alt="UltrasonicArray" width="450" style="max-width: 70%"/></br>
 
@@ -38,7 +38,6 @@ A recent portable alternative hardware solution is also detailed in [2].
 The audio plugin renders the 6 microphone signals to the 2 binaural channels. It employs the DoA estimation, pitch-shifting, and binauralisation, as described and used for the listening tests conducted in [1].
  
 <img src="UltrasonicArray_ProcessingDiagram.png" alt="" style="max-width: 85%"/></br>
-
 
 ## Demo
 
@@ -50,14 +49,14 @@ The proposed ultrasonic super-hearing system is demonstrated in the following vi
 
 ## About the authors
     
-* **Leo McCormack**: a doctoral candidate at Aalto University.
-* **Ville Pulkki**: Professor at Aalto University, known for VBAP, SIRR, DirAC and eccentric behaviour.
-* **Raimundo Gonzalez**: a doctoral candidate at Aalto University.
-* **Ossi Miikkulainen**: a MSc. student at Aalto University.
+* **Leo McCormack**: former postdoctoral researcher at Aalto University.
+* **Ville Pulkki**: professor at Aalto University.
+* **Raimundo Gonzalez**: former postdoctoral researcher at Aalto University.
+* **Ossi Miikkulainen**: former MSc. student at Aalto University.
 
 ## License
 
-This application may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
+This application may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are honoured. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
 
 ## References
 

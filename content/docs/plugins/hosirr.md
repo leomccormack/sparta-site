@@ -1,7 +1,7 @@
 ---
 title: "HO-SIRR"
 description: "Description for the HO-SIRR application."
-lead: "Description for the HO-SIRR application."
+lead: ""
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -15,11 +15,11 @@ toc: true
 
 ## Application description
     
-Higher-order Spatial Impulse Response Rendering (HO-SIRR) is a rendering method, which can synthesise output loudspeaker array room impulse responses (RIRs) using input spherical harmonic (Ambisonic/B-Format) RIRs of arbitrary order [<a href="../../help/related-publications/mccormack2020higher.pdf"><b>1</b></a>,<a href="../../help/related-publications/mccormack2019higher.pdf"><b>2</b></a>]. The method makes assumptions regarding the composition of the sound-field and extracts spatial parameters over time, which allows it to map the input to the output in an adaptive and more informed manner; when compared to purely linear methods such as Ambisonics. 
+Spatial Impulse Response Rendering (SIRR) is a method for converting Ambisonic room impulse responses (RIRs) into loudspeaker array RIRs [<a href="../../help/related-publications/mccormack2020higher.pdf"><b>1</b></a>,<a href="../../help/related-publications/mccormack2019higher.pdf"><b>2</b></a>]. The method makes assumptions regarding the composition of the spatial RIR and extracts parameters over time, which are used to map the input to the output in an adaptive and more informed manner. This is essentially the RIR equivalent of Directional Audio Coding (DirAC; which instead operates on real-time Ambisonic signals).
 
 The idea is that you then convolve a monophonic source with this loudspeaker array RIR, and it will be reproduced and exhibit the spatial characteristics of the captured space. Note that the HO-SIRR algorithm is an extention of the original first-order SIRR formulation, first proposed back in 2005 [3,4], by employing the higher-order analysis principles described in [5], which permits higher spatial accuracy during the mapping provided that higher-order components are available.
     
-Note that this HO-SIRR application is essentially a direct port of the HO-SIRR MATLAB toolbox, which is slighly more configurable than the C/C++ implementation (and easier to augment) and can be found <a href="https://github.com/leomccormack/HO-SIRR"><b>here</b></a>.  
+This HO-SIRR application is a direct port of the HO-SIRR MATLAB toolbox, which can be found <a href="https://github.com/leomccormack/HO-SIRR"><b>here</b></a>.  
 
 <img src="HOSIRR_GUI.png" alt="" style="max-width: 85%"></br>
 
@@ -38,13 +38,13 @@ The perceptual performance of HO-SIRR was evaluated based on formal listening te
      
 ## About the authors
     
-* **Leo McCormack**: a doctoral candidate at Aalto University.
-* **Archontis Politis**: post doctorate researcher at Tampere University, specialising in spatial sound recording and reproduction, acoustic scene analysis and microphone array processing.
-* **Ville Pulkki**: Professor at Aalto University, known for VBAP, SIRR, DirAC and eccentric behaviour.
+* **Leo McCormack**: a former postdoctoral researcher at Aalto University.
+* **Archontis Politis**: a professor at Tampere University.
+* **Ville Pulkki**: a professor at Aalto University.
 
 ## License
 
-This application may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are fulfilled. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
+This application may be used for academic, personal, and/or commercial use. The source code may also be used for commercial purposes, provided that the terms of the GPLv3 license are honoured. This requires that the original code and/or any derived works must also be open-sourced and made available under the same GPLv3 license, if it is to be used for commercial purposes.
     
 ## References
     

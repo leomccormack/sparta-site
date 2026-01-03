@@ -17,19 +17,20 @@ The collection of plug-ins included in the SPARTA installer are the culmination 
 
 ## Frameworks and SDKs
 
-All plug-ins included in the SPARTA suite employ the open-source **JUCE framework** for their graphical user-interface (GUI) and for wrapping arround the **VST2 SDK**. The open-source **Spatial_Audio_Framework** is then used for developing the internal spatial audio signal processing.
+All plug-ins included in the SPARTA suite employ the open-source **JUCE framework** for their graphical user-interface (GUI) and for wrapping arround the VST2, VST3, LV2, AU, and AAX SDKs. The open-source **Spatial_Audio_Framework** is used for developing the internal spatial audio signal processing.
 
 * Source code for the [Spatial_Audio_Framework →](https://github.com/leomccormack/Spatial_Audio_Framework)
 * Source code for the [JUCE framework →](https://github.com/juce-framework/JUCE)
 * Download link for the [VST2 SDK →](https://web.archive.org/web/20181016150224/https://download.steinberg.net/sdk_downloads/vstsdk3610_11_06_2018_build_37.zip)
+  * (All other plugin SDKs are bundled inside JUCE)
 
-Both frameworks are also accompanied by extensive online documentation:
+Both frameworks are accompanied by extensive online documentation:
 * Documentation for the [Spatial_Audio_Framework →](https://leomccormack.github.io/Spatial_Audio_Framework)
 * Documentation for the [JUCE framework →](https://docs.juce.com/master/modules.html)
  
 ## SPARTA suite source code
 
-The source code for the SPARTA plug-ins is made available under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license. However, it should be noted that the repository contains only code for the plug-in GUIs, with the internal signal processing inherited directly from the "examples" ([ISC license](https://choosealicense.com/licenses/isc/)) found in the Spatial_Audio_Framework.
+The source code for the SPARTA plug-ins is made available under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license. However, it should be noted that the repository contains only code for the plug-in GUIs. The internal signal processing is instead inherited directly from the "examples" ([ISC license](https://choosealicense.com/licenses/isc/)) found in the Spatial_Audio_Framework repository.
 
 * Source code for the [SPARTA suite →](https://github.com/leomccormack/SPARTA)
 * Documentation for the [Spatial_Audio_Framework examples →](https://leomccormack.github.io/Spatial_Audio_Framework/examples.html)
@@ -42,7 +43,7 @@ The source code for the HADES Renderer is made available under the [GNU GPLv3](h
 
 ## HO-SIRR source code
 
-The source code for the HO-SIRR application is made available under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license. It is essentially a direct C port of the MATLAB toolbox code with JUCE GUI.
+The source code for the HO-SIRR application is made available under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.
 
 * Source code for the [HO-SIRR application →](https://github.com/leomccormack/HO-SIRR-GUI)
 * Source code for the [HO-SIRR MATLAB toolbox →](https://github.com/leomccormack/HO-SIRR)
@@ -65,6 +66,7 @@ The following repositories were created by the same developers of SPARTA:
 
 * Source code for the reference MATLAB implementation [COMPASS-ref →](https://github.com/polarch/COMPASS-ref) 
 * Source code for the [Spatial Audio Python Package →](https://github.com/chris-hld/spaudiopy)
+* Source code for Higher-Order Ambisonics Codec [(HOAC) →](https://github.com/chris-hld/hoac)
 * Source code for the MATLAB library [Spherical-Harmonic-Transform →](https://github.com/polarch/Spherical-Harmonic-Transform)
 * Source code for the MATLAB library [Spherical-Array-Processing →](https://github.com/polarch/Spherical-Array-Processing)
 * Source code for the MATLAB library [Higher-Order-Ambisonics →](https://github.com/polarch/Higher-Order-Ambisonics)
