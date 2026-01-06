@@ -23,14 +23,14 @@ The COMPASS framework has been developed by Dr. Archontis Politis with contribut
 
 <img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
     
-In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The audio plugins apply this framework to different spatial audio production tasks. Note that the plugins are part of an active research project and we therefore expect to keep improving them in the future. However, we believe that they can already prove useful to users and creators.
+In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The audio plug-ins apply this framework to different spatial audio production tasks. Note that the plug-ins are part of an active research project and we therefore expect to keep improving them in the future. However, we believe that they can already prove useful to users and creators.
 
 ### Decoder
 <img src="Decoder_GUI.png" alt="" style="max-width: 85%"></br>
 
 **Input**: Ambisonics | **Output**: Arbitrary loudspeaker array | [**Related publication**](../../help/related-publications/politis2018compass.pdf)
     
-The plugin offers the following functionality:
+The plug-in offers the following functionality:
 * User-specified loudspeaker angles up to 64 channels.
 * Headphone binaural monitoring of the loudspeaker outputs, with support for user-provided personalised binaural filters (HRTFs) via the SOFA format. 
 * Balance control between the extracted direct sound components and the ambient component, per frequency band. 
@@ -40,7 +40,7 @@ The "Diffuse-to-Direct" control allows the user to give more prominence to the d
     
 The "Linear-to-Parametric" control allows the user to mix the output between standard linear Ambisonic decoding and the COMPASS parametric decoding. This control can be used in cases where parametric processing sounds too aggressive, or if the user prefers some degree of localisation blur offered by linear Ambisonic decoding.
 
-The plugin is considered by the authors a production tool and, due to its time-frequency processing, requires internal audio buffer sizes of 1024 samples. Hence we do not consider it as a low-latency plugin and therefore it is not suitable for interactive input. For cases such as interactive binaural rendering for VR with head-tracking, please use the <b>COMPASS|Binaural</b> variant.
+The plug-in is considered by the authors a production tool and, due to its time-frequency processing, requires internal audio buffer sizes of 1024 samples. Hence we do not consider it as a low-latency plug-in and therefore it is not suitable for interactive input. For cases such as interactive binaural rendering for VR with head-tracking, please use the <b>COMPASS|Binaural</b> variant.
 
 **Developers**: Leo McCormack and Archontis Politis.
 
@@ -49,9 +49,9 @@ The plugin is considered by the authors a production tool and, due to its time-f
 
 **Input**: Ambisonics | **Output**: Binaural | [**Related publication**](../../help/related-publications/mccormack2022estimating.pdf)
     
-This is a binaural playback optimised version of the COMPASS decoder. It bypasses loudspeaker rendering and using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plugin parameters, see the description of the <b>Binaural|Decoder</b> above. Additionally the plugin can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
+This is a binaural playback optimised version of the COMPASS decoder. It bypasses loudspeaker rendering and using binaural filters (HRTFs) directly, which can be user-provided and personalised with the SOFA format. For the plug-in parameters, see the description of the <b>Binaural|Decoder</b> above. Additionally the plug-in can receive OSC rotation angles from a headtracker at a user specified port, in the yaw-pitch-roll convention.
 
-This version is intended mostly for head-tracked binaural playback of Ambisonic content at interactive update rates, usually in conjunction with a head-mounted display (HMD). The plugin requires an audio buffer size of at least 512 samples (~10msec at 48kHz). The averaging parameters can be used to make the parametric analysis and synthesis more or less responsive.
+This version is intended mostly for head-tracked binaural playback of Ambisonic content at interactive update rates, usually in conjunction with a head-mounted display (HMD). The plug-in requires an audio buffer size of at least 512 samples (~10msec at 48kHz). The averaging parameters can be used to make the parametric analysis and synthesis more or less responsive.
     
 **Developers**: Leo McCormack and Archontis Politis.
     
@@ -102,7 +102,7 @@ This plug-in employs COMPASS for the task of upmixing a lower-order Ambisonic re
 
 **Input**: 2xAmbisonics | **Output**: Ambisonics | [**Related publication**](../../help/related-publications/mccormack2021parametric.pdf)
 
-This plug-in applies the COMPASS analysis on one sound scene (scene A [channels 1-16] or scene B [channels 17-32]), and uses the estimated spatial parameters to manipulate the signals of the second sound scene. If scene A and B are the same, then the plugin becomes functionally identical to the COMPASS|Upmixer.
+This plug-in applies the COMPASS analysis on one sound scene (scene A [channels 1-16] or scene B [channels 17-32]), and uses the estimated spatial parameters to manipulate the signals of the second sound scene. If scene A and B are the same, then the plug-in becomes functionally identical to the COMPASS|Upmixer.
     
 ### SpatEdit
 <img src="spatEdit_A.png" alt="" style="max-width: 90%"></br>

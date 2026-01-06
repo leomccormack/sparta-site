@@ -19,7 +19,7 @@ All Ambisonics-related plug-ins conform to the Ambisonic Channel Number (ACN) or
 
 Thanks to the efforts of Daniel Rudrich, the relevant plug-ins also support importing and exporting loudspeaker, source, and sensors directions via .json configuration files; thus allowing for cross-compatibility between SPARTA and the IEM Ambisonics plug-in suite. More information regarding the structure of these files can be [found here](https://plugins.iem.at/docs/configurationfiles/).
 
-{{< alert icon="👉" text="Hover your mouse cursor over plugin parameters to reveal tooltips :-)" />}}
+{{< alert icon="👉" text="Hover your mouse cursor over plug-in parameters to reveal tooltips :-)" />}}
 
 
 ### AmbiBIN
@@ -50,6 +50,8 @@ Note that when the loudspeakers are uniformly distributed (e.g. a t-design), all
 **Input**: Ambisonics | **Output**: Ambisonics | [**Related publication**](../../help/related-publications/mccormack2017fft.pdf)
     
 A frequency-dependent Ambisonic dynamic range compressor (DRC). The gain factors are derived by analysing the omnidirectional component for each frequency band, which are then applied equally to all Ambisonic channels. Therefore, the spatial properties of the scene will remain unchanged; although, your perception of the compressed scene after decoding may change.
+
+**Developers**: Leo McCormack
     
 ### AmbiENC 
 <img src="AmbiENC_GUI.png" alt="" style="max-width: 80%"/><br/>
@@ -57,13 +59,17 @@ A frequency-dependent Ambisonic dynamic range compressor (DRC). The gain factors
 **Input**: Object audio signals | **Output**: Ambisonics
     
 An Ambisonic encoder that takes input signals (up to 128 channels) and encodes each channel/signal into Ambisonic signals at specified directions. These Ambisonic signals describe a synthetic sound scene, where the spatial resolution of the sound scene is determined by the encoding order. Several presets have been included for convenience, which allow for 22.x etc. audio to be encoded into 1-10th order Ambisonics, for example. 
-    
+
+**Developers**: Leo McCormack
+
 ### AmbiRoomSim 
 <img src="ambiRoomSim_GUI.png" alt="" style="max-width: 95%"  /><br/>
 
 **Input**: Object audio signals | **Output**: (multi-)Ambisonics
 
 An Ambisonic encoder that also models wall reflections for a shoebox room using the image source method. Multiple sources and multiple Ambisonic receivers are supported up to a combined 128 channels; e.g. 32x first-order or 8x third-order receivers, 2x 7th-order receivers, or 1x 10th order receiver. The output receiver channels are stacked, e.g. 1-4 channels are for the 1st first-order receiver, 5-8 for the second etc.
+
+**Developers**: Leo McCormack
 
 ### Array2SH 
 <img src="Array2SH_GUI.png" alt="" style="max-width: 95%"/><br/>
@@ -85,6 +91,8 @@ For convenience, the specifications for several commercially available microphon
 
 A simple beamforming plug-in, currently including the following static beam patterns: cardioid, hyper-cardioid, or max_rE weighted hyper-cardioid.
  
+**Developers**: Leo McCormack
+
 ### Binauraliser    
 <img src="Binauraliser_GUI.png" alt="" style="max-width: 95%"/><br/>
 
@@ -111,7 +119,9 @@ This plug-in mirrors the functionality of the [**Binauraliser**](#binauraliser),
 **Input**: Any multichannel signal | **Output**: Any multichannel signal
     
 A simple multi-channel signal decorrelator (up to 128 channels) based on randomised time-frequency delays and cascaded all-pass filters.
-    
+
+**Developers**: Leo McCormack
+
 ### DirASS
 <img src="DirASS_GUI.png" alt="" style="max-width: 90%"/><br/>
 
@@ -129,9 +139,9 @@ A sound-field visualiser, which is based on the directional re-assignment of bea
 A flexible matrix convolver. The matrix of filters should be concatenated for each output channel and loaded as a .wav file. You need only inform the plug-in of the number of input channels, and it will take care of the rest. 
 
 * Example 1, **spatial reverberation**: if you have a B-Format/Ambisonic room impulse response (RIR), you may convolve it with a monophonic input signal and the output will exhibit (much of) the spatial characteristics of the measured room. Simply load this Ambisonic RIR into the plug-in and set the number of input channels to 1. You may then decode the resulting Ambisonic output to your loudspeaker array (e.g. using SPARTA|AmbiDEC) or to headphones (e.g. using SPARTA|AmbiBIN). However, please note that the limitations of lower-order Ambisonics for signals (namely, colouration and poor spatial accuracy) will also be present with lower-order Ambisonic RIRs; at least, when applied in this manner. Consider referring to Example 3, for a more spatially accurate method of reproducing the spatial characteristics of rooms that are captured as B-Format/Ambisonic RIRs.
-* Example 2, **microphone array to Ambisonics encoding**: if you have a matrix of filters to go from an Eigenmike (32 channel) recording to 4th order Ambisonics (25 channel), then the plugin requires a 25-channel wav file to be loaded, and the number of input channels to be set to 32. In this case: the first 32 filters will map the input to the first output channel, filters 33-64 will map the input to the second output channel, ... , and the last 32 filters will map the input to the 25th output channel. An example of such an encoding matrix may be downloaded from [here](http://research.spa.aalto.fi/projects/sparta_vsts/extras/M_eigen2sh_radinv_o4_ACN_N3D_15dB_max.wav). Note that these example filters employ the ACN/**N3D** convention, Tikhonov regularisation, and 15dB of maximum gain amplification; using the Matlab scripts from [**here**](https://github.com/polarch/Spherical-Array-Processing). This should be the same as SPARTA|Array2SH when it is set to the Eigenmike preset and default settings (except N3D not SN3D).
+* Example 2, **microphone array to Ambisonics encoding**: if you have a matrix of filters to go from an Eigenmike (32 channel) recording to 4th order Ambisonics (25 channel), then the plug-in requires a 25-channel wav file to be loaded, and the number of input channels to be set to 32. In this case: the first 32 filters will map the input to the first output channel, filters 33-64 will map the input to the second output channel, ... , and the last 32 filters will map the input to the 25th output channel. An example of such an encoding matrix may be downloaded from [here](http://research.spa.aalto.fi/projects/sparta_vsts/extras/M_eigen2sh_radinv_o4_ACN_N3D_15dB_max.wav). Note that these example filters employ the ACN/**N3D** convention, Tikhonov regularisation, and 15dB of maximum gain amplification; using the Matlab scripts from [**here**](https://github.com/polarch/Spherical-Array-Processing). This should be the same as SPARTA|Array2SH when it is set to the Eigenmike preset and default settings (except N3D not SN3D).
 * Example 3, **more advanced spatial reverberation**: if you have a monophonic recording of a trumpet and you wish to reproduce it as if it were in your favourite concert hall, first measure a B-Format/Ambisonic room impulse response (RIR) of the hall, and then convert this Ambisonic RIR to your loudspeaker set-up using [HO-SIRR](../hosirr). Then load the resulting rendered loudspeaker array RIR into the plug-in and set the number of input channels to 1. Note that you may prefer to use HO-SIRR (which is a parametric renderer), to convert your arbitrary order B-Format/Ambisonic IRs to arbitrary loudspeaker array IRs, as the resulting output will generally be much more spatially accurate when compared to linear (non-parametric) Ambisonic decoding; as described in Example 1. For the curious reader, an example of a 12point T-design loudspeaker array IR, made using a simulation [12] of the Vienna Musikverein concert hall, may be downloaded from [**here**](http://research.spa.aalto.fi/projects/sparta_vsts/extras/Vienna__12point-Tdesign.wav). To listen to the convolved output, either arrange 12 loudspeakers in a t-design for the playback (a bit cumbersome), or use the SPARTA|Binauraliser plug-in set to "T-Design (12)" and listen over headphones.
-* Example 4, **virtual monitoring of a multichannel setup**: if you have a set of binaural head-related impulse responses (BRIRs) which correspond to the loudspeaker directions of a measured listening room, you may use this 2 x L matrix of filters to reproduce loudspeaker mixes (L-channels) over headphones. Simply concatenate the BRIRs for each input channel into a two channel wav file and load them into the plugin, then set the number of inputs to be the number of BRIRs/loudspeakers in the mix.  
+* Example 4, **virtual monitoring of a multichannel setup**: if you have a set of binaural head-related impulse responses (BRIRs) which correspond to the loudspeaker directions of a measured listening room, you may use this 2 x L matrix of filters to reproduce loudspeaker mixes (L-channels) over headphones. Simply concatenate the BRIRs for each input channel into a two channel wav file and load them into the plug-in, then set the number of inputs to be the number of BRIRs/loudspeakers in the mix.  
     
 **Developers**: Leo McCormack and Archontis Politis.
     
@@ -140,7 +150,7 @@ A flexible matrix convolver. The matrix of filters should be concatenated for ea
 
 **Input**: Any multichannel signal | **Output**: Any multichannel signal
     
-A multi-channel convolver. The plugin will convolve each input channel with the respective filter up to the maximum of 128 channels/filters. The filters are loaded as a multi-channel .wav file.
+A multi-channel convolver. The plug-in will convolve each input channel with the respective filter up to the maximum of 128 channels/filters. The filters are loaded as a multi-channel .wav file.
     
 Please note that this is not to be confused with the MatrixConv plug-in. For this plug-in, the number inputs = the number of filters = the number of outputs. i.e. no matrixing is applied.
     
@@ -176,7 +186,9 @@ Set the "Room Coeff" parameter to 0 for standard power-normalisation, 0.5 for a 
 **Input**: Any multichannel signal | **Output**: Any multichannel signal 
     
 A simple multi-channel pitch shifter (up to 128 channels) based on the phase vocoder approach.
-    
+
+**Developers**: Leo McCormack
+
 ### PowerMap
 <img src="Powermap_GUI.png" alt="" style="max-width: 90%"/><br/>
     
@@ -192,7 +204,9 @@ A simple multi-channel pitch shifter (up to 128 channels) based on the phase voc
 **Input**: Ambisonics | **Output**: Ambisonics 
     
 Rotates the Ambisonic sound scene [6]. The rotation angles can be controlled using a head tracker via OSC messages. Simply configure the headtracker to send a vector: '\ypr[3]' to OSC port 9000 (default); where \ypr[0], \ypr[1], \ypr[2] are the yaw-pitch-roll angles, in degrees, respectively. The angles can also be flipped +/- in order to support a wider range of devices. The rotation order (yaw-pitch-roll (default) or roll-pitch-yaw) can also be specified. Alternatively, the rotation can be based on a Quaternion by sending vector: '\quaternion[4]'; where \quaternion[0], \quaternion[1], \quaternion[2], \quaternion[3], are the W, X, Y, Z parts of the Quaternion, respectively.
-    
+
+**Developers**: Leo McCormack
+
 ### SLDoA
 <img src="SLDoA_GUI.png" alt="" style="max-width: 80%"/><br/>
 
@@ -207,7 +221,7 @@ A spatially localised direction-of-arrival (DoA) estimator. The plug-in first us
 
 **Input**: Object audio signal | **Output**: Any multichannel signal | [**Related publication**](../../help/related-publications/mccormack2021rendering.pdf)
 
-This plugin uses an optimised framework for rendering spread sound sources over an arbitrary playback system, as described in [14]. In this particular implementation, the directional responses for the target system are loaded as impulse responses via the SOFA format (e.g., using HRIRs for binaural, or microphone array IRs for creating a synthetic recording). The algorithm is then tasked with mixing the input mono signals to produce the appropriate multi-channel signals (e.g. 2 for binaural playback, 4 or 32 for a synthetic tetrahedral microphone or Eigenmike array recording), such that the output signals create a diffuse, or rather: "incoherently spead" sound source. The solution is optimised to introduce decorrelated signal energy into the output only to the degree that is required to fulfill the target model. Therefore, the signal fidelity of the input signal is largely retained. The algorithm proposed in [14] is denoted as "OM" in this plug-in. For comparison, an unconstrained spatial covariance matching alternative is provided under the name "EVD", which also fulfills the target model, but does so without the constraints for preserving signal fidelity. Additionally, a coherent spreading baseline ("BL"), which is commonly employed in the industry (e.g. game audio engines) is included, which can sound very unnatural when compared to the incoherent spreading alternatives.
+This plug-in uses an optimised framework for rendering spread sound sources over an arbitrary playback system, as described in [14]. In this particular implementation, the directional responses for the target system are loaded as impulse responses via the SOFA format (e.g., using HRIRs for binaural, or microphone array IRs for creating a synthetic recording). The algorithm is then tasked with mixing the input mono signals to produce the appropriate multi-channel signals (e.g. 2 for binaural playback, 4 or 32 for a synthetic tetrahedral microphone or Eigenmike array recording), such that the output signals create a diffuse, or rather: "incoherently spead" sound source. The solution is optimised to introduce decorrelated signal energy into the output only to the degree that is required to fulfill the target model. Therefore, the signal fidelity of the input signal is largely retained. The algorithm proposed in [14] is denoted as "OM" in this plug-in. For comparison, an unconstrained spatial covariance matching alternative is provided under the name "EVD", which also fulfills the target model, but does so without the constraints for preserving signal fidelity. Additionally, a coherent spreading baseline ("BL"), which is commonly employed in the industry (e.g. game audio engines) is included, which can sound very unnatural when compared to the incoherent spreading alternatives.
     
 **Developers**: Leo McCormack and Archontis Politis.
 

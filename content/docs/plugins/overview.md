@@ -50,7 +50,7 @@ Learn more about the [SPARTA Suite →]({{< relref "sparta-suite" >}})
 Learn more about the [COMPASS Suite →]({{< relref "compass-suite" >}})
 
 * [**compass_binaural**](../compass-suite/#binaural) - An adaptive binaural ambisonic decoder (up to 3rd order input) based on the parametric COMPASS model, with a built-in SOFA loader and head-tracking support via OSC messages.
-* [**compass_binauralVR**](../compass-suite/#binauralvr) - Same as the compass_binaural plugin, but also supporting listener translation around the receiver position and support for multiple simultaneous listeners.
+* [**compass_binauralVR**](../compass-suite/#binauralvr) - Same as the compass_binaural plug-in, but also supporting listener translation around the receiver position and support for multiple simultaneous listeners.
 * [**compass_decoder**](../compass-suite/#decoder) - A parametrically enhanced loudspeaker ambisonic decoder (up to 3rd order input).
 * [**compass_6dof**](../compass-suite/#6dof) - A six degrees-of-freedom (6DoF) renderer based on multiple Ambisonic receivers as input, which supports listener translation both within and beyond the convex hull of the receiver arrangement.
 * [**compass_gravitator**](../compass-suite/#gravitator) - A parametric sound-field focussing plug-in.

@@ -25,7 +25,7 @@ The plug-in works by first loading a dense grid of microphone array impulse resp
 
 Once the microphone array IRs have been loaded, the implemented algorithms will binaurally reproduce the captured sound-field using a baseline method, such as: 1) simply taking two reference signals (one for each ear) and routing them to the binaural channels, 2) employing filter-and-sum (FaS) beamformers to better isolate the source signals based on direction-of-arrival estimates, or 3) using binaural minimum-variance distortionless response (BMVDR) beamformers instead. The binaural signals are then spatially enhanced via the spatial covariance matching solution described in [1]. Note that, optionally, the default HRIRs (of a Kemar dummy head) may also be replaced by loading a SOFA file.
 
-Since the plugin conducts a parameterisation of the input sound-field, it can accommodate spatial audio effects and sound-field modifications through simple parameter manipulations. In this plug-in, the direct-to-diffuse balance may be manipulated per frequency band, and the gain of directional components may be adjusted for different directions [2,3].
+Since the plug-in conducts a parameterisation of the input sound-field, it can accommodate spatial audio effects and sound-field modifications through simple parameter manipulations. In this plug-in, the direct-to-diffuse balance may be manipulated per frequency band, and the gain of directional components may be adjusted for different directions [2,3].
 
 ## Paper abstract
 

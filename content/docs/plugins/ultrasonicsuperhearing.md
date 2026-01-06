@@ -35,7 +35,7 @@ A recent portable alternative hardware solution was also described in [2].
 
 ## Auralising the captured ultrasonic sound sources
 
-The audio plugin renders the 6 microphone signals to the 2 binaural channels. It employs the DoA estimation, pitch-shifting, and binauralisation, as described and used for the listening tests conducted in [1].
+The audio plug-in renders the 6 microphone signals to the 2 binaural channels. It employs the DoA estimation, pitch-shifting, and binauralisation, as described and used for the listening tests conducted in [1].
  
 <img src="UltrasonicArray_ProcessingDiagram.png" alt="" style="max-width: 85%"/></br>
 

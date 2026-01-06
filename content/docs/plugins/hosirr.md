@@ -38,9 +38,9 @@ The perceptual performance of HO-SIRR was evaluated based on formal listening te
      
 ## About the authors
     
-* **Leo McCormack**: a former postdoctoral researcher at Aalto University.
-* **Archontis Politis**: a professor at Tampere University.
-* **Ville Pulkki**: a professor at Aalto University.
+* **Leo McCormack**: former postdoctoral researcher at Aalto University.
+* **Archontis Politis**: professor at Tampere University.
+* **Ville Pulkki**: professor at Aalto University.
 
 ## License
 
