@@ -19,7 +19,7 @@ toc: true
 
 **Input**: Ambisonics | **Output**: Binaural | [**Related publication**](../../help/related-publications/mccormack2019parametric.pdf)
 
-This first-order Ambisonic binaural decoder uses the magnitude least-squares (MagLS) ambisonic decoding approach [4] as a starting point. This is then followed by an adaptive algorithm that adjusts the interaural level differences and coherence to better match the adopted sound-field model, using the estimated spatial parameters.
+This first-order Ambisonic binaural decoder uses the magnitude least-squares (MagLS) ambisonic decoding approach [4] as a starting point. This is then followed by an adaptive algorithm that adjusts the interaural level differences and coherence to better match its sound-field model, using the estimated spatial parameters.
 
 The plug-in allows the user to import their own HRTFs via SOFA files, and also supports head-tracking via OSC messages. The user may also influence the direct/diffuse balance per frequency band. Note that the streams are balanced when set in the middle (which is the default). 
 

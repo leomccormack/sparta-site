@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 description: "What's included in the SPARTA installer?"
-lead: "SPARTA is a collection of flexible audio plug-ins for spatial audio production, editing, and reproduction, developed primarily by members of the Acoustics Lab at Aalto University, Finland."
+lead: ""
 date: 2021-08-15T08:48:57+00:00
 lastmod: 2021-08-15T08:48:57+00:00
 draft: false
@@ -13,10 +13,12 @@ weight: 100
 toc: true
 ---
 
-The SPARTA installer also includes the COMPASS suite, the HO-DirAC suite, CroPaC Binaural Decoder, and the HO-SIRR room impulse response renderer. 
-These plug-ins employ parametric processing and are signal-dependent. They aim to go beyond conventional linear Ambisonics algorithms, used by the baseline SPARTA plug-ins, by extracting meaningful spatial parameters over time and subsequently employing them to map the input to the output in an adaptive and informed manner.
+SPARTA is a collection of flexible audio plug-ins for spatial audio production, editing, and playback. The plugins are developed primarily by members of the Acoustics Lab at Aalto University, Finland. However, they have also received contributions from many other researchers, developers, and enthusiasts, from around the world.
 
-[**Example REAPER projects may be found here**](https://github.com/leomccormack/sparta-reaper-examples).
+## Parametric rendering
+
+Note that the SPARTA installer also includes the COMPASS suite, HO-DirAC suite, CroPaC Binaural Decoder, and the HO-SIRR room impulse response renderer. 
+These plug-ins are restricted to lower order Ambisonics input. However, they also leverage parametric processing and are adaptive, which allows them to go beyond the capabilities of conventional linear Ambisonics algorithms. In many cases, parametric rendering of first-order Ambisonics can often match, or exceed, the perceptual performance of traditional renderers operating at much higher Ambisonic orders.
 
 ## All included plug-ins
 
@@ -35,8 +37,8 @@ Learn more about the [SPARTA Suite →]({{< relref "sparta-suite" >}})
 * [**sparta_binauraliserNF**](../sparta-suite/#binauralisernf) - Binauraliser, with the addition of proximity filtering for near field sound sources.
 * [**sparta_decorrelator**](../sparta-suite/#decorrelator) - A simple multi-channel signal decorrelator (up to 128 input channels).
 * [**sparta_dirass**](../sparta-suite/#dirass) - A sound-field visualiser based on re-assigning the energy of beamformers. This re-assignment is based on DoA estimates extracted from "spatially-constrained" regions, which are centred around each beamformer look-direction.
-* [**sparta_matrixconv**](../sparta-suite/#matrixconv) - A basic matrix convolver with an optional partitioned convolution mode. The user need only specify the number of inputs and load the filters via a wav file.
-* [**sparta_multiconv**](../sparta-suite/#multiconv) - A basic multi-channel convolver with an optional partitioned convolution mode. Unlike "MatrixConv", this plug-in does not perform any matrixing. Instead, each input channel is convolved with the respective filter; i.e. numInputs = numFilters = numOutputs.
+* [**sparta_matrixconv**](../sparta-suite/#matrixconv) - A matrix convolver with an optional partitioned convolution mode. The user need only specify the number of inputs and load the filters via a wav file.
+* [**sparta_multiconv**](../sparta-suite/#multiconv) - A multi-channel convolver with an optional partitioned convolution mode. Unlike "MatrixConv", this plug-in does not perform any matrixing. Instead, each input channel is convolved with the respective filter; i.e. numInputs = numFilters = numOutputs.
 * [**sparta_6DoFconv**](../sparta-suite/#6dofconv) - A time-varying partitioned convolution multi-channel convolver for SOFA files containing RIRs with multiple listener positions.
 * [**sparta_panner**](../sparta-suite/#panner) - A 3D loudspeaker array panner using the VBAP method (up to 128 inputs and outputs).
 * [**sparta_pitchshifter**](../sparta-suite/#pitchshifter) - A simple multi-channel pitch shifter (up to 128 channels) based on the phase vocoder approach.

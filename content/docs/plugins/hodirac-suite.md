@@ -13,13 +13,15 @@ weight: 140
 toc: true
 ---
 
+HO-DirAC is a collection of parametric spatial audio plug-ins.
+
+These plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes (note that the AmbiX format refers to the combination of ACN and SN3D). The maximum transform order for these plug-ins is 3rd.
+
+{{< alert icon="👉" text="Hover your mouse cursor over plug-in parameters to reveal tooltips! :-)" />}}
+
 ## Plug-in descriptions 
 
-Directional Audio Coding (DirAC) has been an active research topic at Aalto University since 2007 [1]. The method operates by estimating spatial parameters to describe the input sound scene over time and frequency, which are then used to conduct the mapping of the input Ambisonic signals to the output loudspeaker/binaural channels in an adaptive and informed manner. While the original intention of DirAC was for low bitrate compression and transmission of Ambisonic recordings, more recent years have instead focussed on using it for the enhancement of Ambisonics reproduction.
-
-These particular audio plug-in implementations use the higher-order analysis designs described in [2,3], which synthesise the target output signals based on the optimal covariance domain rendering framework described in [4].
-
-All plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) scalings (note: AmbiX uses ACN/SN3D). The maximum input Ambisonic order for these plug-ins is 3rd.
+Example REAPER projects can be found [**here**](https://github.com/leomccormack/sparta-reaper-examples).
 
 ### Decoder 
 <img src="HODirAC_decoder_GUI.png" alt="" style="max-width: 85%"></br>
@@ -48,8 +50,14 @@ This version is intended mostly for head-tracked binaural playback of Ambisonic 
 
 This plug-in is intended for the task of upmixing a lower-order Ambisonic recording to a higher-order Ambisonic recording. It is essentially a wrapper for HO-DirAC|Decoder, as it first decodes the input to an appropriate uniform arrangement of virtual loudspeakers (e.g. a t-design) followed by re-encoding the virtual loudspeaker signals into the target order. It can be used by users who are already working with a preferred linear Ambisonic decoding workflow of higher-order Ambisonic content, and wish to combine lower-order Ambisonic material with increased spatial resolution. One can upmix first, second, or third-order material (4,9,16 channels) up to fifth-order material (36 channels).
  
+## The HO-DirAC framework
+
+Directional Audio Coding (DirAC) has been an active research topic at Aalto University since 2007 [1]. The method operates by estimating spatial parameters to describe the input sound scene over time and frequency, which are then used to conduct the mapping of the input Ambisonic signals to the output loudspeaker/binaural channels in an adaptive and informed manner. While the original intention of DirAC was for low bitrate compression and transmission of Ambisonic recordings, more recent years have instead focussed on using it for the enhancement of Ambisonics reproduction.
+
+These particular audio plug-in implementations use the higher-order analysis designs described in [2,3], which synthesise the target output signals based on the optimal covariance domain rendering framework described in [4].
+
 ## About the developers
-    
+
 These plug-ins were developed by Leo McCormack. However, a number of people were involved in the research of the underlying algorithms, and much of the internal C/C++ code is based on Matlab code written by Archontis Politis and Juha Vilkamo; who, in turn, based their code and research on the code and research of: Mikko-Ville Laitinen, Jukka Ahonen, Tapani Pihlajam&auml;ki, and Ville Pulkki. For a detailed history of the method the reader is referred to [5].
 
 ## License

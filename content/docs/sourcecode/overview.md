@@ -22,7 +22,7 @@ All plug-ins included in the SPARTA suite employ the open-source **JUCE framewor
 * Source code for the [Spatial_Audio_Framework →](https://github.com/leomccormack/Spatial_Audio_Framework)
 * Source code for the [JUCE framework →](https://github.com/juce-framework/JUCE)
 * Download link for the [VST2 SDK →](https://web.archive.org/web/20181016150224/https://download.steinberg.net/sdk_downloads/vstsdk3610_11_06_2018_build_37.zip)
-  * (All other plugin SDKs are bundled inside JUCE)
+  * (All other audio plug-in SDKs are bundled inside JUCE)
 
 Both frameworks are accompanied by extensive online documentation:
 * Documentation for the [Spatial_Audio_Framework →](https://leomccormack.github.io/Spatial_Audio_Framework)

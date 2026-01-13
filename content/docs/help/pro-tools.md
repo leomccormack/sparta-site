@@ -23,7 +23,7 @@ Note that nearly all compatibility issues described below would be resolved if P
 
 Please file a GitHub [issue](https://github.com/leomccormack/SPARTA/issues) if you encounter a problem/limitation that is not described below.
 
-All testing is currently conducted in Pro Tools (Developer) version 25.12.0.
+All testing is currently conducted in Pro Tools (Developer and Ultimate) version 25.12.0.
 
 ## SPARTA
 
@@ -69,7 +69,7 @@ All testing is currently conducted in Pro Tools (Developer) version 25.12.0.
 ## Other
 
 * **cropac_binaural** - <span style="color:green">fully supported</span> when added as a e.g. "(1st Order Ambisonics/Stereo)" insert on an Ambisonics "Track".
-* **hades_renderer** - <span style="color:YellowGreen">mostly supported</span>. However, it depends on the number of microphones in the array. Note that 2-4 microphone array recordings (loaded onto a Stereo, LRC, or Quad input channel bus, with stereo output) are safe, since they are not re-ordered by Pro Tools. However, higher-channel count microphone arrays require care, in order to make sure Pro Tools does not re-order the channels.
+* **hades_renderer** - <span style="color:YellowGreen">mostly supported</span>. However, it depends on the number of microphones in the array. Note that 2-4 microphone array recordings (loaded onto a Stereo, LRC, or Quad input channel bus, with stereo output) are safe, since they are not re-ordered by Pro Tools. However, higher-channel count microphone arrays require care, since Pro Tools may re-order the channels, which will need to be accounted for.
 * **HOSIRR** - <span style="color:green">fully supported</span>, since it's more of a standalone application. It doesn't process audio, so the bus configuration does not matter.
 * **UltrasonicSuperHearing** - <span style="color:red">not supported</span>. There is no suitable channel configuration for this plug-in in Pro Tools.
 

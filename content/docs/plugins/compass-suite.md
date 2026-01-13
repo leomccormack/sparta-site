@@ -13,17 +13,15 @@ weight: 130
 toc: true
 ---
 
+COMPASS is a collection of parametric spatial audio plug-ins. 
+
+These plug-ins conform to the Ambisonic Channel Number (ACN) ordering convention and offer support for both orthonormalised (N3D) and semi-normalised (SN3D) normalisation schemes (note that the AmbiX format refers to the combination of ACN and SN3D). The maximum transform order for these plug-ins is 3rd.
+
+{{< alert icon="👉" text="Hover your mouse cursor over plug-in parameters to reveal tooltips! :-)" />}}
+
 ## Plug-in descriptions 
 
-COMPASS is a collection of flexible audio plug-ins for spatial audio production, manipulation, and reproduction, developed by Dr. Archontis Politis, Dr. Leo McCormack and Dr. Sakari Tervo at the Acoustics Lab, Aalto University. 
-
-COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) and HARPEX, have gained notoriety recently for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and estimate the model parameters in the Ambisonics recording, over both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of traditional signal-independent Ambisonic decoders. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
-
-The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Dr. Leo McCormack, and published in <a href="../../help/related-publications/politis2018compass.pdf">[1]</a>. The method adopts a general sound-field model, estimating multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M refers to the number of channels):  
-
-<img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
-    
-In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The audio plug-ins apply this framework to different spatial audio production tasks. Note that the plug-ins are part of an active research project and we therefore expect to keep improving them in the future. However, we believe that they can already prove useful to users and creators.
+Example REAPER projects can be found [**here**](https://github.com/leomccormack/sparta-reaper-examples).
 
 ### Decoder
 <img src="Decoder_GUI.png" alt="" style="max-width: 85%"></br>
@@ -121,6 +119,17 @@ The SpatEdit plug-in is intended to be used with two instances. The first instan
 A spatial "warping" effect that pulls directional components of the sound scene towards user defined markers, with a certain degree of "gravitational-pull". The Ambient components of the sound scene will remain unchanged.
   
 **Developers**: Leo McCormack and Archontis Politis.
+
+
+## The COMPASS framework
+
+COMPASS is a framework for parametric spatial audio processing of sound scenes captured in the Ambisonics format. Parametric methods, such as Directional Audio Coding (DirAC) and HARPEX, have gained notoriety in recent years for being able to achieve sharpness or envelopment beyond first or lower-order traditional Ambisonics playback, using the same lower-order Ambisonics signals. Contrary to the time-invariant linear processing of Ambisonics, which does not consider the sound components that comprise the sound scene, parametric methods assume a sound-field model for the sound scene and estimate the model parameters in the Ambisonics recording, over both time and frequency. The parameters are then used to render or upmix the sound scene flexibly to any playback system, without the constraints of traditional signal-independent Ambisonic decoders. Furthermore, the spatial parameters allow flexible manipulation of the sound scene content in ways that are not possible with traditional Ambisonics processing.
+
+The COMPASS framework has been developed by Dr. Archontis Politis with contributions from Dr. Sakari Tervo and Dr. Leo McCormack, and published in <a href="../../help/related-publications/politis2018compass.pdf">[1]</a>. The method adopts a general sound-field model, estimating multiple direct sound components in every time-frequency block, and an ambient component capturing reverberation and other diffuse sounds. Here is a table of the COMPASS model compared to other published parametric techniques (note that M refers to the number of channels):  
+
+<img src="parametric_ambisonic_models.png" alt="" style="max-width: 95%"></br>
+    
+In COMPASS, the ambient component is also spatial and can have directionality, contrary to previous models that force it to be isotropic. The audio plug-ins apply this framework to different spatial audio production tasks. Note that the plug-ins are part of an active research project and we therefore expect to keep improving them in the future. However, we believe that they can already prove useful to users and creators.
      
 ## About the developers
     
