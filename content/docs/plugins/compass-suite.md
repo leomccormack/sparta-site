@@ -85,6 +85,8 @@ The Tracker plug-in employs a multi-source tracker [11,12] to cluster and associ
 Optionally, a beamformer can be steered to each target direction and outputted as individual signals (one target signal per output channel - akin to decomposing the scene into its individual "stems"), or as a binauralisation of these individual "stems" (spatialised in their respective target directions).
     
 Note that multi-source tracking has been an active research topic for several decades, but it is still considered a difficult task. While we are confident in the robustness of this tracker and its implementation, there is still a learning curve to effectively tune the parameters for a specific sound scene/distribution. If the sound scene is very noisy or complex and encoded with first-order/lower resolution, then robust tracking may not be possible. A general starting point is to first disable "Plot Targets" and tune the "Analysis Settings" until the direction estimates (plotted in the colour red) look reasonably clean. If you can make out the trajectories of the sources, then re-enable "Plot Targets" and try a few of the "Tracker Settings" presets and tune things from there. Note that each tracker parameter also has a tooltip describing how it influences the tracking.
+
+**Developers**: Leo McCormack and Archontis Politis. 
     
 ### Upmixer
 <img src="upmixer_GUI.png" alt="" style="max-width: 80%"></br>
@@ -101,7 +103,9 @@ This plug-in employs COMPASS for the task of upmixing a lower-order Ambisonic re
 **Input**: 2xAmbisonics | **Output**: Ambisonics | [**Related publication**](../../help/related-publications/mccormack2021parametric.pdf)
 
 This plug-in applies the COMPASS analysis on one sound scene (scene A [channels 1-16] or scene B [channels 17-32]), and uses the estimated spatial parameters to manipulate the signals of the second sound scene. If scene A and B are the same, then the plug-in becomes functionally identical to the COMPASS|Upmixer.
-    
+
+**Developers**: Leo McCormack and Archontis Politis. 
+
 ### SpatEdit
 <img src="spatEdit_A.png" alt="" style="max-width: 90%"></br>
 

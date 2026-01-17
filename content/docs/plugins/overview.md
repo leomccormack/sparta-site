@@ -17,7 +17,7 @@ SPARTA is a collection of flexible audio plug-ins for spatial audio production, 
 
 ## Parametric rendering
 
-Note that the SPARTA installer also includes the COMPASS suite, HO-DirAC suite, CroPaC Binaural Decoder, and the HO-SIRR room impulse response renderer. 
+The SPARTA installer also includes the COMPASS suite, HO-DirAC suite, CroPaC Binaural Decoder, and the HO-SIRR room impulse response renderer. 
 These plug-ins are restricted to lower order Ambisonics input. However, they also leverage parametric processing and are adaptive, which allows them to go beyond the capabilities of conventional linear Ambisonics algorithms. In many cases, parametric rendering of first-order Ambisonics can often match, or exceed, the perceptual performance of traditional renderers operating at much higher Ambisonic orders.
 
 ## All included plug-ins
