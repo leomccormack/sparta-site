@@ -22,7 +22,7 @@ REAPER also allows the plug-ins to be loaded as VST, LV2, VST3, or AU. However, 
 * **<span style="color:green">AU</span>** - (only for MacOS), these versions work correctly up to 128 channels.
 * **<span style="color:red">VST3</span>** - these show up as supporting 128 channels (e.g., VST3: sparta_ambiBIN (AALTO) (128ch)). However, they are actually unpredictable. They usually cap out at either 24 or 64 channels. In general, VST3 is still not a suitable format for these kind of multi-channel plug-ins. We therefore recommend using the VST (or LV2/AU) versions, if possible.
 Note that Steinberg is aware of this issue:
-* [https://sdk.steinberg.net/viewtopic.php?f=4&t=549](https://sdk.steinberg.net/viewtopic.php?f=4&t=549) (18 April 2018)
-* [https://sdk.steinberg.net/viewtopic.php?f=4&t=6249](https://sdk.steinberg.net/viewtopic.php?f=4&t=624) (6 December 2018)
-* [https://github.com/steinbergmedia/vst3sdk/issues/28](https://github.com/steinbergmedia/vst3sdk/issues/28) (17 January 2019)
-* [https://github.com/leomccormack/SPARTA/issues/28](https://github.com/leomccormack/SPARTA/issues/28) (6 March 2021)
+    * [https://sdk.steinberg.net/viewtopic.php?f=4&t=549](https://sdk.steinberg.net/viewtopic.php?f=4&t=549) (18 April 2018)
+    * [https://sdk.steinberg.net/viewtopic.php?f=4&t=6249](https://sdk.steinberg.net/viewtopic.php?f=4&t=624) (6 December 2018)
+    * [https://github.com/steinbergmedia/vst3sdk/issues/28](https://github.com/steinbergmedia/vst3sdk/issues/28) (17 January 2019)
+    * [https://github.com/leomccormack/SPARTA/issues/28](https://github.com/leomccormack/SPARTA/issues/28) (6 March 2021)
